@@ -7,11 +7,27 @@ import { defineMessages } from 'react-intl';
 
 export default defineMessages({
   home: {
-    id: 'boilerplate.components.Header.home',
+    id: 'components.Header.home',
     defaultMessage: 'Home',
   },
-  features: {
-    id: 'boilerplate.components.Header.features',
-    defaultMessage: 'Features',
+  about: {
+    id: 'components.Header.about',
+    defaultMessage: 'About',
+  },
+  news: {
+    id: 'components.Header.news',
+    defaultMessage: 'News',
+  },
+  library: {
+    id: 'components.Header.library',
+    defaultMessage: 'Library',
+  },
+  blog: {
+    id: 'components.Header.blog',
+    defaultMessage: 'Blog',
+  },
+  meetup: {
+    id: 'components.Header.meetup',
+    defaultMessage: 'Meet-Up',
   },
 });

@@ -15,11 +15,10 @@ import Footer from 'components/Footer';
 import withProgressBar from 'components/ProgressBar';
 
 const AppWrapper = styled.div`
-  max-width: calc(768px + 16px * 2);
-  margin: 0 auto;
+  margin: 0;
   display: flex;
   min-height: 100%;
-  padding: 0 16px;
+  padding: 0;
   flex-direction: column;
 `;
 
@@ -27,10 +26,10 @@ export function App(props) {
   return (
     <AppWrapper>
       <Helmet
-        titleTemplate="%s - React.js Boilerplate"
-        defaultTitle="React.js Boilerplate"
+        titleTemplate="MTA - %s"
+        defaultTitle="Mormon Transhumanist Association"
         meta={[
-          { name: 'description', content: 'A React.js Boilerplate application' },
+          { name: 'description', content: 'Official Website of the Mormon Transhumanist Association' },
         ]}
       />
       <Header />

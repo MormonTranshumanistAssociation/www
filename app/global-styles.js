@@ -13,7 +13,7 @@ injectGlobal`
   }
 
   body.fontLoaded {
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: Abel, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 
   #app {
@@ -22,9 +22,15 @@ injectGlobal`
     min-width: 100%;
   }
 
+  h1, h2, h3, h4 {
+    font-weight: 400;
+  }
+  
   p,
   label {
-    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Source Sans Pro', 'Abel', Helvetica, Arial, sans-serif;
+    font-weight: 300;
     line-height: 1.5em;
+    color: rgba(0,0,0,.9);
   }
 `;
