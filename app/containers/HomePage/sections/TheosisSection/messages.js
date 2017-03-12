@@ -18,4 +18,8 @@ export default defineMessages({
     id: 'containers.HomePage.sections.theosis.josephSmith',
     defaultMessage: 'Joseph Smith',
   },
+  moreOnYouTube: {
+    id: 'containers.HomePage.sections.theosis.moreOnYouTube',
+    defaultMessage: 'More videos on',
+  },
 });

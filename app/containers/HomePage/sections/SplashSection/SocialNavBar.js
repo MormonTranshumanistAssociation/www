@@ -25,9 +25,9 @@ const SocialNavLink = styled(A)`
 
 const SocialNavBar = () => (
   <NavBar>
-    <SocialNavLink href="//facebook.com/transfigurism">Facebook</SocialNavLink>
+    <SocialNavLink href="//www.facebook.com/transfigurism">Facebook</SocialNavLink>
     <SocialNavLink href="//twitter.com/transfigurism">Twitter</SocialNavLink>
-    <SocialNavLink href="//youtube.com/transfigurism">YouTube</SocialNavLink>
+    <SocialNavLink href="//www.youtube.com/user/transfigurism">YouTube</SocialNavLink>
   </NavBar>
 );
 

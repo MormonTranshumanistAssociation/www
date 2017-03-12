@@ -27,12 +27,17 @@ const ContributeLink = styled.a`
   }
 `;
 
+const TopAlignedSection = styled(Section)`
+  background-position-y: top;
+  padding-bottom: 2rem;
+`;
+
 const SplashSection = () => (
-  <Section img={ForestImage}>
+  <TopAlignedSection img={ForestImage}>
     <LogoImg alt="MTA Logo" src={Logo} />
     <SocialNavBar />
     <ContributeLink href="://contribute">Contribute</ContributeLink>
-  </Section>
+  </TopAlignedSection>
 );
 
 export default SplashSection;

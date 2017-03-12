@@ -18,7 +18,7 @@ const H = styled.h3`
 const TextWrapper = styled.div`
   max-width: 384px;
   text-align: left;
-  padding: 0 2rem;
+  padding: 1rem 2rem 0 2rem;
 `;
 
 const VideoWrapper = styled.div`
