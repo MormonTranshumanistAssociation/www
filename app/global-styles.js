@@ -16,6 +16,11 @@ injectGlobal`
     font-family: Abel, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 
+  /* Remove scroll on the body when react-modal is open */
+  .ReactModal__Body--open {
+    //overflow: hidden;
+  }
+  
   #app {
     background-color: #fafafa;
     min-height: 100%;

@@ -9,6 +9,7 @@ import Helmet from 'react-helmet';
 import SplashSection from './sections/SplashSection';
 import AffirmationSection from './sections/AffirmationSection';
 import MandateSection from './sections/MandateSection';
+import TheosisSection from './sections/TheosisSection';
 
 export class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   /**
@@ -27,6 +28,7 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
           <SplashSection />
           <AffirmationSection />
           <MandateSection />
+          <TheosisSection />
         </div>
       </article>
     );

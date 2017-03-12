@@ -23,7 +23,11 @@ const TextWrapper = styled.div`
 
 const VideoWrapper = styled.div`
   max-width: calc(384px + 2 * 2rem);
-  margin-bottom: 2rem;
+  margin: 1rem;
+  
+  @media (min-width: 1024px) {
+    margin-left: 0;
+  }
 `;
 
 const MandateSection = () => (
