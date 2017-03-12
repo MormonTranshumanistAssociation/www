@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Section from 'components/Section';
-import ForestImage from './forest.jpg';
 import Img from 'components/Img';
+import ForestImage from './forest.jpg';
 import SocialNavBar from './SocialNavBar';
 import Logo from './mta-logo.png';
 
@@ -27,10 +27,10 @@ const ContributeLink = styled.a`
   }
 `;
 
-const SplashSection = (props) => (
+const SplashSection = () => (
   <Section img={ForestImage}>
     <LogoImg alt="MTA Logo" src={Logo} />
-    <SocialNavBar/>
+    <SocialNavBar />
     <ContributeLink href="://contribute">Contribute</ContributeLink>
   </Section>
 );

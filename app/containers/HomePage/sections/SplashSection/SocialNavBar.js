@@ -23,7 +23,7 @@ const SocialNavLink = styled(A)`
   }
 `;
 
-const SocialNavBar = (props) => (
+const SocialNavBar = () => (
   <NavBar>
     <SocialNavLink href="//facebook.com/transfigurism">Facebook</SocialNavLink>
     <SocialNavLink href="//twitter.com/transfigurism">Twitter</SocialNavLink>
