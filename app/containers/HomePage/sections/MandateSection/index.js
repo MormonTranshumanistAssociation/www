@@ -1,7 +1,7 @@
 import React from 'react';
-import { FormattedMessage }from 'react-intl';
+import { FormattedMessage } from 'react-intl';
 import Section from 'components/Section';
-import SectionContent from 'components/SectionContent'
+import SectionContent from 'components/SectionContent';
 import styled from 'styled-components';
 import YouTubePlayer from 'components/YouTubePlayer';
 import messages from './messages';
@@ -26,24 +26,16 @@ const VideoWrapper = styled.div`
   margin-bottom: 2rem;
 `;
 
-const MandateSection = (props) => {
-  const affs = [1, 2, 3, 4, 5, 6 ].map((index) => {
-    return {
-      header: messages[`aff${index}Header`],
-      text: messages[`aff${index}Text`],
-    }
-  });
+const MandateSection = () => (
+  <Section img={LeavesImage}>
+    <SectionContent>
+      <VideoWrapper><YouTubePlayer videoId="VePRByRNIAc" /></VideoWrapper>
+      <TextWrapper>
+        <H><FormattedMessage {...messages.header} /></H>
+        <p><FormattedMessage {...messages.text} /></p>
+      </TextWrapper>
+    </SectionContent>
+  </Section>
+);
 
-  return (
-    <Section img={LeavesImage}>
-      <SectionContent>
-        <VideoWrapper><YouTubePlayer videoId="VePRByRNIAc" /></VideoWrapper>
-        <TextWrapper>
-          <H><FormattedMessage {...messages.header} /></H>
-          <p><FormattedMessage {...messages.text} /></p>
-        </TextWrapper>
-      </SectionContent>
-    </Section>
-  );
-}
 export default MandateSection;

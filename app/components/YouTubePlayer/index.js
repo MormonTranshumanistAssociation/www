@@ -57,10 +57,9 @@ const Player = styled.div`
 `;
 
 
-
 class YouTubePlayer extends React.Component {
 
-  static props = {
+  static propTypes = {
     videoId: React.PropTypes.string.isRequired,
   };
 
@@ -80,10 +79,10 @@ class YouTubePlayer extends React.Component {
         { isPlaying
           ? <iframe src={`//www.youtube.com/embed/${videoId}?autoplay=1`} frameBorder="0" allowFullScreen="1" />
           : (
-            <div onClick={this.onClick}>
-              <img src={`//i.ytimg.com/vi/${videoId}/hqdefault.jpg`}/>
-              <div className="play"/>
-            </div>
+            <button onClick={this.onClick}>
+              <img alt="Video Player" src={`//i.ytimg.com/vi/${videoId}/hqdefault.jpg`} />
+              <div className="play" />
+            </button>
           )
         }
       </Player>
