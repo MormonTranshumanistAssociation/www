@@ -17,9 +17,10 @@ import withProgressBar from 'components/ProgressBar';
 const AppWrapper = styled.div`
   margin: 0;
   display: flex;
-  min-height: 100%;
+  min-height: 100vh;
   padding: 0;
   flex-direction: column;
+  position: relative;
 `;
 
 export function App(props) {

@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 export default styled.nav`
   text-align: center;
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
-  padding: 10px 0 4px 0;
-  background: rgba(255,255,255,.75);
+  padding: 12px 0 8px;
+  background: rgba(255,255,255,.7);
   z-index: 1000000;
   a {
     display: inline-flex;
@@ -17,9 +17,13 @@ export default styled.nav`
     user-select: none;
     cursor: pointer;
     outline: 0;
-    font-family: 'Abel', Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    color: #2d371e;
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
     font-weight: 400;
+    font-size: 0.7rem;
+    color: #2d371e;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  a:hover {
   }
 `;

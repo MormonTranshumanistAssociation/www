@@ -12,7 +12,7 @@ const LinkStyler = styled.div`
     text-decoration: underline;
     // For some reason changing the font weight (which doesn't actually change the font) seems to fix 
     // a bug in Chrome that prevents these styles from applying otherwise. 
-    font-weight: 300;   
+    font-weight: 300;
   }
 `;
 
