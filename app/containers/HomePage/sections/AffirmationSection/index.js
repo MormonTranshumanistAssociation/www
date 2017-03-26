@@ -37,11 +37,6 @@ const P = styled.p`
   margin-top: 0;
 `;
 
-const Source = styled.p`
-  font-size: 1rem;
-  font-style: italic;
-`;
-
 const Title = styled.h2`
   color: #525B3A;
   font-size: 2rem;

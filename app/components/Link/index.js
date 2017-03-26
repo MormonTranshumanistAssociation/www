@@ -16,14 +16,11 @@ const LinkStyler = styled.div`
   }
 `;
 
-const Link = ({ to, href, children }) => {
-  console.log({ to, href });
-  return (
-    <LinkStyler>
-      { to ? <RouterLink to={to}>{children}</RouterLink> : <a href={href}>{children}</a> }
-    </LinkStyler>
-  );
-};
+const Link = ({ to, href, children }) => (
+  <LinkStyler>
+    { to ? <RouterLink to={to}>{children}</RouterLink> : <a href={href}>{children}</a> }
+  </LinkStyler>
+);
 Link.propTypes = {
   to: React.PropTypes.string,
   href: React.PropTypes.string,

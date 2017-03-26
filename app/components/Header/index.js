@@ -1,8 +1,8 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import styled from 'styled-components';
-import NavBar from './NavBar';
 import Link from 'components/Link';
+import NavBar from './NavBar';
 import messages from './messages';
 
 const JoinButton = styled.div`

@@ -65,5 +65,5 @@ export default defineMessages({
   title: {
     id: 'affirmationTitle',
     defaultMessage: 'Affirmation',
-  }
+  },
 });

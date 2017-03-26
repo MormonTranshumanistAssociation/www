@@ -1,9 +1,6 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
 import styled from 'styled-components';
 import YouTubePlayer from 'components/YouTubePlayer';
-import YouTubeLogo from './you_tube_logo.png';
-import messages from './messages';
 
 const NavBar = styled.div`
   overflow-x: scroll;
@@ -28,6 +25,7 @@ const VideoWrapper = styled.div`
   }
 `;
 
+/*
 const MoreVideosLinkImage = styled.img`
   background-size: contain;
   margin: auto auto;
@@ -48,6 +46,7 @@ const MoreVideosLinkText = styled.p`
   margin-top: 10px;
   font-size: 12px;
 `;
+*/
 
 const VideoThumb = ({ videoId }) => (
   <VideoWrapper><YouTubePlayer videoId={videoId} modal hiddenOverlay /></VideoWrapper>
