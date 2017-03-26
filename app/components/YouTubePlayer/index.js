@@ -102,7 +102,7 @@ const ModalPlayer = (props) => {
   const modalStyle = {
     overlay: {
       zIndex: 9999,
-      backgroundColor: 'rgba(0,0,0,.5)',
+      backgroundColor: 'rgba(0,0,0,.8)',
     },
     content: {
       background: 'transparent',
@@ -110,6 +110,7 @@ const ModalPlayer = (props) => {
       bottom: 'auto',
       left: '10%',
       right: '10%',
+      top: '60px',
     },
   };
 

@@ -1,33 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
-import A from 'components/A';
+import Link from 'components/Link';
 
 const NavBar = styled.nav`
   margin: 0.5em 0;
-`;
-
-const SocialNavLink = styled(A)`
   color: rgba(29,32,21,.79);
   font-size: 1.2rem;
   font-weight: 400;
-  text-decoration: none;
+`;
+
+const SocialNavLink = styled.div`
+  display: inline-block;
   padding: 0 .8em;
   border-right: 1px solid;
-  
   &:last-child {
     border-right: none;
-  }
-  &:hover {
-    text-decoration: underline;
-    color: inherit;
   }
 `;
 
 const SocialNavBar = () => (
   <NavBar>
-    <SocialNavLink href="//www.facebook.com/transfigurism">Facebook</SocialNavLink>
-    <SocialNavLink href="//twitter.com/transfigurism">Twitter</SocialNavLink>
-    <SocialNavLink href="//www.youtube.com/user/transfigurism">YouTube</SocialNavLink>
+    <SocialNavLink><Link href="//www.facebook.com/transfigurism">Facebook</Link></SocialNavLink>
+    <SocialNavLink><Link href="//twitter.com/transfigurism">Twitter</Link></SocialNavLink>
+    <SocialNavLink><Link href="//www.youtube.com/user/transfigurism">YouTube</Link></SocialNavLink>
   </NavBar>
 );
 

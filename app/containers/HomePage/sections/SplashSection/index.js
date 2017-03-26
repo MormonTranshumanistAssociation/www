@@ -9,7 +9,7 @@ import Logo from './mta-logo.png';
 const LogoImg = styled(Img)`
   width: 206px;
   height: auto;
-  margin: 20px 0 50px 0;
+  margin: 20vh 0 50px 0;
 `;
 
 const ContributeLink = styled.a`
@@ -23,13 +23,16 @@ const ContributeLink = styled.a`
   display: inline-block;
   
   &:hover {
+    text-decoration: underline;
     background: rgba(0,0,0,.5);
   }
 `;
 
 const TopAlignedSection = styled(Section)`
+  min-height: 100vh;
   background-position-y: top;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
+  background-attachment: fixed;
 `;
 
 const SplashSection = () => (

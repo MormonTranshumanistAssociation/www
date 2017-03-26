@@ -1,9 +1,9 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import styled from 'styled-components';
-import { Link } from 'react-router';
 import ForestImage from 'containers/HomePage/sections/SplashSection/forest.jpg';
 import Section from 'components/Section';
+import Link from 'components/Link';
 import SectionContent from 'components/SectionContent';
 import messages from './messages';
 
@@ -15,6 +15,7 @@ const H = styled.h3`
 const FooterSection = styled(Section)`
   padding: 1.5em 0 14px 0;
   background-position-y: bottom;
+  background-attachment: fixed;
 `;
 
 const FooterSectionContent = styled(SectionContent)`
@@ -29,24 +30,8 @@ const Links = styled.div`
 
 const LinkGroup = styled.div`
   width: calc((768px - 4rem) / 4);
-`;
-
-const FooterLink = styled(Link)`
-  color: #525B3A;
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
-  display: block;
-`;
-
-const FooterA = styled.a`
-  color: #525B3A;
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
-  display: block;
+  & > div { display: block }
+  color: rgba(0,0,0,.8);
 `;
 
 function Footer() {
@@ -56,25 +41,25 @@ function Footer() {
         <H><FormattedMessage {...messages.siteMap} /></H>
         <Links>
           <LinkGroup>
-            <FooterLink to="/"><FormattedMessage {...messages.home} /></FooterLink>
-            <FooterLink to="/about"><FormattedMessage {...messages.about} /></FooterLink>
-            <FooterLink to="/news"><FormattedMessage {...messages.news} /></FooterLink>
-            <FooterLink to="/library"><FormattedMessage {...messages.library} /></FooterLink>
-            <FooterLink to="/blog"><FormattedMessage {...messages.blog} /></FooterLink>
-            <FooterLink to="/meetup"><FormattedMessage {...messages.meetup} /></FooterLink>
-            <FooterA href="contribute"><FormattedMessage {...messages.contribute} /></FooterA>
+            <Link to="/"><FormattedMessage {...messages.home} /></Link>
+            <Link to="/about"><FormattedMessage {...messages.about} /></Link>
+            <Link to="/news"><FormattedMessage {...messages.news} /></Link>
+            <Link to="/library"><FormattedMessage {...messages.library} /></Link>
+            <Link to="/blog"><FormattedMessage {...messages.blog} /></Link>
+            <Link to="/meetup"><FormattedMessage {...messages.meetup} /></Link>
+            <Link href="contribute"><FormattedMessage {...messages.contribute} /></Link>
           </LinkGroup>
           <LinkGroup>
-            <FooterA href="contribute"><FormattedMessage {...messages.conferences} /></FooterA>
-            <FooterA href="contribute"><FormattedMessage {...messages.quotes} /></FooterA>
-            <FooterA href="contribute"><FormattedMessage {...messages.videos} /></FooterA>
-            <FooterA href="contribute"><FormattedMessage {...messages.annualReports} /></FooterA>
+            <Link href="contribute"><FormattedMessage {...messages.conferences} /></Link>
+            <Link href="contribute"><FormattedMessage {...messages.quotes} /></Link>
+            <Link href="contribute"><FormattedMessage {...messages.videos} /></Link>
+            <Link href="contribute"><FormattedMessage {...messages.annualReports} /></Link>
           </LinkGroup>
           <LinkGroup>
           </LinkGroup>
           <LinkGroup>
-            <FooterA href="contribute"><FormattedMessage {...messages.facebook} /></FooterA>
-            <FooterA href="contribute"><FormattedMessage {...messages.twitter} /></FooterA>
+            <Link href="contribute"><FormattedMessage {...messages.facebook} /></Link>
+            <Link href="contribute"><FormattedMessage {...messages.twitter} /></Link>
           </LinkGroup>
         </Links>
       </FooterSectionContent>

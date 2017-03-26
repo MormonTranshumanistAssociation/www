@@ -19,11 +19,11 @@ export default defineMessages({
   },
   aff2Header: {
     id: 'aff.2.header',
-    defaultMessage: 'We believe that scientific||and technological power',
+    defaultMessage: 'We believe that scientific||and technological power are',
   },
   aff2Text: {
     id: 'aff.2.text',
-    defaultMessage: `are among the means ordained of God to enable such exaltation, including realization of diverse
+    defaultMessage: `among the means ordained of God to enable such exaltation, including realization of diverse
       prophetic visions of transfiguration, immortality, resurrection, renewal of this world, and the discovery and
       creation of worlds without end.`,
   },
@@ -62,4 +62,8 @@ export default defineMessages({
     defaultMessage: `offer friendship, that all may be one; when we receive truth, let it come from whence it may; and
       when we send relief, consolation and healing, that raises each other together.`,
   },
+  title: {
+    id: 'affirmationTitle',
+    defaultMessage: 'Affirmation',
+  }
 });

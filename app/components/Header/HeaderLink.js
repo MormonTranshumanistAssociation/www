@@ -14,8 +14,4 @@ export default styled(Link)`
   font-family: 'Abel', Helvetica, Arial, sans-serif;
   font-size: 1rem;
   color: #2d371e;
-
-  &:hover {
-    text-decoration: underline;
-  }
 `;

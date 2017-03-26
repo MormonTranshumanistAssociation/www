@@ -67,19 +67,23 @@ const ConferenceVideoNav = () => (
   >
     <VideoThumb videoId="B14yKHwe9HU" />
     <VideoThumb videoId="8YyImflOFA4" />
-    <VideoThumb videoId="HGoQnU6ySw4" />
-    <VideoThumb videoId="yVElI5FfcY8" />
     <VideoThumb videoId="ybXOTs1GA5E" />
+    <VideoThumb videoId="D9i9RJEfHUg" />
+    <VideoThumb videoId="yVElI5FfcY8" />
+    <VideoThumb videoId="HGoQnU6ySw4" />
     <VideoThumb videoId="muIXsGaTOoU" />
     <VideoThumb videoId="IWILNddsatA" />
     <VideoThumb videoId="Tgs5-h5CKdQ" />
     <VideoThumb videoId="JZp0q6bigmw" />
     <VideoThumb videoId="Ho-t11DGvVc" />
-    <VideoWrapper>
-      <MoreVideosLinkText><FormattedMessage {...messages.moreOnYouTube} /></MoreVideosLinkText>
-      <a href="//www.youtube.com/user/transfigurism"><MoreVideosLinkImage src={YouTubeLogo} /></a>
-    </VideoWrapper>
   </NavBar>
 );
 
+/*
+ This "More videos on YouTube" link has an alignment issue in Safari. Removing for now.
+ <VideoWrapper>
+   <MoreVideosLinkText><FormattedMessage {...messages.moreOnYouTube} /></MoreVideosLinkText>
+   <a href="//www.youtube.com/user/transfigurism"><MoreVideosLinkImage src={YouTubeLogo} /></a>
+ </VideoWrapper>
+ */
 export default ConferenceVideoNav;

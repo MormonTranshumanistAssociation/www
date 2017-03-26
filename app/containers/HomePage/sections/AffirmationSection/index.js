@@ -37,6 +37,15 @@ const P = styled.p`
   margin-top: 0;
 `;
 
+const Source = styled.p`
+  font-size: 1rem;
+  font-style: italic;
+`;
+
+const Title = styled.h2`
+  color: #525B3A;
+  font-size: 2rem;
+`;
 const AffirmationSection = () => {
   const affs = [1, 2, 3, 4, 5, 6].map((index) => (
     { header: messages[`aff${index}Header`], text: messages[`aff${index}Text`] }
@@ -45,6 +54,7 @@ const AffirmationSection = () => {
   return (
     <Section>
       <SectionContent>
+        <Title><FormattedMessage {...messages.title} /></Title>
         <ColumnWrapper>
           {
             affs.map((aff, index) => (

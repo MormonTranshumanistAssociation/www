@@ -30,8 +30,12 @@ const VideoWrapper = styled.div`
   }
 `;
 
+const FixedBackgroundSection = styled(Section)`
+  //background-attachment: fixed;
+`;
+
 const MandateSection = () => (
-  <Section img={LeavesImage}>
+  <FixedBackgroundSection img={LeavesImage}>
     <SectionContent>
       <VideoWrapper><YouTubePlayer videoId="VePRByRNIAc" /></VideoWrapper>
       <TextWrapper>
@@ -39,7 +43,7 @@ const MandateSection = () => (
         <p><FormattedMessage {...messages.text} /></p>
       </TextWrapper>
     </SectionContent>
-  </Section>
+  </FixedBackgroundSection>
 );
 
 export default MandateSection;

@@ -18,7 +18,7 @@ injectGlobal`
 
   /* Remove scroll on the body when react-modal is open */
   .ReactModal__Body--open {
-    //overflow: hidden;
+    overflow: hidden;
   }
   
   #app {
