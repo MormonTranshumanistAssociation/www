@@ -12,7 +12,7 @@ or otherwise, and encourage them to adapt Transhumanism to their unique situatio
 
 ## What is the relation between Mormonism and Transhumanism?
 
-Increasingly, people see parallels and complements between Mormon and Transhumanist 
+Increasingly, people are recognizing parallels and complements between Mormon and Transhumanist 
 views. On one hand, [Mormonism](http://en.wikipedia.org/wiki/Mormonism) is a 
 religion of the Judeo-Christian tradition that advocates immersive discipleship of 
 Jesus Christ that leads to creative and compassionate works. On the other hand, 
