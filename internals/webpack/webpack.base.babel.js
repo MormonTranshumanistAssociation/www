@@ -58,6 +58,9 @@ module.exports = (options) => ({
       query: {
         limit: 10000,
       },
+    }, {
+      test: /\.md$/,
+      loader: 'babel-loader!reactdown/webpack',
     }],
   },
   plugins: options.plugins.concat([

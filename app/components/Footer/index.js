@@ -32,6 +32,7 @@ const LinkGroup = styled.div`
   width: calc((768px - 4rem) / 4);
   & > div { display: block }
   color: rgba(0,0,0,.8);
+  margin-bottom: 1em;
 `;
 
 function Footer() {

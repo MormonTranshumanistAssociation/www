@@ -3,19 +3,9 @@ import { FormattedMessage } from 'react-intl';
 import Section from 'components/Section';
 import SectionContent from 'components/SectionContent';
 import styled from 'styled-components';
+import Columns, { Column } from 'components/Columns';
+
 import messages from './messages';
-
-
-const ColumnWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-`;
-
-const Column = styled.div`
-  width: 384px;
-  text-align: left;
-  padding: 1rem 2rem;
-`;
 
 function softBreak(WrappedComponent) {
   return ({ children = '', ...rest }) => {      // eslint-disable-line react/prop-types
@@ -50,7 +40,7 @@ const AffirmationSection = () => {
     <Section>
       <SectionContent>
         <Title><FormattedMessage {...messages.title} /></Title>
-        <ColumnWrapper>
+        <Columns>
           {
             affs.map((aff, index) => (
               <Column key={index}>
@@ -59,7 +49,7 @@ const AffirmationSection = () => {
               </Column>
             ))
           }
-        </ColumnWrapper>
+        </Columns>
       </SectionContent>
     </Section>
   );

@@ -29,6 +29,13 @@ injectGlobal`
 
   h1, h2, h3, h4 {
     font-weight: 400;
+    font-family: 'Abel', Helvetica, Arial, sans-serif;
+    color: #525B3A;
+    line-height: 1.2em;
+    margin-top: 1.5em;
+  }
+  h1 {
+    margin-top: 0;
   }
   
   p,
@@ -37,5 +44,14 @@ injectGlobal`
     font-weight: 300;
     line-height: 1.5em;
     color: rgba(0,0,0,.9);
+  }
+  
+  a {
+    text-decoration: none;
+    color: #659400;
+    font-weight: 600;
+  }
+  a:hover {
+    text-decoration: underline !important;
   }
 `;

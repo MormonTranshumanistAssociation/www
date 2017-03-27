@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Link from 'components/Link';
 import NavBar from './NavBar';
 import messages from './messages';
+import Banner from './Banner';
 
 const JoinButton = styled.div`
   display: inline-block;
@@ -26,22 +27,23 @@ const JoinButton = styled.div`
   }
 `;
 
-class Header extends React.Component { // eslint-disable-line react/prefer-stateless-function
-  render() {
-    return (
-      <div>
-        <NavBar>
-          <Link data-tag="Link" to="/"><FormattedMessage {...messages.home} /></Link>
-          <Link href="/about"><FormattedMessage {...messages.about} /></Link>
-          <Link to="/news"><FormattedMessage {...messages.news} /></Link>
-          <Link to="/library"><FormattedMessage {...messages.library} /></Link>
-          <Link href="//transfigurist.org"><FormattedMessage {...messages.blog} /></Link>
-          <Link to="/meetup"><FormattedMessage {...messages.meetup} /></Link>
-          <JoinButton><Link to="/join"><FormattedMessage {...messages.join} /></Link></JoinButton>
-        </NavBar>
-      </div>
-    );
-  }
-}
+
+const Header = (props) => (
+  <div>
+    <NavBar>
+      <Link data-tag="Link" to="/"><FormattedMessage {...messages.home} /></Link>
+      <Link to="/about"><FormattedMessage {...messages.about} /></Link>
+      <Link to="/news"><FormattedMessage {...messages.news} /></Link>
+      <Link to="/library"><FormattedMessage {...messages.library} /></Link>
+      <Link href="//transfigurist.org"><FormattedMessage {...messages.blog} /></Link>
+      <Link to="/meetup"><FormattedMessage {...messages.meetup} /></Link>
+      <JoinButton><Link to="/join"><FormattedMessage {...messages.join} /></Link></JoinButton>
+    </NavBar>
+    { !props.menuOnly && <Banner /> }
+  </div>
+);
+Header.propTypes = {
+  menuOnly: React.PropTypes.bool,
+};
 
 export default Header;

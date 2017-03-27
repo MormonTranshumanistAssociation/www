@@ -7,26 +7,25 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import styled from 'styled-components';
-
+import Header from 'components/Header';
 import H1 from 'components/H1';
+import Section from 'components/Section';
+import SectionContent from 'components/SectionContent';
 import messages from './messages';
 
-const Article = styled.article`
-  max-width: 768px;
-  height: 60vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
+const FullPageSection = styled(Section)`
+  min-height: calc(100vh - 550px);
 `;
 
 export default function NotFound() {
   return (
-    <Article>
-      <H1>
-        <FormattedMessage {...messages.header} />
-      </H1>
-    </Article>
+    <div>
+      <Header />
+      <FullPageSection>
+        <SectionContent>
+          <H1><FormattedMessage {...messages.header} /></H1>
+        </SectionContent>
+      </FullPageSection>
+    </div>
   );
 }

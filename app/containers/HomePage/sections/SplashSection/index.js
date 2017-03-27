@@ -9,7 +9,8 @@ import Logo from './mta-logo.png';
 const LogoImg = styled(Img)`
   width: 206px;
   height: auto;
-  margin: 20vh 0 50px 0;
+  margin: 50px 0 50px 0;
+  flex: 0;
 `;
 
 const ContributeLink = styled.a`
@@ -21,6 +22,7 @@ const ContributeLink = styled.a`
   text-decoration: none;
   margin: 12px 0;
   display: inline-block;
+  flex: 0;
   
   &:hover {
     text-decoration: underline;
@@ -29,17 +31,27 @@ const ContributeLink = styled.a`
 `;
 
 const TopAlignedSection = styled(Section)`
-  min-height: 100vh;
+  //min-height: 100vh;
   background-position-y: top;
   padding-bottom: 3rem;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+`;
+
+const Spacer = styled.div`
+  flex: 1,
 `;
 
 const SplashSection = () => (
   <TopAlignedSection img={ForestImage}>
-    <LogoImg alt="MTA Logo" src={Logo} />
-    <SocialNavBar />
-    <ContributeLink href="://contribute">Contribute</ContributeLink>
+    <Spacer />
+    <div>
+      <LogoImg alt="MTA Logo" src={Logo} />
+      <SocialNavBar />
+      <ContributeLink href="://contribute">Contribute</ContributeLink>
+    </div>
+    <Spacer />
   </TopAlignedSection>
 );
 
