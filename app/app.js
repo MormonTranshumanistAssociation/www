@@ -40,6 +40,10 @@ import '!file-loader?name=[name].[ext]!./manifest.json';
 import 'file-loader?name=[name].[ext]!./.htaccess'; // eslint-disable-line import/extensions
 /* eslint-enable import/no-webpack-loader-syntax */
 
+// import GHPages support
+import '!file-loader?name=[name]!./CNAME';    // eslint-disable-line import/extensions
+import '!file-loader?name=[name].[ext]!./404.html';
+
 import configureStore from './store';
 
 // Import i18n messages
