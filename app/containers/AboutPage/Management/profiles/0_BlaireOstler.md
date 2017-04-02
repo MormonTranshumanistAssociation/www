@@ -1,4 +1,4 @@
-![Blaire Ostler](assets/blaire-ostler.jpg)
+![Blaire Ostler](assets/blaire-ostler.png)
 # Blaire Ostler
 ## Chief Executive Officer
 [Blaire Ostler](http://blaireostler.blogspot.com/) is one of the leading voices on the intersections of Mormonism, feminism, and transhumanism. 
