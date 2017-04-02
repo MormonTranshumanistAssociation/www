@@ -6,11 +6,19 @@
 
 import React from 'react';
 import Helmet from 'react-helmet';
+import styled from 'styled-components';
 import Header from 'components/Header';
 import Section from 'components/Section';
 import SectionContent from 'components/SectionContent';
 import { SingleColumn } from 'components/Columns';
-import IndexPage from './markdown/index.md';
+import ToC from './toc';
+
+const PageWithContents = styled(SectionContent)`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+`;
 
 export class AboutPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -20,11 +28,12 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
         <article>
           <Helmet title="About" />
           <Section>
-            <SectionContent>
+            <PageWithContents>
+              <div><ToC /></div>
               <SingleColumn>
-                <IndexPage />
+                {this.props.children}
               </SingleColumn>
-            </SectionContent>
+            </PageWithContents>
           </Section>
         </article>
       </div>
@@ -33,7 +42,7 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
 }
 
 AboutPage.propTypes = {
-  loading: React.PropTypes.bool,
+  children: React.PropTypes.any,
 };
 
 export default AboutPage;

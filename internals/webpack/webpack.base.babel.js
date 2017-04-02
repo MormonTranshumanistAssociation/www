@@ -11,6 +11,14 @@ module.exports = (options) => ({
     path: path.resolve(process.cwd(), 'build'),
     publicPath: '/',
   }, options.output), // Merge with env dependent settings
+  node: {
+    // nh: fix issue when building reactdown
+    fs: 'empty',
+  },
+  externals: [{
+    // nh: fix issue when building react-markdown-loader
+    xmlhttprequest: '{XMLHttpRequest:XMLHttpRequest}',
+  }],
   module: {
     loaders: [{
       test: /\.js$/, // Transform all .js files required somewhere with Babel
@@ -61,6 +69,9 @@ module.exports = (options) => ({
     }, {
       test: /\.md$/,
       loader: 'babel-loader!reactdown/webpack',
+    }, {
+      test: /\.mdx$/,
+      loader: 'babel-loader!markdown-component-loader',
     }],
   },
   plugins: options.plugins.concat([
@@ -80,7 +91,7 @@ module.exports = (options) => ({
     new webpack.NamedModulesPlugin(),
   ]),
   resolve: {
-    modules: ['app', 'node_modules'],
+    modules: ['app', 'node_modules', 'assets'],
     extensions: [
       '.js',
       '.jsx',

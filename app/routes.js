@@ -29,6 +29,42 @@ export default function createRoutes() {
           .then(loadModule(cb))
           .catch(errorLoading);
       },
+      indexRoute: {
+        getComponent(partialNextState, cb) {
+          import('containers/AboutPage/markdown/index.md')
+            .then(loadModule(cb))
+            .catch(errorLoading);
+        },
+      },
+      childRoutes: [
+        {
+          path: 'transhumanist-declaration',
+          name: 'transhumanist-declaration',
+          getComponent(nextState, cb) {
+            import('containers/AboutPage/markdown/TranshumanistDeclaration.md')
+              .then(loadModule(cb))
+              .catch(errorLoading);
+          },
+        },
+        {
+          path: 'mormon-transhumanist-affirmation',
+          name: 'mormon-transhumanist-affirmation',
+          getComponent(nextState, cb) {
+            import('containers/AboutPage/markdown/MormonTranshumanistAffirmation.md')
+              .then(loadModule(cb))
+              .catch(errorLoading);
+          },
+        },
+        {
+          path: 'management',
+          name: 'management',
+          getComponent(nextState, cb) {
+            import('containers/AboutPage/Management')
+              .then(loadModule(cb))
+              .catch(errorLoading);
+          },
+        },
+      ],
     }, {
       path: '/features',
       name: 'features',

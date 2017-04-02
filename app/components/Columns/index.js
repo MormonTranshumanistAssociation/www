@@ -11,7 +11,7 @@ export const Column = styled(ColumnBase)`
 `;
 
 export const SingleColumn = styled(ColumnBase)`
-  max-width: 560px;
+  max-width: 500px;
   text-align: left;
   padding: 1rem 2rem;
 `;
