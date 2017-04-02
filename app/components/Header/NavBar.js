@@ -5,12 +5,11 @@ export default styled.nav`
   position: absolute;
   top: 0;
   width: 100%;
-  padding-top: 3px;
   background: rgba(255,255,255,.7);
   z-index: 1000000;
   a {
     display: inline-flex;
-    padding: 12px 0 10px 3px;
+    padding: 10px 0 10px 3px;
     margin: 0 1rem;
     text-decoration: none;
     -webkit-touch-callout: none;
@@ -28,6 +27,6 @@ export default styled.nav`
     text-decoration: none !important;
   }
   a.selectedLink {
-    border-bottom: solid 1px #333;
+    border-top: solid 1px rgba(0,0,0,.7);
   }
 `;
