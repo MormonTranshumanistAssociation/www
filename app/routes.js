@@ -31,7 +31,7 @@ export default function createRoutes() {
       },
       indexRoute: {
         getComponent(partialNextState, cb) {
-          import('containers/AboutPage/markdown/index.md')
+          import('containers/AboutPage/pages/index.md')
             .then(loadModule(cb))
             .catch(errorLoading);
         },
@@ -39,40 +39,49 @@ export default function createRoutes() {
       childRoutes: [
         {
           path: 'transhumanist-declaration',
-          name: 'transhumanist-declaration',
           getComponent(nextState, cb) {
-            import('containers/AboutPage/markdown/TranshumanistDeclaration.md')
-              .then(loadModule(cb))
-              .catch(errorLoading);
+            import('containers/AboutPage/pages/TranshumanistDeclaration.md').then(loadModule(cb)).catch(errorLoading);
           },
         },
         {
           path: 'mormon-transhumanist-affirmation',
-          name: 'mormon-transhumanist-affirmation',
           getComponent(nextState, cb) {
-            import('containers/AboutPage/markdown/MormonTranshumanistAffirmation.md')
+            import('containers/AboutPage/pages/MormonTranshumanistAffirmation.md')
               .then(loadModule(cb))
               .catch(errorLoading);
           },
         },
         {
           path: 'management',
-          name: 'management',
           getComponent(nextState, cb) {
-            import('containers/AboutPage/Management')
-              .then(loadModule(cb))
-              .catch(errorLoading);
+            import('containers/AboutPage/pages/Management').then(loadModule(cb)).catch(errorLoading);
+          },
+        },
+        {
+          path: 'board-of-directors',
+          getComponent(nextState, cb) {
+            import('containers/AboutPage/pages/Board').then(loadModule(cb)).catch(errorLoading);
+          },
+        },
+        {
+          path: 'constitution',
+          getComponent(nextState, cb) {
+            import('containers/AboutPage/pages/Constitution.md').then(loadModule(cb)).catch(errorLoading);
+          },
+        },
+        {
+          path: 'articles-of-incorporation',
+          getComponent(nextState, cb) {
+            import('containers/AboutPage/pages/ArticlesOfIncorporation.md').then(loadModule(cb)).catch(errorLoading);
+          },
+        },
+        {
+          path: 'faq',
+          getComponent(nextState, cb) {
+            import('containers/AboutPage/pages/FAQ.md').then(loadModule(cb)).catch(errorLoading);
           },
         },
       ],
-    }, {
-      path: '/features',
-      name: 'features',
-      getComponent(nextState, cb) {
-        import('containers/FeaturePage')
-          .then(loadModule(cb))
-          .catch(errorLoading);
-      },
     }, {
       path: '*',
       name: 'notfound',

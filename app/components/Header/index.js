@@ -33,7 +33,6 @@ const Header = (props) => (
     <NavBar>
       <Link data-tag="Link" to="/"><FormattedMessage {...messages.home} /></Link>
       <Link to="/about"><FormattedMessage {...messages.about} /></Link>
-      <Link to="/news"><FormattedMessage {...messages.news} /></Link>
       <Link to="/library"><FormattedMessage {...messages.library} /></Link>
       <Link href="//transfigurist.org"><FormattedMessage {...messages.blog} /></Link>
       <Link to="/meetup"><FormattedMessage {...messages.meetup} /></Link>
