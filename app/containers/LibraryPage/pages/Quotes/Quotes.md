@@ -41,7 +41,7 @@
 
 ### Sarah M. Kimball
 ![Sarah M. Kimball](assets/quotes/women/SarahMKimball.jpg)
-"It is proper on occasions like this to consider such topics as shall be of the highest benefit to womankind; into my mind, it is fitting to discuss here that capacity of mind in which woman is preeminently fitted to excel. [...] They that knock with study and faith's assurance have the narrow way opened to them and I received into communion with the infinite Father and Mother, are permitted to enter hollowed mansions, to attend the school of the profits, and by advancing steps, to reach the school of the gods, where they learn the process by which worlds are organized by the combining of eternal, intelligent, obedient elements; The uses for which worlds are called into existence; the manner in which they are controlled; and the laws of progression by which all begins and animate things are perfected and glorified in their respective spheres."
+"It is proper on occasions like this to consider such topics as shall be of the highest benefit to womankind; into my mind, it is fitting to discuss here that capacity of mind in which woman is preeminently fitted to excel. \[...\] They that knock with study and faith's assurance have the narrow way opened to them and I received into communion with the infinite Father and Mother, are permitted to enter hollowed mansions, to attend the school of the profits, and by advancing steps, to reach the school of the gods, where they learn the process by which worlds are organized by the combining of eternal, intelligent, obedient elements; The uses for which worlds are called into existence; the manner in which they are controlled; and the laws of progression by which all begins and animate things are perfected and glorified in their respective spheres."
 #### National Council of Women, Metzerott's Music Hall, Washington DC, February 21, 1895
 
 ### Bathsheba W. Smith
@@ -172,14 +172,14 @@
 "These children are now at play, making mud worlds. The time will come when some of these boys, through their faithfulness to the gospel, will progress and develop in knowledge, intelligence and power, in future eternities, until they shall be able to go out into space where there is unorganized matter and call together the necessary elements, and through their knowledge of and control over the laws and powers of nature, to organize matter into worlds on which their posterity may dwell, and over which they shall rule as gods."
 #### Improvement Era, June 1919, 658–5
 
-"Godliness cannot be conferred but must be acquired, a fact of which the religious world seem[s] strangely and lamentably unconscious."
+"Godliness cannot be conferred but must be acquired, a fact of which the religious world seem\[s\] strangely and lamentably unconscious."
 #### “Address to the Saints in Great Britain' 362–63
 
 ### Orson F Whitney
 ![Orson F. Whitney](assets/quotes/men/OrsonFWhitney.jpg)
 "Mormonism, to me, is but another name for God's truth, and to find the fullness of that truth we would have to bring together and aggregate the truth of all religions, adding thereto all others that God would or could reveal.
 
-"Truth is truth, where'er `tis found,  
+"Truth is truth, where'er \`tis found,  
 "On Christian or on heathen ground.  
 
 "... Mormonism teaches that God was once just like ourselves; that the eternal part of Him was enshrined in mortal flesh, subject to mortal ills and earthly pains and toils.  I do not now refer to the experience of the Savior in the meridian of time.  I mean that in the far away aeons of the past God once dwelt upon an earth like this, and that through its trials and vicissitudes and the experience they afforded He became a more intelligent being than before, ascending finally by obedience to certain principles, ennobling and exalting in their nature, to the plane which He now occupies.  These truths, forming the ladder up which He climbed to celestial heights, up which we too are expected to climb from earth to heaven, from mortality to immortality, from a world where grief and sorrow reign, to a better and brighter sphere where sorrow and suffering are unknown--these truths are self-existent and eternal.  God did not create them.  Intelligence, the light of truth, cannot be created.  But by means of His superior intelligence, which is his glory and which makes Him God He instituted laws whereby the rest, the lesser intelligences, might advance like Himself.  These laws we call the Gospel, the plan of salvation, formulated in the heavens before this world was, and revealed again and again to the children of Adam for their salvation.  We hold that men are literally the sons and daughters of God; that He intends we shall become like Him; and it is certainly reasonable to expect that the child will eventually develop to the status of the Parent.  We are divine beings in embryo, and it is only a question of time when we shall blossom in perfection."
