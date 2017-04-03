@@ -1,4 +1,4 @@
-# FAQs
+# FAQ
 
 ## What is Transfigurism?
 Transfigurism is religious Transhumanism, exemplified by syncretization of Mormonism and Transhumanism. The term “transfigurism” denotes advocacy for change in form, and alludes to sacred stories from many religious traditions, such as the [Universal Form of Krishna](http://vedabase.com/en/bg/11) in Hinduism, the [Radiant Face of Moses](http://www.biblegateway.com/passage/?search=Exodus+34%3A29-35&version=NIV) in Judaism, the [Wakening of Gautama Buddha](http://www.accesstoinsight.org/tipitaka/dn/dn.16.1-6.vaji.html#para-4-47) in Buddhism, the [Transfiguration of Jesus Christ](http://www.biblegateway.com/passage/?search=Mark%209:1-10&version=NIV) in Christianity, and the [Translation of the Three Nephites](http://www.lds.org/scriptures/bofm/3-ne/28) in Mormonism. Transfigurism also alludes to prophecies, such as the [Rapture](http://www.biblegateway.com/passage/?search=1%20Corinthians%2015:45-55&version=NIV) in Christianity and the [Day of Transfiguration](http://www.lds.org/scriptures/dc-testament/dc/63.20-21?lang=eng#19) in Mormonism.
