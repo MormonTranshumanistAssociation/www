@@ -8,14 +8,15 @@ const Wrapper = styled.article`
     padding: 0 0 0 2em;
     text-indent: -1em;
   }
-  img {
-    width: 150px;
+  h3 + p > img {
+    width: 150px !important;
     height: auto;
     float: right;
     margin-left: 16px;
   }
   h2 > img {
-    width: 436px;
+    width: 100%;
+    max-width: 436px;
     height: auto;
     float: none;
     margin: 0 0 1.5em 0;

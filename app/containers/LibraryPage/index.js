@@ -18,6 +18,11 @@ const PageWithContents = styled(SectionContent)`
   flex-wrap: wrap;
   flex-direction: row-reverse;
   justify-content: flex-start;
+  
+  h2 ~ p > img {
+    width: 100%;
+    max-width: 436px;
+  }
 `;
 
 const LibraryPage = (props) => (
