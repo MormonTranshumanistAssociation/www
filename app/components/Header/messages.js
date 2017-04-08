@@ -18,9 +18,13 @@ export default defineMessages({
     id: 'components.Header.news',
     defaultMessage: 'News',
   },
-  library: {
-    id: 'components.Header.library',
-    defaultMessage: 'Library',
+  curriculum: {
+    id: 'components.Header.curriculum',
+    defaultMessage: 'Curriculum',
+  },
+  quotes: {
+    id: 'components.Header.quotes',
+    defaultMessage: 'Quotes',
   },
   blog: {
     id: 'components.Header.blog',

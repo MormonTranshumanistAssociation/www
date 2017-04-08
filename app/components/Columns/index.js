@@ -14,6 +14,7 @@ export const SingleColumn = styled(ColumnBase)`
   max-width: 500px;
   text-align: left;
   padding: 1rem 2rem;
+  width: 100%;
 `;
 const Columns = styled.div`
   display: flex;

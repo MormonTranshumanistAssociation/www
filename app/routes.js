@@ -114,6 +114,25 @@ export default function createRoutes() {
         },
       ],
     }, {
+      path: '/curriculum',
+      name: 'curriculum',
+      getComponent(nextState, cb) {
+        import('containers/CurriculumPage').then(loadModule(cb)).catch(errorLoading);
+      },
+      indexRoute: {
+        getComponent(partialNextState, cb) {
+          import('containers/CurriculumPage/lessons/index.md').then(loadModule(cb)).catch(errorLoading);
+        },
+      },
+      childRoutes: [
+        {
+          path: 'lesson1',
+          getComponent(nextState, cb) {
+            import('containers/CurriculumPage/lessons/Lesson1.md').then(loadModule(cb)).catch(errorLoading);
+          },
+        },
+      ],
+    }, {
       path: '*',
       name: 'notfound',
       getComponent(nextState, cb) {

@@ -6,24 +6,11 @@
 
 import React from 'react';
 import Helmet from 'react-helmet';
-import styled from 'styled-components';
 import Header from 'components/Header';
 import Section from 'components/Section';
-import SectionContent from 'components/SectionContent';
+import PageWithContents from 'components/PageWithContents';
 import { SingleColumn } from 'components/Columns';
 import ToC from './toc';
-
-const PageWithContents = styled(SectionContent)`
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row-reverse;
-  justify-content: flex-start;
-  
-  h2 ~ p > img {
-    width: 100%;
-    max-width: 436px;
-  }
-`;
 
 const LibraryPage = (props) => (
   <div>
