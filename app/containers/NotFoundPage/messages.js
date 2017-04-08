@@ -8,6 +8,7 @@ import { defineMessages } from 'react-intl';
 export default defineMessages({
   header: {
     id: 'boilerplate.containers.NotFoundPage.header',
-    defaultMessage: 'Oops... we seem to be missing this page.',
+    // defaultMessage: 'Oops... we seem to be missing this page.',
+    defaultMessage: 'Oh no, Martin!! What have you done with this page?!',
   },
 });
