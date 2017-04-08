@@ -53,14 +53,14 @@ const GlossaryProvidingMarkdown = styled.div`
   strong {
     position: relative;
     cursor: help;
-    //color: rgb(35,52,0);
+    color: rgb(100,148,0);
     display: inline-block;
-    font-weight: 300;
+    font-weight: 500;
     padding: 0 2px;
-    margin: 0 -2px;
+    margin: 0 -1px;
     border-radius: 1px;
-    //border-bottom: 1px dashed;
-    background: rgba(225,255,117,.7);
+    border-bottom: 1px dashed;
+    //background: rgba(225,255,117,.7);
   }
   strong > code {
     text-shadow: none;
