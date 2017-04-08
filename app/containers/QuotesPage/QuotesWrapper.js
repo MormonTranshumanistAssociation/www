@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import QuotesMarkdown from '../../../QuotesPage/Quotes.md';
+import QuotesMarkdown from './Quotes.md';
 
 const Wrapper = styled.article`
   h1 + ul {
@@ -49,6 +49,6 @@ const Wrapper = styled.article`
   }
 `;
 
-const Quotes = () => <Wrapper><QuotesMarkdown /></Wrapper>;
+const QuotesWrapper = () => <Wrapper><QuotesMarkdown /></Wrapper>;
 
-export default Quotes;
+export default QuotesWrapper;

@@ -133,6 +133,12 @@ export default function createRoutes() {
         },
       ],
     }, {
+      path: '/quotes',
+      name: 'quotes',
+      getComponent(nextState, cb) {
+        import('containers/QuotesPage').then(loadModule(cb)).catch(errorLoading);
+      },
+    }, {
       path: '*',
       name: 'notfound',
       getComponent(nextState, cb) {
