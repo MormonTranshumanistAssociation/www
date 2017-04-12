@@ -1,27 +1,20 @@
-/*
- * HomePage
- *
- * This is the first thing users see of our App, at the '/' route
- */
-
 import React from 'react';
 import Helmet from 'react-helmet';
 import Header from 'components/Header';
 import Section from 'components/Section';
 import PageWithContents from 'components/PageWithContents';
 import { SingleColumn } from 'components/Columns';
-import ToC from './toc';
+import QuotesWrapper from './QuotesWrapper';
 
-const LibraryPage = (props) => (
+const QuotesPage = () => (
   <div>
     <Header />
     <article>
       <Helmet title="Quotes" />
       <Section>
         <PageWithContents>
-          <div><ToC /></div>
           <SingleColumn>
-            {props.children}
+            <QuotesWrapper />
           </SingleColumn>
         </PageWithContents>
       </Section>
@@ -29,8 +22,8 @@ const LibraryPage = (props) => (
   </div>
 );
 
-LibraryPage.propTypes = {
+QuotesPage.propTypes = {
   children: React.PropTypes.any,
 };
 
-export default LibraryPage;
+export default QuotesPage;
