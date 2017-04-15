@@ -12,9 +12,9 @@ As the MTA continue to grow in size so will our local meet-up groups. We current
   You can [join the Utah Valley Chapter here](https://www.meetup.com/transfigurism-orem/).
 
 - ### Bay Area Chapter
-  Please [email us](mailto://admin@transfigurism.org) and one of our chapter representatives will contact you.
+  Please [email us](mailto://secretary@transfigurism.org) and one of our chapter representatives will contact you.
 
 - ### Seattle Chapter
-  Please [email us](mailto://admin@transfigurism.org) and one of our chapter representatives will contact you.
+  Please [email us](mailto://secretary@transfigurism.org) and one of our chapter representatives will contact you.
 
 Hope to see you soon!
