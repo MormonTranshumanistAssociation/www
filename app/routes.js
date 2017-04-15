@@ -22,6 +22,10 @@ export default function createRoutes() {
           .catch(errorLoading);
       },
     }, {
+      path: '/pages',
+      name: 'pages',
+
+    }, {
       path: '/about',
       name: 'about',
       getComponent(nextState, cb) {
@@ -138,6 +142,36 @@ export default function createRoutes() {
       getComponent(nextState, cb) {
         import('containers/QuotesPage').then(loadModule(cb)).catch(errorLoading);
       },
+    }, {
+      path: '/meetup',
+      name: 'meetup',
+      getComponent(nextState, cb) {
+        import('containers/MeetupPage').then(loadModule(cb)).catch(errorLoading);
+      },
+      indexRoute: {
+        getComponent(partialNextState, cb) {
+          import('containers/MeetupPage/Meetup.md').then(loadModule(cb)).catch(errorLoading);
+        },
+      },
+    }, {
+      path: '/join',
+      name: 'join',
+      getComponent(nextState, cb) {
+        import('containers/JoinPage').then(loadModule(cb)).catch(errorLoading);
+      },
+      indexRoute: {
+        getComponent(partialNextState, cb) {
+          import('containers/JoinPage/Join.md').then(loadModule(cb)).catch(errorLoading);
+        },
+      },
+      childRoutes: [
+        {
+          path: 'form',
+          getComponent(nextState, cb) {
+            import('containers/JoinPage/Form.md').then(loadModule(cb)).catch(errorLoading);
+          },
+        },
+      ],
     }, {
       path: '*',
       name: 'notfound',

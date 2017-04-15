@@ -49,7 +49,7 @@ const SplashSection = () => (
     <div>
       <LogoImg alt="MTA Logo" src={Logo} />
       <SocialNavBar />
-      <ContributeLink href="://contribute">Contribute</ContributeLink>
+      <ContributeLink href="/join#donation">Contribute</ContributeLink>
     </div>
     <Spacer />
   </TopAlignedSection>

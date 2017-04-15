@@ -22,7 +22,7 @@ injectGlobal`
   }
   
   #app {
-    background-color: #fafafa;
+    background-color: #fff; /* #fafafa; */
     min-height: 100%;
     min-width: 100%;
   }
@@ -53,5 +53,11 @@ injectGlobal`
   }
   a:hover {
     text-decoration: underline !important;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0 1em;
+    margin: 0;
   }
 `;

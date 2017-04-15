@@ -7,6 +7,13 @@ import YouTubePlayer from 'components/YouTubePlayer';
 import messages from './messages';
 import LeavesImage from './leaves.jpg';
 
+const Centered = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
 const H = styled.h3`
   font-size: 2rem;
   padding: 0;
@@ -17,18 +24,15 @@ const H = styled.h3`
 
 const TextWrapper = styled.div`
   max-width: 384px;
-  text-align: left;
+  text-align: center;
   padding: 1rem 2rem 0 2rem;
 `;
 
 const VideoWrapper = styled.div`
   max-width: calc(384px + 2 * 2rem);
-  margin: 1rem auto;
-  text-align: center;
-  
-  @media (min-width: 1024px) {
-    margin-left: 0;
-  }
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;  
 `;
 
 const FixedBackgroundSection = styled(Section)`
@@ -38,11 +42,13 @@ const FixedBackgroundSection = styled(Section)`
 const MandateSection = () => (
   <FixedBackgroundSection img={LeavesImage}>
     <SectionContent>
-      <VideoWrapper><YouTubePlayer videoId="VePRByRNIAc" /></VideoWrapper>
-      <TextWrapper>
-        <H><FormattedMessage {...messages.header} /></H>
-        <p><FormattedMessage {...messages.text} /></p>
-      </TextWrapper>
+      <Centered>
+        <VideoWrapper><YouTubePlayer videoId="VePRByRNIAc" /></VideoWrapper>
+        <TextWrapper>
+          <H><FormattedMessage {...messages.header} /></H>
+          <p><FormattedMessage {...messages.text} /></p>
+        </TextWrapper>
+      </Centered>
     </SectionContent>
   </FixedBackgroundSection>
 );

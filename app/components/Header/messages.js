@@ -32,7 +32,7 @@ export default defineMessages({
   },
   meetup: {
     id: 'components.Header.meetup',
-    defaultMessage: 'Meet-Up',
+    defaultMessage: 'Meetup',
   },
   join: {
     id: 'components.Header.join',

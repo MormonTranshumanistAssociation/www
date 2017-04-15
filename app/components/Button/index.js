@@ -1,46 +1,26 @@
-/**
- *
- * Button.react.js
- *
- * A common button, if you pass it a prop "route" it'll render a link to a react-router route
- * otherwise it'll render a link with an onclick
- */
+import styled from 'styled-components';
 
-import React, { PropTypes, Children } from 'react';
-
-import A from './A';
-import StyledButton from './StyledButton';
-import Wrapper from './Wrapper';
-
-function Button(props) {
-  // Render an anchor tag
-  let button = (
-    <A href={props.href} onClick={props.onClick}>
-      {Children.toArray(props.children)}
-    </A>
-  );
-
-  // If the Button has a handleRoute prop, we want to render a button
-  if (props.handleRoute) {
-    button = (
-      <StyledButton onClick={props.handleRoute}>
-        {Children.toArray(props.children)}
-      </StyledButton>
-    );
+const Button = styled.div`
+  display: inline-block !important;
+  background: hsla(52,11%,44%, .8) !important;
+  border-radius: 2em !important;
+  color: #fff !important;
+  margin: 0 1em !important;
+  font-weight: 500 !important;
+  padding: 0 0 0 0 !important;
+  &:hover {
+    background: hsla(52,11%,44%, 1) !important;
+    text-decoration: underline;
   }
-
-  return (
-    <Wrapper>
-      {button}
-    </Wrapper>
-  );
-}
-
-Button.propTypes = {
-  handleRoute: PropTypes.func,
-  href: PropTypes.string,
-  onClick: PropTypes.func,
-  children: PropTypes.node.isRequired,
-};
+  a {
+    font-family: 'Abel', Heletica, sans-serif !important;
+    letter-spacing: normal !important;
+    font-size: 14px !important;
+    text-transform: none !important;
+    color: #fff !important;
+    padding: 0 1em !important;
+    border-top: none !important;
+  }
+`;
 
 export default Button;
