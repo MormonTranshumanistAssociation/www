@@ -11,7 +11,13 @@ const BannerSection = styled(Section)`
   background-position-y: top;
   background-attachment: fixed;
   margin: 0;
-  padding: calc(45px) 0 0 0;
+  padding: 111px 0 0 0;
+  @media (min-width: 377px) {
+    padding-top: 71px;
+  }
+  @media (min-width: 672px) {
+    padding-top: 36px;
+  }
 `;
 
 const LogoImg = styled(Img)`

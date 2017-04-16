@@ -5,7 +5,7 @@ const Button = styled.div`
   background: hsla(52,11%,44%, .8) !important;
   border-radius: 2em !important;
   color: #fff !important;
-  margin: 0 1em !important;
+  margin: 8px 1em !important;
   font-weight: 500 !important;
   padding: 0 0 0 0 !important;
   &:hover {
