@@ -8,7 +8,7 @@ import ConferenceVideoNav from './ConferenceVideoNav';
 
 const Quote = styled.h3`
   font-size: 1.75rem;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
   margin: 0;
   line-height: 1.25em;
   color: #525B3A;
