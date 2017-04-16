@@ -173,6 +173,12 @@ export default function createRoutes() {
         },
       ],
     }, {
+      path: '/pages/*',
+      getComponent(nextState, cb) {
+        window.location.href = `http://legacy.transfigurism.org${nextState.location.pathname}`;
+        cb();
+      },
+    }, {
       path: '*',
       name: 'notfound',
       getComponent(nextState, cb) {
