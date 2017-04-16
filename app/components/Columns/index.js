@@ -17,6 +17,7 @@ export const SingleColumn = styled(ColumnBase)`
   text-align: left;
   margin-right: auto;
   overflow-x: hidden;
+  width: 100%;
 `;
 const Columns = styled.div`
   display: flex;

@@ -168,7 +168,7 @@ export default function createRoutes() {
         {
           path: 'form',
           getComponent(nextState, cb) {
-            import('containers/JoinPage/Form.md').then(loadModule(cb)).catch(errorLoading);
+            import('containers/JoinPage/Form').then(loadModule(cb)).catch(errorLoading);
           },
         },
       ],
