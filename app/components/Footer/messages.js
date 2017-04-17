@@ -66,4 +66,8 @@ export default defineMessages({
     id: 'components.Footer.twitter',
     defaultMessage: 'Twitter',
   },
+  youtube: {
+    id: 'components.Footer.youtube',
+    defaultMessage: 'YouTube',
+  },
 });

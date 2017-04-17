@@ -44,23 +44,21 @@ function Footer() {
           <LinkGroup>
             <Link to="/"><FormattedMessage {...messages.home} /></Link>
             <Link to="/about"><FormattedMessage {...messages.about} /></Link>
-            <Link to="/news"><FormattedMessage {...messages.news} /></Link>
-            <Link to="/library"><FormattedMessage {...messages.library} /></Link>
+            <Link to="/pages/news"><FormattedMessage {...messages.news} /></Link>
+            <Link to="/curriculum">Curriculum</Link>
+            <Link to="/quotes"><FormattedMessage {...messages.quotes} /></Link>
             <Link to="/blog"><FormattedMessage {...messages.blog} /></Link>
             <Link to="/meetup"><FormattedMessage {...messages.meetup} /></Link>
-            <Link href="contribute"><FormattedMessage {...messages.contribute} /></Link>
-          </LinkGroup>
-          <LinkGroup>
-            <Link href="contribute"><FormattedMessage {...messages.conferences} /></Link>
-            <Link href="contribute"><FormattedMessage {...messages.quotes} /></Link>
-            <Link href="contribute"><FormattedMessage {...messages.videos} /></Link>
-            <Link href="contribute"><FormattedMessage {...messages.annualReports} /></Link>
+            <Link to="/join"><FormattedMessage {...messages.contribute} /></Link>
           </LinkGroup>
           <LinkGroup>
           </LinkGroup>
           <LinkGroup>
-            <Link href="contribute"><FormattedMessage {...messages.facebook} /></Link>
-            <Link href="contribute"><FormattedMessage {...messages.twitter} /></Link>
+          </LinkGroup>
+          <LinkGroup>
+            <Link href="//www.facebook.com/transfigurism"><FormattedMessage {...messages.facebook} /></Link>
+            <Link href="//twitter.com/transfigurism"><FormattedMessage {...messages.twitter} /></Link>
+            <Link href="//www.youtube.com/user/transfigurism"><FormattedMessage {...messages.youtube} /></Link>
           </LinkGroup>
         </Links>
       </FooterSectionContent>
