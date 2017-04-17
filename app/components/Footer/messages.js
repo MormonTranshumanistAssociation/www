@@ -50,6 +50,10 @@ export default defineMessages({
     id: 'components.Footer.quotes',
     defaultMessage: 'Quotes',
   },
+  curriculum: {
+    id: 'components.Footer.curriculum',
+    defaultMessage: 'Curriculum',
+  },
   videos: {
     id: 'components.Footer.videos',
     defaultMessage: 'Videos',

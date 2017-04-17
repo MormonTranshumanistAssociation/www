@@ -44,8 +44,7 @@ function Footer() {
           <LinkGroup>
             <Link to="/"><FormattedMessage {...messages.home} /></Link>
             <Link to="/about"><FormattedMessage {...messages.about} /></Link>
-            <Link to="/pages/news"><FormattedMessage {...messages.news} /></Link>
-            <Link to="/curriculum">Curriculum</Link>
+            <Link to="/curriculum"><FormattedMessage {...messages.curriculum} /></Link>
             <Link to="/quotes"><FormattedMessage {...messages.quotes} /></Link>
             <Link to="/blog"><FormattedMessage {...messages.blog} /></Link>
             <Link to="/meetup"><FormattedMessage {...messages.meetup} /></Link>
