@@ -22,9 +22,6 @@ export default function createRoutes() {
           .catch(errorLoading);
       },
     }, {
-      path: '/pages',
-      name: 'pages',
-
     }, {
       path: '/about',
       name: 'about',
@@ -48,7 +45,7 @@ export default function createRoutes() {
           },
         },
         {
-          path: 'mormon-transhumanist-affirmation',
+          path: 'affirmation',
           getComponent(nextState, cb) {
             import('containers/AboutPage/pages/MormonTranshumanistAffirmation.md')
               .then(loadModule(cb))
