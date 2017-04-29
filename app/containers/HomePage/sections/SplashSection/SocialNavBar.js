@@ -20,9 +20,9 @@ const SocialNavLink = styled.div`
 
 const SocialNavBar = () => (
   <NavBar>
-    <SocialNavLink><Link href="//www.facebook.com/transfigurism">Facebook</Link></SocialNavLink>
-    <SocialNavLink><Link href="//twitter.com/transfigurism">Twitter</Link></SocialNavLink>
-    <SocialNavLink><Link href="//www.youtube.com/user/transfigurism">YouTube</Link></SocialNavLink>
+    <SocialNavLink><Link href="//www.facebook.com/transfigurism" target="_blank">Facebook</Link></SocialNavLink>
+    <SocialNavLink><Link href="//twitter.com/transfigurism" target="_blank">Twitter</Link></SocialNavLink>
+    <SocialNavLink><Link href="//www.youtube.com/user/transfigurism" target="_blank">YouTube</Link></SocialNavLink>
   </NavBar>
 );
 

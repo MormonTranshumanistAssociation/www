@@ -12,4 +12,4 @@
 
 6. We practice our discipleship when we offer friendship, that all may be many in one; when we receive truth, let it come from whence it may; and when we send relief, consolation and healing, that raises each other together.
 
-(From the [Constitution of the Mormon Transhumanist Association](http://transfigurism.org/pages/about/constitution))
+(From the [Constitution of the Mormon Transhumanist Association](http://transfigurism.org/about/constitution))

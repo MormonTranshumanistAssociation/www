@@ -46,7 +46,7 @@ function Footer() {
             <Link to="/about"><FormattedMessage {...messages.about} /></Link>
             <Link to="/curriculum"><FormattedMessage {...messages.curriculum} /></Link>
             <Link to="/quotes"><FormattedMessage {...messages.quotes} /></Link>
-            <Link to="/blog"><FormattedMessage {...messages.blog} /></Link>
+            <Link href="http://transfigurist.org" target="_blank"><FormattedMessage {...messages.blog} /></Link>
             <Link to="/meetup"><FormattedMessage {...messages.meetup} /></Link>
             <Link to="/join"><FormattedMessage {...messages.contribute} /></Link>
           </LinkGroup>
@@ -55,9 +55,15 @@ function Footer() {
           <LinkGroup>
           </LinkGroup>
           <LinkGroup>
-            <Link href="//www.facebook.com/transfigurism"><FormattedMessage {...messages.facebook} /></Link>
-            <Link href="//twitter.com/transfigurism"><FormattedMessage {...messages.twitter} /></Link>
-            <Link href="//www.youtube.com/user/transfigurism"><FormattedMessage {...messages.youtube} /></Link>
+            <Link href="//www.facebook.com/transfigurism" target="_blank">
+              <FormattedMessage {...messages.facebook} />
+            </Link>
+            <Link href="//twitter.com/transfigurism" target="_blank">
+              <FormattedMessage {...messages.twitter} />
+            </Link>
+            <Link href="//www.youtube.com/user/transfigurism" target="_blank">
+              <FormattedMessage {...messages.youtube} />
+            </Link>
           </LinkGroup>
         </Links>
       </FooterSectionContent>

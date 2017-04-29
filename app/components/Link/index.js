@@ -17,15 +17,19 @@ const LinkStyler = styled.div`
   }
 `;
 
-const Link = ({ to, href, children }) => (
+const Link = ({ to, href, target, children }) => (
   <LinkStyler>
-    { to ? <RouterLink to={to} activeClassName="selectedLink">{children}</RouterLink> : <a href={href}>{children}</a> }
+    { to
+      ? <RouterLink to={to} activeClassName="selectedLink">{children}</RouterLink>
+      : <a href={href} target={target}>{children}</a>
+    }
   </LinkStyler>
 );
 Link.propTypes = {
   to: React.PropTypes.string,
   href: React.PropTypes.string,
   children: React.PropTypes.any,
+  target: React.PropTypes.string,
 };
 
 export default Link;

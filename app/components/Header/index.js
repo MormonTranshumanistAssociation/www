@@ -13,7 +13,7 @@ const Header = (props) => (
       <Link to="/about"><FormattedMessage {...messages.about} /></Link>
       <Link to="/curriculum"><FormattedMessage {...messages.curriculum} /></Link>
       <Link to="/quotes"><FormattedMessage {...messages.quotes} /></Link>
-      <Link href="http://transfigurist.org"><FormattedMessage {...messages.blog} /></Link>
+      <Link href="http://transfigurist.org" target="_blank"><FormattedMessage {...messages.blog} /></Link>
       <Link to="/meetup"><FormattedMessage {...messages.meetup} /></Link>
       <Button><Link to="/join"><FormattedMessage {...messages.join} /></Link></Button>
     </NavBar>
