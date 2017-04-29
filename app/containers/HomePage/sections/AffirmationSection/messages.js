@@ -14,16 +14,16 @@ export default defineMessages({
   },
   aff1Text: {
     id: 'aff.1.text',
-    defaultMessage: `which is to trust in, change toward, and immerse our bodies and minds in the role of Christ, to
+    defaultMessage: `which is to trust in, change toward, and fully immerse our bodies and minds in the role of Christ, to
       become compassionate creators as exemplified and invited by Jesus.`,
   },
   aff2Header: {
     id: 'aff.2.header',
-    defaultMessage: 'We believe that scientific||and technological power are',
+    defaultMessage: 'We believe that scientific||knowledge and technological',
   },
   aff2Text: {
     id: 'aff.2.text',
-    defaultMessage: `among the means ordained of God to enable such exaltation, including realization of diverse
+    defaultMessage: `power are among the means ordained of God to enable such exaltation, including realization of diverse
       prophetic visions of transfiguration, immortality, resurrection, renewal of this world, and the discovery and
       creation of worlds without end.`,
   },
@@ -59,7 +59,7 @@ export default defineMessages({
   },
   aff6Text: {
     id: 'aff.6.text',
-    defaultMessage: `offer friendship, that all may be one; when we receive truth, let it come from whence it may; and
+    defaultMessage: `offer friendship, that all may be many in one; when we receive truth, let it come from whence it may; and
       when we send relief, consolation and healing, that raises each other together.`,
   },
   title: {

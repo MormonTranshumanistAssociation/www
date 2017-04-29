@@ -10,7 +10,7 @@ imports:
 - [Financial Donation](#donation)
 - [Discussion](#discussion)
 
-Help us promote practical faith in human exaltation through charitable use of science and technology, as outlined in the [Transhumanist Declaration](/about/transhumanist-declaration) and the [Mormon Transhumanist Affirmation](/about/mormon-transhumanist-affirmation). Support discussion and public awareness of emerging technologies, defend the right of individuals in free and democratic societies to adopt technologies that expand human capacities, and anticipate and propose solutions for the potential consequences of emerging technologies.
+Help us promote practical faith in human exaltation through charitable use of science and technology, as outlined in the [Transhumanist Declaration](/about/transhumanist-declaration) and the [Mormon Transhumanist Affirmation](/about/affirmation). Support discussion and public awareness of emerging technologies, defend the right of individuals in free and democratic societies to adopt technologies that expand human capacities, and anticipate and propose solutions for the potential consequences of emerging technologies.
 
 ## <a name="basic-membership"></a>Basic Membership
 - [Join the Mormon Transhumanist Association](/join/form)
@@ -41,9 +41,9 @@ Voting members participate in elections and other association votes, and donate 
   To make arrangements for in-kind donations, please contact admin@transfigurism.org.
 
 ## <a name="donation"></a>Financial Donation
-The Mormon Transhumanist Association depends on your donations to pay for this web site, publications, advertising, conference reservations, promotional items and other operating costs. In addition, 10% of each donation goes to an endowment fund, to be used as determined by a super majority of voting members. The Mormon Transhumanist Association is recognized by the United States as a 501c3 non-profit organization, and your donations are tax deductible in the United States. Thank you for your support!
+The Mormon Transhumanist Association depends on your donations to pay for this website, publications, advertising, annual & semi-annual conferences, retreats, humanitarian projects, promotional items, and other operating costs. In addition, 10% of annual profits goes to an endowment fund, to be used as determined by a super majority of voting members. The Mormon Transhumanist Association is recognized by the United States as a 501c3 non-profit organization, and your donations are tax deductible in the United States. Thank you for your support!
 
-You may indicate the amount of your donation and any special requests, such as using a portion of your donation to cover your voting membership dues.
+You may indicate the amount of your donation and any special requests, such as using a portion of your donation to cover a specific humanitarian project or your voting membership dues.
   <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
     <input type="hidden" name="cmd" value="_s-xclick" />
     <input type="hidden" name="hosted_button_id" value="Z7DMMYU9AUR4C" />

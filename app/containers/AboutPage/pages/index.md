@@ -5,7 +5,7 @@
 The Mormon Transhumanist Association is the world’s largest advocacy network for ethical 
 use of technology and religion to expand human abilities, as outlined in the 
 [Transhumanist Declaration](/about/transhumanist-declaration) and the 
-[Mormon Transhumanist Affirmation](/about/mormon-transhumanist-affirmation). 
+[Mormon Transhumanist Affirmation](/about/affirmation). 
 Although we are neither a religious organization nor affiliated with any religious 
 organization, we support our members in their personal religious affiliations, Mormon 
 or otherwise, and encourage them to adapt Transhumanism to their unique situations.
