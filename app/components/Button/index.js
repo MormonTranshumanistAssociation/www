@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 const Button = styled.div`
+  cursor: pointer;
   display: inline-block !important;
   background: hsla(52,11%,44%, .8) !important;
   border-radius: 2em !important;
   color: #fff !important;
-  margin: 8px 1em !important;
   font-weight: 500 !important;
   padding: 0 0 0 0 !important;
   &:hover {

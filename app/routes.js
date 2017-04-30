@@ -22,6 +22,24 @@ export default function createRoutes() {
           .catch(errorLoading);
       },
     }, {
+      path: '/news',
+      name: 'news',
+      getComponent(nextState, cb) {
+        import('containers/NewsPage').then(loadModule(cb)).catch(errorLoading);
+      },
+      indexRoute: {
+        getComponent(partialNextState, cb) {
+          import('containers/NewsPage/List').then(loadModule(cb)).catch(errorLoading);
+        },
+      },
+      childRoutes: [
+        {
+          path: '/news/:id',
+          getComponent(nextState, cb) {
+            import('containers/NewsPage/Detail').then(loadModule(cb)).catch(errorLoading);
+          },
+        },
+      ],
     }, {
       path: '/about',
       name: 'about',

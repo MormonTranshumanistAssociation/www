@@ -10,6 +10,7 @@ const Header = (props) => (
   <div>
     <NavBar>
       <Link data-tag="Link" to="/"><FormattedMessage {...messages.home} /></Link>
+      <Link to="/news"><FormattedMessage {...messages.news} /></Link>
       <Link to="/about"><FormattedMessage {...messages.about} /></Link>
       <Link to="/curriculum"><FormattedMessage {...messages.curriculum} /></Link>
       <Link to="/quotes"><FormattedMessage {...messages.quotes} /></Link>
