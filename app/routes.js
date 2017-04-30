@@ -83,7 +83,7 @@ export default function createRoutes() {
           },
         },
         {
-          path: 'membership',
+          path: 'members',
           getComponent(nextState, cb) {
             import('containers/AboutPage/pages/Membership').then(loadModule(cb)).catch(errorLoading);
           },
