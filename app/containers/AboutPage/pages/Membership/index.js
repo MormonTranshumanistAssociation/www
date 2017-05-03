@@ -2,12 +2,19 @@
 /* eslint-disable */
 import React from 'react';
 import _ from 'lodash';
+import { FormattedMessage } from 'react-intl';
 import loadjs from 'loadjs';
+import messages from './messages';
 
 const MemberLocationSpreadsheet = 'https://docs.google.com/spreadsheets/d/1RI22NUmZT8B70wHAkiJnlIqWMSKj46Bvxd-WuFeUp4E/gviz/tq?gid=540714092&headers=1';
 const DefaultLocation = { latitude: '39.499741', longitude: '-111.547318' };    // Utah
 
 class Membership extends React.Component {
+
+  state = {
+    memberCount: '-',
+    countryCount: '-',
+  };
 
   componentDidMount() {
     // console.log('drawing...');
@@ -55,6 +62,8 @@ class Membership extends React.Component {
 
     const table = response.getDataTable();
     const rowCount = table.getNumberOfRows();
+    let memberCount = 0;
+    const countries = {};
     let locations = []; // [['Location', 'Count']];
     for (let i=0; i < rowCount; ++i) {
       let country = table.getValue(i, 0) || 'USA';
@@ -66,9 +75,13 @@ class Membership extends React.Component {
         state = null;
       }
       const count = table.getValue(i, 2);
+
+      memberCount += count;
+      countries[country] = true;
       locations.push({ country, state, count });
     }
 
+    this.setState({ memberCount, countryCount: _.size(countries) });
     const usLocations = _.filter(locations, { country: 'US' });
     const usCount = _.reduce(usLocations, (result, location) => result + location.count, 0);
     const otherLocations = _.filter(locations, (location) => location.country !== 'US');
@@ -88,8 +101,8 @@ class Membership extends React.Component {
     worldChart.draw(google.visualization.arrayToDataTable(coords), {
       region: 'world',
       height: 400,
-      colorAxis: { minValue: 0, maxValue: 20, colors: ['#dceabc', '#659400'] },
-      legend: 'none',
+      colorAxis: { minValue: 0, maxValue: 500, colors: ['#dceabc', '#659400', '#659400', '#659400'] },
+      // legend: 'none',
     });
 
     const usaCoords = [['Place', 'Members']];
@@ -105,8 +118,8 @@ class Membership extends React.Component {
       resolution: 'provinces',
       height: 400,
       sizeAxis: { minValue: 0, maxValue: 10 },
-      colorAxis: { minValue: 0, maxValue: 30, colors: ['#dceabc', '#659400'] },
-      legend: 'none',
+      colorAxis: { minValue: 0, maxValue: 200, colors: ['#dceabc', '#659400', '#659400', '#659400'] },
+      // legend: 'none',
     });
 
     const chart = new google.visualization.GeoChart(document.getElementById('membership_chart_world_div'));
@@ -116,6 +129,12 @@ class Membership extends React.Component {
     return (
       <div>
         <h1>Members</h1>
+        <p>
+          <FormattedMessage
+            {...messages.membership}
+            values={{ memberCount: this.state.memberCount, countryCount: this.state.countryCount }}
+          />
+        </p>
         <div id="membership_chart_world_div" />
         <div id="membership_chart_usa_div" />
       </div>
