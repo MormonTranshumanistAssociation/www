@@ -19,7 +19,7 @@ const AboutPage = (props) => (
       <Helmet title="About" />
       <Section>
         <PageWithContents>
-          <div><ToC /></div>
+          <ToC />
           <SingleColumn>
             {props.children}
           </SingleColumn>

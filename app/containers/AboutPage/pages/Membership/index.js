@@ -101,8 +101,11 @@ class Membership extends React.Component {
     worldChart.draw(google.visualization.arrayToDataTable(coords), {
       region: 'world',
       height: 400,
-      colorAxis: { minValue: 0, maxValue: 500, colors: ['#dceabc', '#659400', '#659400', '#659400'] },
-      // legend: 'none',
+      colorAxis: {
+        minValue: 0,
+        maxValue: 200,
+        colors: ['#dceabc', '#659400', '#659400', '#659400', '#659400', '#659400', '#659400']
+      },
     });
 
     const usaCoords = [['Place', 'Members']];
@@ -117,9 +120,11 @@ class Membership extends React.Component {
       region: 'US',
       resolution: 'provinces',
       height: 400,
-      sizeAxis: { minValue: 0, maxValue: 10 },
-      colorAxis: { minValue: 0, maxValue: 200, colors: ['#dceabc', '#659400', '#659400', '#659400'] },
-      // legend: 'none',
+      colorAxis: {
+        minValue: 0,
+        maxValue: 200,
+        colors: ['#dceabc', '#659400', '#659400', '#659400', '#659400', '#659400', '#659400']
+      },
     });
 
     const chart = new google.visualization.GeoChart(document.getElementById('membership_chart_world_div'));

@@ -1,8 +1,13 @@
+import React, { PropTypes } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router';
 
-const TableOfContents = styled.nav`
-  width: 300px;
+const Wrapper = styled.div`
+  width: 264px;
+  float: right;
+`;
+
+const Nav = styled.nav`
   text-align: left;
   border-left: 1px solid rgba(0,0,0,.2);
   list-style-type: none;
@@ -15,4 +20,14 @@ export const Entry = styled(Link)`
   padding-left: 1em;
 `;
 
+export const TableOfContents = (props) => (
+  <Wrapper>
+    <Nav>
+      {props.children}
+    </Nav>
+  </Wrapper>
+);
+TableOfContents.propTypes = {
+  children: PropTypes.any,
+};
 export default TableOfContents;
