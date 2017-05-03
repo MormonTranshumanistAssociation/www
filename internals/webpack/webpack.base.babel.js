@@ -75,10 +75,6 @@ module.exports = (options) => ({
     }],
   },
   plugins: options.plugins.concat([
-    // Fixes warning in moment-with-locales.min.js ("Module not found: Error: Can't resolve './locale' in ...")
-    // new webpack.IgnorePlugin(/\.\/locale$/),
-    new webpack.ContextReplacementPlugin(/\.\/locale$/, null, false, /js$/),
-
     new webpack.ProvidePlugin({
       // make fetch available
       fetch: 'exports-loader?self.fetch!whatwg-fetch',
@@ -95,6 +91,9 @@ module.exports = (options) => ({
     new webpack.NamedModulesPlugin(),
   ]),
   resolve: {
+    // Fixes warning in moment-with-locales.min.js ("Module not found: Error: Can't resolve './locale' in ...")
+    // see https://github.com/moment/moment/issues/1435
+    alias: { moment: 'moment/moment.js' },
     modules: ['app', 'node_modules', 'assets'],
     extensions: [
       '.js',
