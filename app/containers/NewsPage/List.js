@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions, react/no-danger */
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 import _ from 'lodash';
 import styled from 'styled-components';
 import striptags from 'striptags';
@@ -25,6 +26,11 @@ const PublishedDate = styled.div`
 
 const MoreButtonWrapper = styled.div`
   margin-top: 40px;
+`;
+
+const ReadMoreLink = styled(Link)`
+  padding-left: 0.5em;
+  white-space: nowrap;
 `;
 
 const html2text = (html, options) => {
@@ -62,7 +68,13 @@ class NewsPage extends React.PureComponent {
                       <PublishedDate>{moment(entry.published).format('LL')}</PublishedDate>
                       <Link to={`/news/${shortId}`}><h2>{entry.title.content}</h2></Link>
                       { !!entry.thumbnail && <Thumbnail src={entry.thumbnail.url} /> }
-                      <div dangerouslySetInnerHTML={{ __html: html2text(entry.content.content, { length: 400 }) }} />
+                      <div>
+                        <span dangerouslySetInnerHTML={{ __html: html2text(entry.content.content, { length: 400 }) }} />
+                        <ReadMoreLink to={`/news/${shortId}`}>
+                          <FormattedMessage id="readMore" defaultMessage="Read more" />
+                        </ReadMoreLink>
+                      </div>
+
                     </div>
                   );
                 })}
