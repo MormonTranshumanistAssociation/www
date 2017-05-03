@@ -6,7 +6,7 @@ const IntrinsicContainer = styled.div`
   position: relative;
   height: 0;
   overflow: hidden;
-  padding-bottom: 820px;
+  padding-bottom: 850px;
   
   iframe {
     position: absolute;
