@@ -18,7 +18,7 @@ const Button = styled.div`
     font-size: 14px !important;
     text-transform: none !important;
     color: #fff !important;
-    padding: 0 1em !important;
+    padding: 0 1.5em !important;
     border-top: none !important;
   }
 `;

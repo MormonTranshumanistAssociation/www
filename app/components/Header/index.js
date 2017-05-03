@@ -1,10 +1,18 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
+import styled from 'styled-components';
 import Link from 'components/Link';
 import Button from 'components/Button';
 import NavBar from './NavBar';
 import messages from './messages';
 import Banner from './Banner';
+
+const JoinButton = styled(Button)`
+  margin-left: 1.25em;
+  a {
+    margin: 0;
+  }
+`;
 
 const Header = (props) => (
   <div>
@@ -16,7 +24,7 @@ const Header = (props) => (
       <Link to="/quotes"><FormattedMessage {...messages.quotes} /></Link>
       <Link href="http://transfigurist.org" target="_blank"><FormattedMessage {...messages.blog} /></Link>
       <Link to="/meetup"><FormattedMessage {...messages.meetup} /></Link>
-      <Button><Link to="/join"><FormattedMessage {...messages.join} /></Link></Button>
+      <JoinButton><Link to="/join"><FormattedMessage {...messages.join} /></Link></JoinButton>
     </NavBar>
     { !props.menuOnly && <Banner /> }
   </div>
