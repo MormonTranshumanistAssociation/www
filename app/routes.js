@@ -108,37 +108,6 @@ export default function createRoutes() {
         },
       ],
     }, {
-      path: '/library',
-      name: 'library',
-      getComponent(nextState, cb) {
-        import('containers/LibraryPage').then(loadModule(cb)).catch(errorLoading);
-      },
-      indexRoute: {
-        getComponent(partialNextState, cb) {
-          import('containers/LibraryPage/pages/index.md').then(loadModule(cb)).catch(errorLoading);
-        },
-      },
-      childRoutes: [
-        {
-          path: 'curriculum',
-          getComponent(nextState, cb) {
-            import('containers/LibraryPage/pages/Curriculum.md').then(loadModule(cb)).catch(errorLoading);
-          },
-        },
-        {
-          path: 'quotes',
-          getComponent(nextState, cb) {
-            import('containers/LibraryPage/pages/Quotes').then(loadModule(cb)).catch(errorLoading);
-          },
-        },
-        {
-          path: 'videos',
-          getComponent(nextState, cb) {
-            import('containers/LibraryPage/pages/Videos.md').then(loadModule(cb)).catch(errorLoading);
-          },
-        },
-      ],
-    }, {
       path: '/curriculum',
       name: 'curriculum',
       getComponent(nextState, cb) {

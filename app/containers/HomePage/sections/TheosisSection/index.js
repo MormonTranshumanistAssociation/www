@@ -25,6 +25,7 @@ const NewGodLinkImage = styled.img`
   height: auto;
   margin: 2em 0 6em 0;
   transition: .2s all;
+  box-shadow: 0 1px 4px rgba(0,0,0,.6);
 
   &:hover {
     -webkit-filter: brightness(75%);

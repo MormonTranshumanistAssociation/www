@@ -49,6 +49,7 @@ import ToC from './toc';
 const GlossaryProvidingMarkdown = styled.div`
   img {
     width: 100%; 
+    box-shadow: 0 1px 4px rgba(0,0,0,.6);
   }
   strong {
     position: relative;

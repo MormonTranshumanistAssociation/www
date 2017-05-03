@@ -21,6 +21,7 @@ const Article = styled.article`
   img {
     width: 100%;
     height: auto;
+    box-shadow: 0 1px 4px rgba(0,0,0,.6);
   }
 `;
 

@@ -15,7 +15,7 @@ const VideoWrapper = styled.div`
   display: inline-block;
   overflow: hidden;
   box-sizing: border-box;
-  border: 1px solid rgba(0,0,0,.1);
+  //border: 1px solid rgba(0,0,0,.1);
   position: relative;
   &:first-child {
     margin-left: 2em;
@@ -23,6 +23,7 @@ const VideoWrapper = styled.div`
   &:last-child {
     margin-right: 2em;
   }
+  box-shadow: 0 1px 4px rgba(0,0,0,.6);
 `;
 
 /*

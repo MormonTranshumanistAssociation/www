@@ -2,9 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import Section from 'components/Section';
 import Img from 'components/Img';
+import SectionContent from 'components/SectionContent';
 import ForestImage from './forest.jpg';
 import SocialNavBar from './SocialNavBar';
 import Logo from './mta-logo.png';
+import Headlines from './Headlines';
 
 const LogoImg = styled(Img)`
   width: 206px;
@@ -33,7 +35,7 @@ const ContributeLink = styled.a`
 const TopAlignedSection = styled(Section)`
   //min-height: 100vh;
   background-position-y: top;
-  padding-bottom: 3rem;
+  padding-bottom: 0;
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
@@ -41,6 +43,11 @@ const TopAlignedSection = styled(Section)`
 
 const Spacer = styled.div`
   flex: 1,
+`;
+
+const HeadlinesSection = styled.div`
+  margin-top: 3em;
+  background: rgba(0,0,0,.35);
 `;
 
 const SplashSection = () => (
@@ -52,6 +59,11 @@ const SplashSection = () => (
       <ContributeLink href="/join#donation">Contribute</ContributeLink>
     </div>
     <Spacer />
+    <HeadlinesSection>
+      <SectionContent>
+        <Headlines />
+      </SectionContent>
+    </HeadlinesSection>
   </TopAlignedSection>
 );
 

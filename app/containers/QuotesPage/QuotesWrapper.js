@@ -3,16 +3,20 @@ import styled from 'styled-components';
 import QuotesMarkdown from './Quotes.md';
 
 const Wrapper = styled.article`
-  h1 + ul {
-    list-style-type: none;
-    padding: 0 0 0 2em;
-    text-indent: -1em;
+  ul {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(400px / 2)
+  }
+  ul + div + h3 {
+    margin-top: 2rem;
   }
   h3 + p > img {
     width: 150px !important;
     height: auto;
     float: right;
     margin-left: 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.6);
   }
   h2 > img {
     width: 100%;
@@ -20,6 +24,7 @@ const Wrapper = styled.article`
     height: auto;
     float: none;
     margin: 0 0 1.5em 0;
+    box-shadow: 0 1px 4px rgba(0,0,0,.6);
   }
   h2 {
     margin-bottom: 0;

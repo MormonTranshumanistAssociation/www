@@ -16,6 +16,7 @@ const Thumbnail = styled.img`
   margin-top: 3px;
   margin-right: 12px;
   margin-bottom: 0;
+  box-shadow: 0 1px 4px rgba(0,0,0,.6);
 `;
 
 const PublishedDate = styled.div`

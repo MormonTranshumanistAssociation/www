@@ -17,6 +17,8 @@
 - [Heber C Kimball](#heber-c-kimball)
 - [Wilford Woodruff](#wilford-woodruff)
 - [Lorenzo Snow](#lorenzo-snow)
+
+
 - [Orson F. Whitney](#orson-f-whitney)
 - [Joseph F. Smith](#joseph-f-smith)
 - [James Talmage](#james-talmage)
@@ -32,6 +34,7 @@
 - [Jeffrey R. Holland](#jeffrey-r-holland)
 - [Dallin H. Oaks](#dallin-h-oaks)
 - [Dieter F. Uchtdorf](#dieter-f-uchtdorf)
+
 
 
 ..ref joseph-smith
@@ -54,7 +57,7 @@
 
 ..ref elicia-a-grist
 ### Elicia A. Grist
-![Elicia A. Grist](assets/quotes/women/EliciaAGrist.png)
+![Elicia A. Grist](assets/quotes/women/EliciaAGrist.jpg)
 "When we take into consideration the many opportunities and various ways of usefulness, and the amount of good that may be accomplished by us who are engaged in so great a cause, some of you may feel that it is not our prerogative to interfere in the least, or to take one step towards building up the kingdom of God. But I feel that it is a mistaken idea to suppose that we cannot perform acts that would ennoble are character and position, when we are so nearly allied to the brother and of the priesthood, and they required to use strenuous efforts to advance the cause of God."
 #### Millennial Star, May 4, 1861
 
