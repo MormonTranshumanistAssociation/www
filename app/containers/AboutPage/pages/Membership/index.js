@@ -12,8 +12,8 @@ const DefaultLocation = { latitude: '39.499741', longitude: '-111.547318' };    
 class Membership extends React.Component {
 
   state = {
-    memberCount: '-',
-    countryCount: '-',
+    memberCount: '…',
+    countryCount: '…',
   };
 
   componentDidMount() {
