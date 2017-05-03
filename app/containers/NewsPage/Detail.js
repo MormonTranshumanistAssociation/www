@@ -17,6 +17,13 @@ const MoreButtonWrapper = styled.div`
   margin-top: 40px;
 `;
 
+const Article = styled.article`
+  img {
+    width: 100%;
+    height: auto;
+  }
+`;
+
 class NewsPage extends React.PureComponent {
   render() {
     const { params } = this.props;
@@ -32,13 +39,13 @@ class NewsPage extends React.PureComponent {
           renderer={(result) => {
             const entry = _.get(result, 'query.results.entry');
             return entry && (
-              <article>
+              <Article>
                 <div id={entry.id} key={entry.id}>
                   <PublishedDate>{moment(entry.published).format('LL')}</PublishedDate>
                   <h1>{entry.title.content}</h1>
                   <div dangerouslySetInnerHTML={{ __html: entry.content.content }} />
                 </div>
-              </article>
+              </Article>
             );
           }}
         />
