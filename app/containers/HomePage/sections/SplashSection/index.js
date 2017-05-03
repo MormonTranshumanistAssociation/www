@@ -48,6 +48,7 @@ const Spacer = styled.div`
 const HeadlinesSection = styled.div`
   margin-top: 3em;
   background: rgba(0,0,0,.35);
+  min-height: 111px;    // height if no headline has more than 3 lines of text; prevents jitter when content loads
 `;
 
 const SplashSection = () => (
