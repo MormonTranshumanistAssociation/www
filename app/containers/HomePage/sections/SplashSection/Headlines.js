@@ -41,45 +41,31 @@ const Thumbnail = styled.img`
   margin: 0 11px 0 0;
 `;
 
-class Headlines extends React.PureComponent {
-  state = {
-    limit: 3,
-  };
-
-  onMorePress = () => {
-    this.setState({ limit: this.state.limit + 3 });
-  };
-
-  render() {
-    return (
-      <Wrapper>
-        <Feed
-          url="http://news.transfigurism.org/feeds/posts/default?redirect=false"
-          select="id, published, title, thumbnail"
-          renderer={(result) => {
-            const entries = _.get(result, 'query.results.entry', []);
-            return (
-              <NewsList>
-                { _.map(entries, (entry) => {
-                  const match = /post-(.*)$/.exec(entry.id);
-                  const shortId = match[1];
-                  return (
-                    <NewsItem id={entry.id} key={entry.id}>
-                      { !!entry.thumbnail && <Thumbnail src={entry.thumbnail.url} /> }
-                      <Link to={`/news/${shortId}`}><h3>{entry.title.content}</h3></Link>
-                    </NewsItem>
-                  );
-                })}
-              </NewsList>
-            );
-          }}
-          limit={this.state.limit}
-        />
-      </Wrapper>
-    );
-  }
-}
-Headlines.propTypes = {
-};
+const Headlines = () => (
+  <Wrapper>
+    <Feed
+      url="http://news.transfigurism.org/feeds/posts/default?redirect=false"
+      select="id, title, thumbnail"
+      limit={3}
+      renderer={(result) => {
+        const entries = _.get(result, 'query.results.entry', []);
+        return (
+          <NewsList>
+            { _.map(entries, (entry) => {
+              const match = /post-(.*)$/.exec(entry.id);
+              const shortId = match[1];
+              return (
+                <NewsItem id={entry.id} key={entry.id}>
+                  { !!entry.thumbnail && <Thumbnail src={entry.thumbnail.url} /> }
+                  <Link to={`/news/${shortId}`}><h3>{entry.title.content}</h3></Link>
+                </NewsItem>
+              );
+            })}
+          </NewsList>
+        );
+      }}
+    />
+  </Wrapper>
+);
 
 export default Headlines;
