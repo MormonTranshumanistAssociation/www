@@ -103,8 +103,8 @@ class Membership extends React.Component {
       height: 400,
       colorAxis: {
         minValue: 0,
-        maxValue: 200,
-        colors: ['#dceabc', '#659400', '#659400', '#659400', '#659400', '#659400', '#659400']
+        maxValue: 50,
+        colors: ['#f0f2ec', '#659400']
       },
     });
 
@@ -122,8 +122,8 @@ class Membership extends React.Component {
       height: 400,
       colorAxis: {
         minValue: 0,
-        maxValue: 200,
-        colors: ['#dceabc', '#659400', '#659400', '#659400', '#659400', '#659400', '#659400']
+        maxValue: 50,
+        colors: ['#f0f2ec', '#659400']
       },
     });
 
