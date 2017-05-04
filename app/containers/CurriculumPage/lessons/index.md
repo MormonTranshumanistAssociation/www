@@ -1,8 +1,8 @@
-# Curriculum
+# Primers
 
 Invite a circle of friends to engage in stimulating discussions about Mormon Transhumanism!
 
-Each lesson provides the following:
+Each primer provides the following:
 - Objective(s)
 - Summary
 - Easy-to-understand content
@@ -10,4 +10,3 @@ Each lesson provides the following:
 - Discussion questions
 - Call to action
 - Resources for further study/engagement
-

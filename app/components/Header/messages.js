@@ -18,9 +18,9 @@ export default defineMessages({
     id: 'components.Header.news',
     defaultMessage: 'News',
   },
-  curriculum: {
-    id: 'components.Header.curriculum',
-    defaultMessage: 'Curriculum',
+  primers: {
+    id: 'components.Header.primers',
+    defaultMessage: 'Primers',
   },
   quotes: {
     id: 'components.Header.quotes',

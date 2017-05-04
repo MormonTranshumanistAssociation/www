@@ -108,8 +108,8 @@ export default function createRoutes() {
         },
       ],
     }, {
-      path: '/curriculum',
-      name: 'curriculum',
+      path: '/primers',
+      name: 'primers',
       getComponent(nextState, cb) {
         import('containers/CurriculumPage').then(loadModule(cb)).catch(errorLoading);
       },
@@ -120,9 +120,15 @@ export default function createRoutes() {
       },
       childRoutes: [
         {
-          path: 'lesson1',
+          path: '1',
           getComponent(nextState, cb) {
             import('containers/CurriculumPage/lessons/Lesson1.md').then(loadModule(cb)).catch(errorLoading);
+          },
+        },
+        {
+          path: '2',
+          getComponent(nextState, cb) {
+            import('containers/CurriculumPage/lessons/Lesson2.md').then(loadModule(cb)).catch(errorLoading);
           },
         },
       ],

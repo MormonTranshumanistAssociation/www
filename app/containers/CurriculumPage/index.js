@@ -97,6 +97,9 @@ const GlossaryProvidingMarkdown = styled.div`
     border-style: solid;
     border-color: rgba(50,50,50,.9) transparent transparent transparent;
   }
+  ul > li {
+    list-style-type: disc;
+  }
 
 `;
 

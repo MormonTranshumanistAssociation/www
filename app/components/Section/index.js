@@ -7,7 +7,8 @@ const Section = styled.section`
   background-position: center center;
   width: 100%;
   padding: 80px 0;
-  
+  overflow-x: hidden;
+
   //&:first-child {
   //  padding-top: calc(80px + 32px);    // leave room for header nav bar
   //}
