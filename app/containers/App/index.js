@@ -26,9 +26,9 @@ export function App(props) {
     <AppWrapper>
       <Helmet
         titleTemplate="MTA - %s"
-        defaultTitle="Mormon Transhumanist Association"
+        defaultTitle="Home"
         meta={[
-          { name: 'description', content: 'Official Website of the Mormon Transhumanist Association' },
+          { name: 'description', content: 'Mormon Transhumanist Association is the world\'s largest advocacy network for ethical use of technology and religion to extend human abilities.' },
         ]}
       />
       {React.Children.toArray(props.children)}
