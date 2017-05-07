@@ -38,7 +38,7 @@ Voting members participate in elections and other association votes, and donate 
   </form>
 
 - ### In-kind Donation of Dues
-  To make arrangements for in-kind donations, please contact admin@transfigurism.org.
+  To make arrangements for in-kind donations, please contact info@transfigurism.org.
 
 ## <a id="donation"></a>Financial Donation
 The Mormon Transhumanist Association depends on your donations to pay for this website, publications, advertising, annual & semi-annual conferences, retreats, humanitarian projects, promotional items, and other operating costs. In addition, 10% of annual profits goes to an endowment fund, to be used as determined by a super majority of voting members. The Mormon Transhumanist Association is recognized by the United States as a 501c3 non-profit organization, and your donations are tax deductible in the United States. Thank you for your support!

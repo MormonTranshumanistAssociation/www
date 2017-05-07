@@ -21,7 +21,7 @@ Help the Mormon Transhumanist Association promote radical flourishing in compass
 ## How can I contact the Mormon Transhumanist Association?
 You may contact us by email:
 
-[**admin@transfigurism.org**](mailto:admin@transfigurism.org)
+[**info@transfigurism.org**](mailto:info@transfigurism.org)
 
 You may also contact us by mail:
 
