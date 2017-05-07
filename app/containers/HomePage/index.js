@@ -19,7 +19,7 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
         <Header menuOnly />
         <article>
           <Helmet
-            title="Home"
+            title="Mormon Transhumanist Association"
             meta={[
               { name: 'description', content: 'Official website of the Mormon Transhumanist Association' },
             ]}
