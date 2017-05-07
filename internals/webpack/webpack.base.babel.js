@@ -4,6 +4,7 @@
 
 const path = require('path');
 const webpack = require('webpack');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = (options) => ({
   entry: options.entry,
@@ -75,6 +76,9 @@ module.exports = (options) => ({
     }],
   },
   plugins: options.plugins.concat([
+    new CopyWebpackPlugin([
+      { from: 'app/assets/mta-banner.png', to: 'assets' },
+    ]),
     new webpack.ProvidePlugin({
       // make fetch available
       fetch: 'exports-loader?self.fetch!whatwg-fetch',
