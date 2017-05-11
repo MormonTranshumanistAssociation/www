@@ -25,7 +25,7 @@ export function App(props) {
   return (
     <AppWrapper>
       <Helmet
-        titleTemplate="%sMormon Transhumanist Association"
+        titleTemplate="%s | Mormon Transhumanist Association"
         defaultTitle=""
         meta={[
           { name: 'description', content: 'Mormon Transhumanist Association is the world\'s largest advocacy network for ethical use of technology and religion to extend human abilities.' },

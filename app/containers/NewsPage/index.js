@@ -8,7 +8,7 @@ import { SingleColumn } from 'components/Columns';
 const NewsPage = (props) => (
   <div>
     <Header />
-    <Helmet title="News : " />
+    <Helmet title="News" />
     <Section>
       <PageWithContents>
         <SingleColumn>

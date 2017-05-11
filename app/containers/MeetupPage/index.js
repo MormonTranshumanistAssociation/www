@@ -9,7 +9,7 @@ const MeetupPage = (props) => (
   <div>
     <Header />
     <article>
-      <Helmet title="Meetup : " />
+      <Helmet title="Meetup" />
       <Section>
         <PageWithContents>
           <SingleColumn>
