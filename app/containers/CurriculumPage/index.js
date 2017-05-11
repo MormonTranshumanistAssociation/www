@@ -107,7 +107,7 @@ const CurriculumPage = (props) => (
   <div>
     <Header />
     <article>
-      <Helmet title="Curriculum" />
+      <Helmet title="Curriculum : " />
       <Section>
         <PageWithContents>
           <div><ToC /></div>

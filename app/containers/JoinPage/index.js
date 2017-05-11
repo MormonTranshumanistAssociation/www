@@ -9,7 +9,7 @@ const JoinPage = (props) => (
   <div>
     <Header />
     <article>
-      <Helmet title="Join" />
+      <Helmet title="Join : " />
       <Section>
         <PageWithContents>
           <SingleColumn>

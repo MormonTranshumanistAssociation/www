@@ -16,7 +16,7 @@ const AboutPage = (props) => (
   <div>
     <Header />
     <article>
-      <Helmet title="About" />
+      <Helmet title="About : " />
       <Section>
         <PageWithContents>
           <ToC />

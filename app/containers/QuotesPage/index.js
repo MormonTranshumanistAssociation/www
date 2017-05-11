@@ -10,7 +10,7 @@ const QuotesPage = () => (
   <div>
     <Header />
     <article>
-      <Helmet title="Quotes" />
+      <Helmet title="Quotes : " />
       <Section>
         <PageWithContents>
           <SingleColumn>
