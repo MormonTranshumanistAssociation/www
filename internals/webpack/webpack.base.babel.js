@@ -78,6 +78,7 @@ module.exports = (options) => ({
   plugins: options.plugins.concat([
     new CopyWebpackPlugin([
       { from: 'app/assets/mta-banner.png', to: 'assets' },
+      { from: 'app/assets/mta-thumbnail.jpg', to: 'assets' },
     ]),
     new webpack.ProvidePlugin({
       // make fetch available
