@@ -167,7 +167,7 @@
 ..ref e-l-t-harrison
 ### E. L. T. Harrison
 ![E. L. T. Harrison](assets/quotes/men/ELTHarrison.png)
-"One thing is certain, authority alone is not sufficient to make us representative sof God. Some men possess that, but nothing else. There is scarecely an attribute of God about them. They walk in the authority of their appointment, but not in the virtue, the grace, or the righteousness of it. Strip such men of their authority, and there is nothing of God left to be counted.
+"One thing is certain, authority alone is not sufficient to make us representatives of God. Some men possess that, but nothing else. There is scarecely an attribute of God about them. They walk in the authority of their appointment, but not in the virtue, the grace, or the righteousness of it. Strip such men of their authority, and there is nothing of God left to be counted.
 
 "Neither does faithfulness in carrying out the duties of our calling prove we are getting much nearer to God or porgressing toward celestial perfection. Shall the priesthood consider they meet the demand of God simply because they are faithful to the truth? As God lives, we may do all this and have it done well, too, and then be no better than any sectarian who sincerely believes his faith and upholds it.
 
