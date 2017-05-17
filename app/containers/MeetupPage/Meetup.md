@@ -2,7 +2,7 @@
 
 The [Utah meetup group](https://www.meetup.com/transfigurism-orem/) of the Mormon Transhumanist Association gets together about once a month to talk about Mormonism, Transhumanism, technology, spirituality, science, religion, and just about anything else you can imagine.
 
-Recently, we have incorporated our [MTA Primers](/primers) to give participants useful and interesting content to discuss. Most of us are Mormons or have a Mormon background or interests, and similarly most of us identify to some extent or another as Transhumanists, but you don't have to be a Mormon or a Transhumanist to participate.
+Recently, we have incorporated our [Primers](/primers) to give participants useful and interesting content to discuss. Most of us are Mormons or have a Mormon background or interests, and similarly most of us identify to some extent or another as Transhumanists, but you don't have to be a Mormon or a Transhumanist to participate.
 
 As the MTA continue to grow in size so will our local meet-up groups. We currently have three meetup groups or chapters in the US. Our largest is our Utah Valley Chapter, followed by our Bay Area Chapter, and finally our Seattle Chapter. Our local chapters not only facilitate discussion groups, but get involved in local community service projects too.
 
