@@ -18,6 +18,8 @@ export const Entry = styled(Link)`
   display: block;
   text-indent: -1em;
   padding-left: 1em;
+  padding-bottom: .4em;
+  line-height: 1.33em;
 `;
 
 export const TableOfContents = (props) => (
