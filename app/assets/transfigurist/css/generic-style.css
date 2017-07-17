@@ -1,0 +1,138 @@
+/*******************************************************************
+ *
+ * IMPORTANT!!
+ * Any changes to this file should be saved to the Git repo at
+ * https://github.com/MormonTranshumanistAssociation/www/app/assets/transfigurist/css
+ *
+ *******************************************************************/
+
+a, a:active, a:link, a:visited {
+  text-decoration: none;
+}
+
+a, a:link {
+  color: #0000FF;
+}
+
+a:active {
+  color: #FF0000;
+}
+
+a:focus, button:focus, input[type=button]:focus, input[type=submit]:focus, input[type=reset]:focus {
+  outline: #333333 dotted 1px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #000099;
+}
+
+address, dl, fieldset, h1, h2, h3, h4, h5, h6, hr, ol, p, pre, table, ul {
+  margin-bottom: 20px;
+}
+
+blockquote {
+  margin: 0px 40px 0px 40px;
+}
+
+body {
+  font: normal normal normal 14px/21px arial, sans-serif;
+  margin-top: 10px;
+  color: #333333;
+}
+
+button, input[type=button], input[type=submit], input[type=reset] {
+  color: #000000;
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: #CCCCCC;
+  border-right-color: #666666;
+  border-bottom-color: #666666;
+  border-left-color: #CCCCCC;
+  background-color: #999999;
+  padding: 5px;
+  cursor: pointer;
+}
+
+button:active, input[type=button]:active, input[type=submit]:active, input[type=reset]:active {
+  color: #FFFFFF;
+  border-top-color: #666666;
+  border-right-color: #CCCCCC;
+  border-bottom-color: #CCCCCC;
+  border-left-color: #666666;
+}
+
+h1, h1 a, h1 a:active, h1 a:hover, h1 a:link, h1 a:visited {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h2, h2 a, h2 a:active, h2 a:hover, h2 a:link, h2 a:visited {
+  font-size: 22px;
+  line-height: 33px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h3, h3 a, h3 a:active, h3 a:hover, h3 a:link, h3 a:visited {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h4, h4 a, h4 a:active, h4 a:hover, h4 a:link, h4 a:visited {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h5, h5 a, h5 a:active, h5 a:hover, h5 a:link, h5 a:visited {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h6, h6 a, h6 a:active, h6 a:hover, h6 a:link, h6 a:visited {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+hr {
+  border-top: solid 1px #CCCCCC;
+  clear: both;
+}
+
+input[type=text], input[type=password], select, textarea {
+  border: solid 1px #CCCCCC;
+  background-color: #FFFFFF;
+}
+
+li {
+  margin-left: 40px;
+}
+
+ol {
+  list-style: decimal;
+}
+
+sup {
+  font-size: 80%;
+  position: relative;
+  top: -0.5em;
+}
+
+ul {
+  list-style: disc;
+}
+

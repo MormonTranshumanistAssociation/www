@@ -1,0 +1,51 @@
+/*******************************************************************
+ *
+ * IMPORTANT!!
+ * Any changes to this file should be saved to the Git repo at
+ * https://github.com/MormonTranshumanistAssociation/www/app/assets/transfigurist/css
+ *
+ *******************************************************************/
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  outline: 0px;
+  font-size: 100%;
+  text-align: left;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+:focus {
+  outline: 0;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+body {
+  line-height: 1;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+ins {
+  text-decoration: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

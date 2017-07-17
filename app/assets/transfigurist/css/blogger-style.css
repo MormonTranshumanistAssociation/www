@@ -1,0 +1,17 @@
+/*******************************************************************
+ *
+ * IMPORTANT!!
+ * Any changes to this file should be saved to the Git repo at
+ * https://github.com/MormonTranshumanistAssociation/www/app/assets/transfigurist/css
+ *
+ *******************************************************************/
+
+.navbar, #navbar, .Navbar, #Navbar1, #navbar-iframe {
+  height: 0px !important;
+  width: 0px !important;
+  margin: 0px !important;
+  border: 0px !important;
+  padding: 0px !important;
+  display: none;
+}
+
