@@ -848,14 +848,6 @@
                             </a>
                             <b:else/>
                             <b:if cond='data:post.url'>
-                              <b:if cond='data:blog.url != data:post.url'>
-                                <a expr:href='data:post.url'>
-                                  <data:post.title/>
-                                </a>
-                                <b:else/>
-                                <data:post.title/>
-                              </b:if>
-                              <b:else/>
                               <data:post.title/>
                             </b:if>
                           </b:if>
