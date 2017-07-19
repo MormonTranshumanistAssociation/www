@@ -383,7 +383,7 @@ h1.title.title.title.title a:hover {
 }
 
 #blog-pager-older-link::before {
-  content: '⏴';
+  content: '◂';
   padding-right: .25em;
 }
 
