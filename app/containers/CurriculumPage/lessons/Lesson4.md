@@ -1,4 +1,4 @@
-# Humanity+ and The Transhumanist Declaration
+# Exponential Change
 
 ![Image](./assets/lesson4.jpg)
 ## Objective(s)
