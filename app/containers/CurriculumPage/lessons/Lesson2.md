@@ -5,7 +5,7 @@
 Describe the purpose and goals of the Mormon Transhumanist Association.
 
 ## Summary
-The Mormon Transhumanist Association (MTA) approaches transhumanism and theosis as active, not passive work. The Mormon Transhumanist Affirmation expresses this approach.
+_The Mormon Transhumanist Association (MTA) approaches transhumanism and theosis as active, not passive work. The Mormon Transhumanist Affirmation expresses this approach._
 
 ## Purpose of the MTA
 For Mormon Transhumanists, **theosis `The idea that humans can become Gods.`** is deliberate, active work. This is the pursuit of **posthumanity `The race of human descendants with capabilities beyond current humans to such a degree as to warrant a different category — in the same way that humans differ from prehumans.`**. The idea of human **agency `The ability to choose and act.`** in this work is fundamental to **transhumanism `An intellectual movement based on the belief that humanity can transcend current physical or cognitive limitations through the use of science and technology.`**, and is abundant in the teachings of **Mormonism `A religion with a set of denominations founded by Joseph Smith. The name is derived from the Book of Mormon, a book of scripture translated by Smith.`**.

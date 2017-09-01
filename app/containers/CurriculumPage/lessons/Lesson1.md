@@ -5,7 +5,7 @@
 Describe _Mormonism_, _Transhumanism_, and _Mormon Transhumanism_.
 
 ## Summary
-Mormon teachings about humans becoming gods connect with transhumanist ideas about using technology to enhance the human condition. Mormon Transhumanism embraces science and religion to work toward these corresponding aims.
+_Mormon teachings about humans becoming gods connect with transhumanist ideas about using technology to enhance the human condition. Mormon Transhumanism embraces science and religion to work toward these corresponding aims._
 
 ## What is Mormonism?
 **Mormonism `A religion with a set of denominations founded by Joseph Smith. The name is derived from the Book of Mormon, a book of scripture translated by Smith.`**

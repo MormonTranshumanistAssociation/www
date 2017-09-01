@@ -5,7 +5,7 @@
 Describe basic goals of the Transhumanist Declaration.
 
 ## Summary
-Transhumanists advocate for people actively working to address risks and realize the opportunities of technological advancement. The Transhumanist Declaration expresses these intentions.
+_Transhumanists advocate for people actively working to address risks and realize the opportunities of technological advancement. The Transhumanist Declaration expresses these intentions._
 
 ## The Transhumanist Declaration
 The [Transhumanist Declaration](/about/transhumanist-declaration) was created in 1998 with the founding of the World Transhumanist Association (now called **Humanity+ `A non-profit 501(c)3 educational organization dedicated to elevating the human condition.`**). It lays the foundation for a vision of **transhumanism `An intellectual movement based on the belief that humanity can transcend current physical or cognitive limitations through the use of science and technology.`** widely accepted by **transhumanists `People who subscribe to transhumanism.`**. It reads:
