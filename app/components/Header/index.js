@@ -12,6 +12,7 @@ const JoinButton = styled(Button)`
   a {
     margin: 0;
   }
+  margin-bottom: 6px;
 `;
 
 const Header = (props) => (

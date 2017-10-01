@@ -20,6 +20,10 @@ export const Entry = styled(Link)`
   padding-left: 1em;
   padding-bottom: .4em;
   line-height: 1.33em;
+  @media screen and (max-width: 672px) {
+    line-height: 1.2em;
+    padding-bottom: 0.4em; 
+  }
 `;
 
 export const TableOfContents = (props) => (

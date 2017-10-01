@@ -8,19 +8,23 @@ import BannerImage from './banner.jpg';
 import Logo from './mta-logo.png';
 
 const BannerSection = styled(Section)`
-  background-position-y: top;
-  background-attachment: fixed;
-  margin: 0;
-  padding: 111px 0 0 0;
-  @media (min-width: 377px) {
-    padding-top: 71px;
-  }
-  @media (min-width: 672px) {
-    padding-top: 36px;
-  }
+    background-position-y: top;
+    background-attachment: fixed;
+    margin: 0;
+    @media screen and (max-width: 672px) {
+      height: 1px;
+      padding: 0;
+      overflow-y: hidden;
+    }
+    @media (min-width: 672px) {
+      padding: 36px 0 0 0;
+    }
 `;
 
 const LogoImg = styled(Img)`
+  @media (max-width: 672px) {
+    display: none;
+  }
   height: 80px;
   width: auto;
   margin-left: -3px;
