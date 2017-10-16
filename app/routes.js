@@ -108,6 +108,10 @@ export default function createRoutes() {
         },
       ],
     }, {
+      path: '/curriculum',
+      name: 'curriculum',
+      onEnter: ({ params }, replace) => replace('/primers'),
+    }, {
       path: '/primers',
       name: 'primers',
       getComponent(nextState, cb) {
