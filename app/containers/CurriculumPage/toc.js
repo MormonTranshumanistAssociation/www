@@ -7,6 +7,7 @@ const ToC = () => (
     <Entry to="/primers/2">The Purpose of the Mormon Transhumanist Association</Entry>
     <Entry to="/primers/3">Humanity+ and The Transhumanist Declaration</Entry>
     <Entry to="/primers/4">Exponential Change</Entry>
+    <Entry to="/primers/5">Implications of Exponential Technological Trends for Humanity</Entry>
   </TableOfContents>
 );
 
