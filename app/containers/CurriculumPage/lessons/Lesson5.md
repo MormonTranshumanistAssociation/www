@@ -1,8 +1,6 @@
 # Implications of Exponential Technological Trends for Humanity
 
 ![Image](./assets/lesson5.jpg)
-_(image source: https://pxhere.com/en/photo/1286962)_
-
 ## Objective(s)
 - Describe implications for humans in light of the exponential rate of technological change.
 
