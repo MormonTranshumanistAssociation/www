@@ -153,6 +153,12 @@ export default function createRoutes() {
             import('containers/CurriculumPage/lessons/Lesson5.md').then(loadModule(cb)).catch(errorLoading);
           },
         },
+        {
+          path: '6',
+          getComponent(nextState, cb) {
+            import('containers/CurriculumPage/lessons/Lesson6.md').then(loadModule(cb)).catch(errorLoading);
+          },
+        },
       ],
     }, {
       path: '/quotes',
