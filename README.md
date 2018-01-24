@@ -2,7 +2,7 @@
 
 Official website of the Mormon Transhumanist Association
 
-React application built from react-boilerplate.
+React application built from [react-boilerplate](https://www.reactboilerplate.com/).
 
 ### Building
 
