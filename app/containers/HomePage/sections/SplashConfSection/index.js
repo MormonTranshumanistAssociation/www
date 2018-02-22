@@ -5,7 +5,7 @@ import Img from 'components/Img';
 import SectionContent from 'components/SectionContent';
 import BackgroundImage from './sands.jpg';
 import SocialNavBar from './SocialNavBar';
-import ConfImage from './worlds_without_number_keynotes_1920x1080.jpg';
+import ConfImage from './worlds_without_number_keynotes_1920x940.jpg';
 import Headlines from './Headlines';
 
 const ConferenceImage = styled(Img)`
