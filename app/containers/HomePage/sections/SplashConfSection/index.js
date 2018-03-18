@@ -17,7 +17,7 @@ const ConferenceImage = styled(Img)`
 const ContributeLink = styled.a`
   color: white;
   padding: 0.2rem 1.75rem;
-  border-radius: 4px;
+  border-radius: 2px;
   background: rgba(0,0,0,.35); 
   font-size: 0.9rem;
   text-decoration: none;
