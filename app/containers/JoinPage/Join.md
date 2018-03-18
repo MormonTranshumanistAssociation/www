@@ -31,7 +31,7 @@ Basic membership is free!
 ## <a id="voting-membership"></a>Voting Membership
 
 </p>
-<div style="display: flex; align-items: center; justify-content: flex-start; padding: 4px 0;">
+<div style="display: flex; align-items: center; justify-content: flex-start; padding: 8px 0;">
 <a href="https://www.joinit.org/o/transfigurism" title="Memberships for Mormon Transhumanist Association" style="display: flex; text-decoration: none; padding: 8px 20px; font-size: 18px; color: #fff; border: none; background-color: #74ab00; font-weight: 400; border-radius: 3px;" target="_blank">
   I want to be a voting member!
 </a>
@@ -55,7 +55,7 @@ You may indicate the amount of your donation and any special requests, such as u
   <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
     <input type="hidden" name="cmd" value="_s-xclick" />
     <input type="hidden" name="hosted_button_id" value="Z7DMMYU9AUR4C" />
-    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" name="submit" alt="Donate Button" />
+    <button type="submit" style="display: flex; cursor: pointer; font-family: Abel, 'Helvetica Neue', Helvetica, Arial, sans-serif; text-decoration: none; padding: 8px 20px; font-size: 18px; color: #fff; border: none; background-color: #74ab00; font-weight: 400; border-radius: 3px;">Donate</button>
   </form>
 
 ## <a id="discussion"></a>Discussion
