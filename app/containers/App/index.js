@@ -48,10 +48,6 @@ const AppWrapper = styled.div`
   position: relative;
 `;
 
-const HubSpotCode = () => (
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4347476.js"></script>
-);
-
 export function App(props) {
   return (
     <AppWrapper>
@@ -64,7 +60,6 @@ export function App(props) {
       />
       {React.Children.toArray(props.children)}
       <Footer />
-      <HubSpotCode />
     </AppWrapper>
   );
 }
