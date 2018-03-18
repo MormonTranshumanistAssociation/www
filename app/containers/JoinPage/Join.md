@@ -13,7 +13,7 @@ imports:
 
 <style>
   .join-button {
-    display: flex; 
+    display: inline-block;
     text-decoration: none; 
     padding: 6px 20px; 
     font-size: 18px; 
@@ -23,6 +23,7 @@ imports:
     font-weight: 500; 
     border-radius: 2px;
     cursor: pointer; font-family: Abel, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 4px 0;
   }
   .join-button:hover {
     text-decoration: underline !important;
@@ -47,11 +48,9 @@ Basic membership is free!
 ## <a id="voting-membership"></a>Voting Membership
 
 </p>
-<div style="display: flex; align-items: center; justify-content: flex-start; padding: 8px 0;">
 <a href="https://www.joinit.org/o/transfigurism" title="Memberships for Mormon Transhumanist Association" class="join-button" target="_blank">
   I want to be a voting member!
 </a>
-</div>
 <p>
 
 - ### Standard: $100/year
