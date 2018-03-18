@@ -11,14 +11,30 @@ imports:
 - [Discussion](#discussion)
 
 
+<style>
+  .join-button {
+    display: flex; 
+    text-decoration: none; 
+    padding: 6px 20px; 
+    font-size: 18px; 
+    color: #fff; 
+    border: none; 
+    background-color: #74ab00; 
+    font-weight: 500; 
+    border-radius: 2px;
+    cursor: pointer; font-family: Abel, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  .join-button:hover {
+    text-decoration: underline !important;
+  }
+</style>
+
 ## <a id="basic-membership"></a>Basic Membership
 
 </p>
-<div style="display: flex; align-items: center; justify-content: flex-start; padding: 4px 0;">
-<a href="https://www.joinit.org/o/transfigurism" title="Memberships for Mormon Transhumanist Association" style="display: flex; text-decoration: none; padding: 8px 20px; font-size: 18px; color: #fff; border: none; background-color: #74ab00; font-weight: 400; border-radius: 3px;" target="_blank">
+<a href="https://www.joinit.org/o/transfigurism" title="Memberships for Mormon Transhumanist Association" class="join-button" target="_blank">
   I want to join!
 </a>
-</div>
 <p>
 
 Help us promote practical faith in human exaltation through charitable use of science and technology, as outlined in the [Transhumanist Declaration](/about/transhumanist-declaration) and the [Mormon Transhumanist Affirmation](/about/affirmation). 
@@ -32,7 +48,7 @@ Basic membership is free!
 
 </p>
 <div style="display: flex; align-items: center; justify-content: flex-start; padding: 8px 0;">
-<a href="https://www.joinit.org/o/transfigurism" title="Memberships for Mormon Transhumanist Association" style="display: flex; text-decoration: none; padding: 8px 20px; font-size: 18px; color: #fff; border: none; background-color: #74ab00; font-weight: 400; border-radius: 3px;" target="_blank">
+<a href="https://www.joinit.org/o/transfigurism" title="Memberships for Mormon Transhumanist Association" class="join-button" target="_blank">
   I want to be a voting member!
 </a>
 </div>
@@ -55,7 +71,7 @@ You may indicate the amount of your donation and any special requests, such as u
   <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
     <input type="hidden" name="cmd" value="_s-xclick" />
     <input type="hidden" name="hosted_button_id" value="Z7DMMYU9AUR4C" />
-    <button type="submit" style="display: flex; cursor: pointer; font-family: Abel, 'Helvetica Neue', Helvetica, Arial, sans-serif; text-decoration: none; padding: 8px 20px; font-size: 18px; color: #fff; border: none; background-color: #74ab00; font-weight: 400; border-radius: 3px;">Donate</button>
+    <button type="submit" class="join-button">Donate</button>
   </form>
 
 ## <a id="discussion"></a>Discussion
