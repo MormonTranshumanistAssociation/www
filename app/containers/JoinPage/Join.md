@@ -14,7 +14,7 @@ imports:
 ## <a id="basic-membership"></a>Basic Membership
 
 </p>
-<div style="display: flex; align-items: center; justify-content: flex-start; padding: 12px 0;">
+<div style="display: flex; align-items: center; justify-content: flex-start; padding: 4px 0;">
 <a href="https://www.joinit.org/o/transfigurism" title="Memberships for Mormon Transhumanist Association" style="display: flex; text-decoration: none; padding: 8px 20px; font-size: 18px; color: #fff; border: none; background-color: #74ab00; font-weight: 400; border-radius: 3px;" target="_blank">
   I want to join!
 </a>
@@ -31,7 +31,7 @@ Basic membership is free!
 ## <a id="voting-membership"></a>Voting Membership
 
 </p>
-<div style="display: flex; align-items: center; justify-content: flex-start; padding: 12px 0;">
+<div style="display: flex; align-items: center; justify-content: flex-start; padding: 4px 0;">
 <a href="https://www.joinit.org/o/transfigurism" title="Memberships for Mormon Transhumanist Association" style="display: flex; text-decoration: none; padding: 8px 20px; font-size: 18px; color: #fff; border: none; background-color: #74ab00; font-weight: 400; border-radius: 3px;" target="_blank">
   I want to be a voting member!
 </a>
@@ -45,7 +45,7 @@ Basic membership is free!
   Voting members that are students, unemployed, retired or residents of less-developed countries are eligible to donate reduced regular dues.
 
 - ### In-kind Donation of Dues
-  To make arrangements for in-kind donations, please contact info@transfigurism.org.
+  To make arrangements for in-kind donations, please contact [info@transfigurism.org](mailto://info@transfigurism.org).
 
 
 ## <a id="donation"></a>Financial Donation
