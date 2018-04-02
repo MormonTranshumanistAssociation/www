@@ -27,7 +27,7 @@ const Info = styled.div`
 const Name = styled.span`
   font-weight: bold;
   color: #659400;
-  padding-right: 0.25em;
+  padding-right: 0.1em;
 `;
 
 const PresentationName = styled.span`
