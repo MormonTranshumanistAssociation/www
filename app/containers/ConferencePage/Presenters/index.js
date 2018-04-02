@@ -1,0 +1,91 @@
+import * as React from 'react';
+import _ from 'lodash';
+import { Query } from 'react-apollo';
+import gql from 'graphql-tag';
+import { filter } from 'graphql-anywhere';
+import styled from 'styled-components';
+import MarkdownProfiles, { Title } from 'components/MarkdownProfiles';
+import Presenter from './Presenter';
+import { CONFERENCE_ID } from '../constants';
+
+const query = gql`
+  query ConferencePresenters($confId: ID!) {
+    viewer {
+      allPresenters(
+        where: { presentations: { conference: { id: { eq: $confId } } } } 
+        orderBy: { field: displayName, direction: ASC }
+      ) {
+        edges {
+          node {
+            id
+            displayName
+            ...PresenterPresenter 
+          }
+        }
+      }
+    }
+  }
+  ${Presenter.fragments.presenter}
+`;
+
+const ToCWrapper = styled.div`
+  margin: 2em 0 3em 0;
+  ul {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(400px / 2)
+  }
+  ul + div + h3 {
+    margin-top: 2rem;
+  }
+`;
+
+const ToC = styled.ul`
+`;
+
+const ToCItem = styled.li`
+`;
+
+export default () => (
+  <div>
+    <Title>2018 Conference Presenters</Title>
+    <MarkdownProfiles>
+      <Query query={query} variables={{ confId: CONFERENCE_ID }}>
+        {({ loading, error, data }) => {
+          if (loading) return <p>Loading...</p>;
+          if (error) return <p>Error</p>;
+
+          const presenters = _.map(_.get(data, 'viewer.allPresenters.edges', []), 'node');
+          const tocHalfIdx = Math.floor(presenters.length / 2);
+          const tocPart1 = presenters.slice(0, tocHalfIdx);
+          const tocPart2 = presenters.slice(tocHalfIdx, presenters.length);
+          const tocParts = [tocPart1, tocPart2];
+
+          return (
+            <div>
+              <ToCWrapper>
+                {
+                  _.map(tocParts, (tocPart) => (
+                    <ToC>
+                      {
+                        _.map(tocPart, (presenter) => (
+                          <ToCItem key={presenter.id}>
+                            <a href={`#${encodeURIComponent(presenter.displayName)}`}>{presenter.displayName}</a>
+                          </ToCItem>
+                        ))
+                      }
+                    </ToC>
+                  ))
+                }
+              </ToCWrapper>
+              {
+                _.map(presenters, (presenter) => (
+                  <Presenter key={presenter.id} presenter={filter(Presenter.fragments.presenter, presenter)} />
+                ))
+              }
+            </div>);
+        }}
+      </Query>
+    </MarkdownProfiles>
+  </div>
+);

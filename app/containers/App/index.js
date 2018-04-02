@@ -7,9 +7,6 @@
  */
 
 import React from 'react';
-import Helmet from 'react-helmet';
-import styled from 'styled-components';
-import Footer from 'components/Footer';
 import withProgressBar from 'components/ProgressBar';
 // import runtime from 'offline-plugin/runtime';
 
@@ -38,30 +35,8 @@ import withProgressBar from 'components/ProgressBar';
 // // clear all SW caches
 // caches.keys().then((cs) => cs.forEach( (c) => caches.delete(c)));
 
-
-const AppWrapper = styled.div`
-  margin: 0;
-  display: flex;
-  min-height: 100vh;
-  padding: 0;
-  flex-direction: column;
-  position: relative;
-`;
-
 export function App(props) {
-  return (
-    <AppWrapper>
-      <Helmet
-        titleTemplate="%s | Mormon Transhumanist Association"
-        defaultTitle=""
-        meta={[
-          { name: 'description', content: 'Mormon Transhumanist Association is the world\'s largest advocacy network for ethical use of technology and religion to extend human abilities.' },
-        ]}
-      />
-      {React.Children.toArray(props.children)}
-      <Footer />
-    </AppWrapper>
-  );
+  return props.children;
 }
 
 App.propTypes = {

@@ -80,6 +80,7 @@ module.exports = (options) => ({
       { from: 'app/assets/mta-banner.png', to: 'assets' },
       { from: 'app/assets/mta-thumbnail.jpg', to: 'assets' },
       { from: 'app/assets/transfigurist', to: 'assets/transfigurist' },
+      { from: 'app/assets/presenters', to: 'assets/presenters' },
     ]),
     new webpack.ProvidePlugin({
       // make fetch available

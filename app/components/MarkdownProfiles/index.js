@@ -21,6 +21,7 @@ const MarkdownProfiles = styled.div`
     margin: 0 20px 0 0;
     width: 128px;
     height: 160px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.6);
   }
   & > div {
     margin-bottom: 2em;
