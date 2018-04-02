@@ -3,6 +3,7 @@ import _ from 'lodash';
 import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
 import MarkdownProfiles, { Title } from 'components/MarkdownProfiles';
+import Loader from 'halogen/GridLoader';
 import Presentation from './Presentation';
 import { CONFERENCE_ID } from '../constants';
 import { Scheduler } from '../scheduler';
@@ -32,7 +33,7 @@ export default () => (
     <MarkdownProfiles>
       <Query query={query} variables={{ confId: CONFERENCE_ID }}>
         {({ loading, error, data }) => {
-          if (loading) return <p>Loading...</p>;
+          if (loading) return <Loader color="#525B3A" size="10px" />;
           if (error) return <p>Error</p>;
 
           const conference = data.node;

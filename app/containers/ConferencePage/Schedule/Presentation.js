@@ -91,7 +91,7 @@ const Presentation = ({ presentation }) => {
     presenterName += ', ';
   }
   return (
-    <Wrapper id={`${encodeURIComponent(presentation.title)}`} isBreak={!presenterName}>
+    <Wrapper id={`${presentation.id}`} isBreak={!presenterName}>
       <Time>
         <ScheduleColor presentation={presentation}>{formattedDate(presentation.adjustedMoment)}</ScheduleColor>
       </Time>

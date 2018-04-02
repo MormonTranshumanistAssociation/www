@@ -3,7 +3,7 @@ import { Link as RouterLink } from 'react-router';
 import styled from 'styled-components';
 
 const LinkStyler = styled.div`
-  display: inline-block;
+  display: inline;
   & > a {
     text-decoration: none;
     color: inherit;

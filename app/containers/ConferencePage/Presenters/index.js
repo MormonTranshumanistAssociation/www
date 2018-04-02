@@ -4,6 +4,7 @@ import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
 import { filter } from 'graphql-anywhere';
 import styled from 'styled-components';
+import Loader from 'halogen/GridLoader';
 import MarkdownProfiles, { Title } from 'components/MarkdownProfiles';
 import Presenter from './Presenter';
 import { CONFERENCE_ID } from '../constants';
@@ -52,7 +53,7 @@ export default () => (
     <MarkdownProfiles>
       <Query query={query} variables={{ confId: CONFERENCE_ID }}>
         {({ loading, error, data }) => {
-          if (loading) return <p>Loading...</p>;
+          if (loading) return <Loader color="#525B3A" size="10px" />;
           if (error) return <p>Error</p>;
 
           const presenters = _.map(_.get(data, 'viewer.allPresenters.edges', []), 'node');
@@ -65,8 +66,8 @@ export default () => (
             <div>
               <ToCWrapper>
                 {
-                  _.map(tocParts, (tocPart) => (
-                    <ToC>
+                  _.map(tocParts, (tocPart, index) => (
+                    <ToC key={index}>
                       {
                         _.map(tocPart, (presenter) => (
                           <ToCItem key={presenter.id}>
