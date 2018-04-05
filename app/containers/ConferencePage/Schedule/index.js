@@ -85,7 +85,7 @@ export default () => (
       <div>Join us online at https://transfigurism.org/conf</div>
     </PrintOnly>
     <ScreenOnly>
-      <div><div id="twitter-link"><a href="https://twitter.com/hashtag/mtaconf2018">#mtaconf</a></div></div>
+      <div><div id="twitter-link"><a href="https://twitter.com/hashtag/mtaconf">#mtaconf</a></div></div>
       <div><div id="facebook-link"><a href="https://www.facebook.com/events/158279478213858/">Facebook</a></div></div>
     </ScreenOnly>
     <MarkdownProfiles>
