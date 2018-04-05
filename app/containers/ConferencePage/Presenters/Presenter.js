@@ -4,6 +4,7 @@ import _ from 'lodash';
 import styled from 'styled-components';
 import gql from 'graphql-tag';
 import Link from 'components/Link';
+import { toSafeId } from '../helpers';
 
 const Wrapper = styled.div`
   margin-bottom: 2.5em;
@@ -47,12 +48,12 @@ const ClearFix = styled.div`
 `;
 
 const Presenter = ({ presenter }) => (
-  <Wrapper id={`${encodeURIComponent(presenter.displayName)}`}>
+  <Wrapper id={`${toSafeId(presenter.displayName)}`}>
     {presenter.photoUrl ? <Photo src={presenter.photoUrl} alt={presenter.displayName} /> : <EmptyPhoto />}
     <DisplayName>{presenter.displayName}</DisplayName>
     {
       _.map(_.get(presenter, 'presentations.edges'), (edge) => (
-        <Link key={edge.node.id} to={`/conf/schedule#${edge.node.id}`}>
+        <Link key={edge.node.id} to={`/conf/schedule#${toSafeId(edge.node.title)}`}>
           <PresentationName>{edge.node.title}</PresentationName>
         </Link>
       ))

@@ -15,8 +15,14 @@ const JoinButton = styled(Button)`
   margin-bottom: 6px;
 `;
 
+const HiddenWhenPrinting = styled.div`
+  @media print {
+    display: none;
+  }
+`;
+
 const Header = (props) => (
-  <div>
+  <HiddenWhenPrinting>
     <NavBar>
       <Link data-tag="Link" to="/"><FormattedMessage {...messages.home} /></Link>
       <Link to="/news"><FormattedMessage {...messages.news} /></Link>
@@ -28,7 +34,7 @@ const Header = (props) => (
       <JoinButton><Link to="/join"><FormattedMessage {...messages.join} /></Link></JoinButton>
     </NavBar>
     { !props.menuOnly && <Banner /> }
-  </div>
+  </HiddenWhenPrinting>
 );
 Header.propTypes = {
   menuOnly: React.PropTypes.bool,

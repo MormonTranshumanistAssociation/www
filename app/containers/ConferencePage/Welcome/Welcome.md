@@ -1,6 +1,31 @@
 # 2018 Conference
 
-![Splash](./assets/worlds_without_number_keynotes_1920x940.jpg)
+![Splash](../assets/worlds_without_number_keynotes_1920x940.jpg)
+
+</p>
+<style>
+  .register-button {
+    display: inline-block;
+    text-decoration: none; 
+    padding: 6px 20px; 
+    font-size: 18px; 
+    color: #fff; 
+    border: none; 
+    background-color: rgb(255,133,5); 
+    font-weight: 500; 
+    border-radius: 2px;
+    cursor: pointer; font-family: Abel, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 4px;
+  }
+  .register-button:hover {
+    text-decoration: underline !important;
+  }
+</style>
+<a href="https://www.eventbrite.com/e/2018-conference-of-the-mormon-transhumanist-association-registration-42931748014?ref=transfigurism" target="_blank" class="register-button">
+  Register now at Eventbrite!
+</a>
+<p>
+
 
 ## Welcome!
 We're so glad to have you join us for the 2018 Conference of the Mormon Transhumanist Association!

@@ -5,6 +5,7 @@ import gql from 'graphql-tag';
 import Link from 'components/Link';
 import moment from 'moment';
 import _ from 'lodash';
+import { toSafeId } from '../helpers';
 
 const Wrapper = styled.div`
   display: flex;
@@ -91,14 +92,14 @@ const Presentation = ({ presentation }) => {
     presenterName += ', ';
   }
   return (
-    <Wrapper id={`${presentation.id}`} isBreak={!presenterName}>
+    <Wrapper id={`${toSafeId(presentation.title)}`} isBreak={!presenterName}>
       <Time>
         <ScheduleColor presentation={presentation}>{formattedDate(presentation.adjustedMoment)}</ScheduleColor>
       </Time>
       <Info>
         {presenterName &&
           <Title>
-            <Link to={`/conf/presenters#${encodeURIComponent(presentation.presenter.displayName)}`}>
+            <Link to={`/conf/presenters#${toSafeId(presentation.presenter.displayName)}`}>
               <Name>{presenterName}</Name>
             </Link>
             {presentation.title && <PresentationName>{presentation.title}</PresentationName>}

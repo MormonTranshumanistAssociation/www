@@ -6,7 +6,7 @@
     "README_file" : "Remove 'file' to use request url below. A relative or absolute path to the JSON from a schema introspection query, e.g. '{ data: ... }' or a .graphql/.graphqls file describing the schema using GraphQL Schema Language. Changes to the file are watched.",
     "README_request" : "To request the schema from a url instead, remove the 'file' JSON property above (and optionally delete the default graphql.schema.json file).",
     "request": {
-      "url" : "https://us-west-2.api.scaphold.io/graphql/mta-timer",
+      "url" : "https://us-west-2.api.scaphold.io/graphql/mta-conf",
       "method" : "POST",
       "README_postIntrospectionQuery" : "Whether to POST an introspectionQuery to the url. If the url always returns the schema JSON, set to false and consider using GET",
       "postIntrospectionQuery" : true,
@@ -23,8 +23,8 @@
   "README_endpoints": "A list of GraphQL endpoints that can be queried from '.graphql' files in the IDE",
   "endpoints" : [
     {
-      "name": "Default (https://us-west-2.api.scaphold.io/graphql/mta-timer)",
-      "url": "https://us-west-2.api.scaphold.io/graphql/mta-timer",
+      "name": "Default (https://us-west-2.api.scaphold.io/graphql/mta-conf)",
+      "url": "https://us-west-2.api.scaphold.io/graphql/mta-conf",
       "options" : {
         "headers": {
           "user-agent" : "JS GraphQL"

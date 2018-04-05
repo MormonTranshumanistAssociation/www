@@ -16,6 +16,9 @@ const FooterSection = styled(Section)`
   padding: 1.5em 0 14px 0;
   background-position-y: bottom;
   background-attachment: fixed;
+  @media print {
+    display: none;
+  }
 `;
 
 const FooterSectionContent = styled(SectionContent)`
@@ -49,6 +52,7 @@ function Footer() {
             <Link href="http://transfigurist.org" target="_blank"><FormattedMessage {...messages.blog} /></Link>
             <Link to="/meetup"><FormattedMessage {...messages.meetup} /></Link>
             <Link to="/join"><FormattedMessage {...messages.contribute} /></Link>
+            <Link to="/conf/login"><FormattedMessage {...messages.adminLogin} /></Link>
           </LinkGroup>
           <LinkGroup>
           </LinkGroup>

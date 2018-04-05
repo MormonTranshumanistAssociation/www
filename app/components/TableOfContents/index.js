@@ -1,10 +1,14 @@
-import React, { PropTypes } from 'react';
-import styled from 'styled-components';
+import * as React from 'react';
+import PropTypes from 'prop-types';
+import styled, { css } from 'styled-components';
 import { Link } from 'react-router';
 
 const Wrapper = styled.div`
   width: 264px;
   float: right;
+  @media print {
+    display: none;
+  }
 `;
 
 const Nav = styled.nav`
@@ -14,7 +18,7 @@ const Nav = styled.nav`
   padding: 0 14px;
 `;
 
-export const Entry = styled(Link)`
+export const EntryCss = css`
   display: block;
   text-indent: -1em;
   padding-left: 1em;
@@ -24,6 +28,10 @@ export const Entry = styled(Link)`
     line-height: 1.2em;
     padding-bottom: 0.4em; 
   }
+`;
+
+export const Entry = styled(Link)`
+  ${EntryCss}
 `;
 
 export const TableOfContents = (props) => (

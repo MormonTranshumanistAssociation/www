@@ -8,6 +8,7 @@ import Loader from 'halogen/GridLoader';
 import MarkdownProfiles, { Title } from 'components/MarkdownProfiles';
 import Presenter from './Presenter';
 import { CONFERENCE_ID } from '../constants';
+import { scrollToLocationHash, toSafeId } from '../helpers';
 
 const query = gql`
   query ConferencePresenters($confId: ID!) {
@@ -56,8 +57,9 @@ export default () => (
           if (loading) return <Loader color="#525B3A" size="10px" />;
           if (error) return <p>Error</p>;
 
+          scrollToLocationHash();
           const presenters = _.map(_.get(data, 'viewer.allPresenters.edges', []), 'node');
-          const tocHalfIdx = Math.floor(presenters.length / 2);
+          const tocHalfIdx = Math.ceil(presenters.length / 2);
           const tocPart1 = presenters.slice(0, tocHalfIdx);
           const tocPart2 = presenters.slice(tocHalfIdx, presenters.length);
           const tocParts = [tocPart1, tocPart2];
@@ -71,7 +73,7 @@ export default () => (
                       {
                         _.map(tocPart, (presenter) => (
                           <ToCItem key={presenter.id}>
-                            <a href={`#${encodeURIComponent(presenter.displayName)}`}>{presenter.displayName}</a>
+                            <a href={`#${toSafeId(presenter.displayName)}`}>{presenter.displayName}</a>
                           </ToCItem>
                         ))
                       }

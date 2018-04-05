@@ -10,16 +10,19 @@ const Button = styled.div`
   padding: 0 0 0 0 !important;
   &:hover {
     background: hsla(52,11%,44%, 1) !important;
-    text-decoration: underline;
   }
-  a {
+  &:hover, a:hover, button:hover, input:hover {
+   text-decoration: underline;
+   cursor: pointer;
+  }
+  a, button, input {
+    color: #fff !important;
+    border-top: none !important;
+    padding: 0 1.5em !important;
     font-family: 'Abel', Heletica, sans-serif !important;
     letter-spacing: normal !important;
     font-size: 14px !important;
     text-transform: none !important;
-    color: #fff !important;
-    padding: 0 1.5em !important;
-    border-top: none !important;
   }
 `;
 

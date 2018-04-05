@@ -209,7 +209,7 @@ export default function createRoutes() {
           },
           indexRoute: {
             getComponent(partialNextState, cb) {
-              import('containers/ConferencePage/Welcome.md').then(loadModule(cb)).catch(errorLoading);
+              import('containers/ConferencePage/Welcome').then(loadModule(cb)).catch(errorLoading);
             },
           },
           childRoutes: [
@@ -223,6 +223,12 @@ export default function createRoutes() {
               path: 'schedule',
               getComponent(nextState, cb) {
                 import('containers/ConferencePage/Schedule').then(loadModule(cb)).catch(errorLoading);
+              },
+            },
+            {
+              path: 'login',
+              getComponent(nextState, cb) {
+                import('containers/ConferencePage/SignIn').then(loadModule(cb)).catch(errorLoading);
               },
             },
           ],

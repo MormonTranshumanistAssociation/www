@@ -11,6 +11,9 @@ const Section = styled.section`
   @media screen and (max-width: 672px) {
     padding: 40px 0;
   }
+  @media print {
+    padding: 0;
+  }
 
   //&:first-child {
   //  padding-top: calc(80px + 32px);    // leave room for header nav bar

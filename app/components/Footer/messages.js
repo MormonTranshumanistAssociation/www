@@ -46,6 +46,10 @@ export default defineMessages({
     id: 'components.Footer.conferences',
     defaultMessage: 'Conferences',
   },
+  adminLogin: {
+    id: 'components.Footer.adminLogin',
+    defaultMessage: 'Admin Login',
+  },
   quotes: {
     id: 'components.Footer.quotes',
     defaultMessage: 'Quotes',

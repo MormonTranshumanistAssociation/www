@@ -7,8 +7,10 @@ import PageWithContents from 'components/PageWithContents';
 import { SingleColumn } from 'components/Columns';
 import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from 'react-apollo';
+import { Provider as MobxProvider } from 'mobx-react';
 import ToC from './toc';
 import { GRAPHQL_URL } from './constants';
+import authStore from './authStore';
 
 const MarkdownPage = styled.div` 
   h1 + p > img {
@@ -17,27 +19,40 @@ const MarkdownPage = styled.div`
   }
 `;
 
-const apolloClient = new ApolloClient({ uri: GRAPHQL_URL });
-
+const apolloClient = new ApolloClient({
+  uri: GRAPHQL_URL,
+  request: async (operation) => {
+    const token = localStorage.getItem('conf-token');
+    if (token) {
+      operation.setContext({
+        headers: {
+          authorization: `Bearer ${token}`,
+        },
+      });
+    }
+  },
+});
 
 const ConferencePage = (props) => (
   <ApolloProvider client={apolloClient}>
-    <div>
-      <Header />
-      <article>
-        <Helmet title="Conference" />
-        <Section>
-          <PageWithContents>
-            <div><ToC /></div>
-            <SingleColumn>
-              <MarkdownPage>
-                {props.children}
-              </MarkdownPage>
-            </SingleColumn>
-          </PageWithContents>
-        </Section>
-      </article>
-    </div>
+    <MobxProvider authStore={authStore}>
+      <div>
+        <Header />
+        <article>
+          <Helmet title="Conference" />
+          <Section>
+            <PageWithContents>
+              <div><ToC /></div>
+              <SingleColumn>
+                <MarkdownPage>
+                  {props.children}
+                </MarkdownPage>
+              </SingleColumn>
+            </PageWithContents>
+          </Section>
+        </article>
+      </div>
+    </MobxProvider>
   </ApolloProvider>
 );
 ConferencePage.propTypes = {
