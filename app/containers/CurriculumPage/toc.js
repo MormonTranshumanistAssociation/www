@@ -9,6 +9,7 @@ const ToC = () => (
     <Entry to="/primers/4">Exponential Change</Entry>
     <Entry to="/primers/5">Implications of Exponential Technological Trends for Humanity</Entry>
     <Entry to="/primers/6">A Brief History of Religious Transhumanism</Entry>
+    <Entry to="/primers/7">The Role of Christ in Transhumanism</Entry>
   </TableOfContents>
 );
 
