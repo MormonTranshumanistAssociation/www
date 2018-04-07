@@ -17,10 +17,16 @@
     cursor: pointer; font-family: Abel, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 4px;
   }
+  .youtube-button {
+    background-color: red;
+  }
   .register-button:hover {
     text-decoration: underline !important;
   }
 </style>
+<a href="https://www.youtube.com/c/TransfigurismOrg/live" target="_blank" class="register-button youtube-button">
+  View live stream on YouTube!
+</a>
 <a href="https://www.eventbrite.com/e/2018-conference-of-the-mormon-transhumanist-association-registration-42931748014?ref=transfigurism" target="_blank" class="register-button">
   Register now at Eventbrite!
 </a>
