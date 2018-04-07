@@ -242,7 +242,7 @@ export default function createRoutes() {
       ],
     }, {
       path: '/conf/timer',
-      name: 'conf/timer',
+      name: 'timer',
       getComponent(nextState, cb) {
         import('containers/ConferencePage/Timer').then(loadModule(cb)).catch(errorLoading);
       },

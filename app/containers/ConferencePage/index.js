@@ -5,12 +5,11 @@ import Header from 'components/Header';
 import Section from 'components/Section';
 import PageWithContents from 'components/PageWithContents';
 import { SingleColumn } from 'components/Columns';
-import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from 'react-apollo';
 import { Provider as MobxProvider } from 'mobx-react';
 import ToC from './toc';
-import { GRAPHQL_URL } from './constants';
 import authStore from './authStore';
+import apolloClient from './apolloClient';
 
 const MarkdownPage = styled.div` 
   h1 + p > img {
@@ -18,20 +17,6 @@ const MarkdownPage = styled.div`
     box-shadow: 0 1px 4px rgba(0,0,0,.6);
   }
 `;
-
-const apolloClient = new ApolloClient({
-  uri: GRAPHQL_URL,
-  request: async (operation) => {
-    const token = localStorage.getItem('conf-token');
-    if (token) {
-      operation.setContext({
-        headers: {
-          authorization: `Bearer ${token}`,
-        },
-      });
-    }
-  },
-});
 
 const ConferencePage = (props) => (
   <ApolloProvider client={apolloClient}>
