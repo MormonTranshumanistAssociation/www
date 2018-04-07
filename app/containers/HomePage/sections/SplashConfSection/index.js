@@ -77,6 +77,22 @@ const ConferenceBanner = styled.div`
   }
 `;
 
+const RegistrationHeader = styled.a`
+  display: block;
+  text-align: center; 
+  background: rgb(255,133,5);
+  padding: 8px 24px;
+  color: white;
+  font-size: 2rem;
+  font-family: 'Source Sans Pro', 'Abel', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  text-decoration: none !important;
+  margin: -2px -2px 0 -2px;
+  &:hover {
+    text-decoration: none !important;
+  }
+`;
+
 const Spacer = styled.div`
   flex: 1;
 `;
@@ -95,6 +111,9 @@ const SplashSection = () => (
     <ElevatedContainer>
       <RouterLink to="/conf">
         <ConferenceBanner>
+          <RegistrationHeader>
+            Join our live video stream!
+          </RegistrationHeader>
           <ConferenceImage alt="2018 Conference" src={ConfImage} />
         </ConferenceBanner>
       </RouterLink>
