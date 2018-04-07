@@ -19,7 +19,7 @@ class ConferenceTimer extends React.Component {
   }
   handleKeyDown = (event) => {
     const { authStore } = this.props;
-    console.log({ code: event.keyCode, F: KeyCodes.F });
+    console.log({ code: event.keyCode, B: KeyCodes.B });
     if (!authStore.token) {
       console.error('Not authenticated, ignoring key commands.');
     }
@@ -30,6 +30,7 @@ class ConferenceTimer extends React.Component {
         break;
       }
       case KeyCodes.B: {
+        this.handlePresentationReverse();
         break;
       }
       default: {
@@ -54,6 +55,22 @@ class ConferenceTimer extends React.Component {
     console.log({ nextIdx, presentationId });
     setActivePresentation({ presentationId });
   };
+
+  handlePresentationReverse = () => {
+    console.log('handlePresentationAdvance');
+    const { setActivePresentation, presentations, activePresentationId } = this.props;
+    const currentIdx = _.findIndex(presentations, (p) => p.id === activePresentationId);
+    let nextIdx;
+    if (currentIdx === null || currentIdx === 0) {
+      nextIdx = null;
+    } else {
+      nextIdx = currentIdx - 1;
+    }
+    const presentationId = nextIdx === null ? '' : presentations[nextIdx].id;
+    console.log({ nextIdx, presentationId });
+    setActivePresentation({ presentationId });
+  };
+
 
   render() {
     const { presentations, activePresentationId } = this.props;

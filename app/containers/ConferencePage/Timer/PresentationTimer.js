@@ -235,14 +235,19 @@ class TimerPage extends React.PureComponent {
     const H = formatHours(secondsLeft);
     const M = formatMinutes(secondsLeft);
     const S = formatSeconds(secondsLeft);
+
+    const imageUrl = _.get(presentation, 'presenter.photoUrl');
+    const presenterName = _.get(presentation, 'presenter.displayName');
+    const presentationTitle = presentation.title;
+
     return (
       <Wrapper>
         <ProgressBackground style={{ backgroundColor: color }} />
         {ParticlesComponent}
         <ProgressCover progress={progress} style={{ width: `${percentRemaining}%` }} />
         <FlashingCover animate={animate} />
-        {!!secondsLeft && <PresenterImage src={_.get(presentation, 'presenter.photoUrl')} />}
-        <PresenterName>{_.get(presentation, 'presenter.displayName')}</PresenterName>
+        {!!secondsLeft && imageUrl && <PresenterImage src={imageUrl} />}
+        <PresenterName>{presenterName || presentationTitle}</PresenterName>
         {!!secondsLeft && (
           <TimeRemaining>
             <TimeRow>{H} {H ? <FlashingTimeUnit>{M}</FlashingTimeUnit> : M}</TimeRow>
@@ -322,7 +327,8 @@ PresentationTimer.propTypes = {
 PresentationTimer.fragments = {
   presentation: gql`
     fragment PresentationTimerPresentation on Presentation {
-      duration,
+      duration
+      title
       presenter {
         displayName
         photoUrl

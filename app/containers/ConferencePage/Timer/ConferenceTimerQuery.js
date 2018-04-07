@@ -51,7 +51,7 @@ class ConferenceTimerQuery extends React.Component {
   render() {
     const { setActivePresentation } = this.props;
     return (
-      <Query query={conferenceTimerQuery} variables={{ confId: CONFERENCE_ID }} pollInterval={1000} >
+      <Query query={conferenceTimerQuery} variables={{ confId: CONFERENCE_ID }}>
         {({ loading, error, data }) => {
           if (loading) return <Loader color="#525B3A" size="10px" />;
           if (error) return <p>Error</p>;
