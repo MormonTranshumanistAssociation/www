@@ -41,7 +41,7 @@ import 'file-loader?name=[name].[ext]!./.htaccess'; // eslint-disable-line impor
 /* eslint-enable import/no-webpack-loader-syntax */
 
 // import GHPages support
-import '!file-loader?name=[name]!./CNAME';    // eslint-disable-line import/extensions
+import '!file-loader?name=[name]!./CNAME'; // eslint-disable-line import/extensions
 import '!file-loader?name=[name].[ext]!./404.html';
 
 import configureStore from './store';
@@ -62,11 +62,14 @@ injectTapEventPlugin();
 const abelFontObserver = new FontFaceObserver('Abel', {});
 
 // When Open Sans is loaded, add a font-family using Open Sans to the body
-abelFontObserver.load().then(() => {
-  document.body.classList.add('fontLoaded');
-}, () => {
-  document.body.classList.remove('fontLoaded');
-});
+abelFontObserver.load().then(
+  () => {
+    document.body.classList.add('fontLoaded');
+  },
+  () => {
+    document.body.classList.remove('fontLoaded');
+  },
+);
 
 // Create redux store with history
 // this uses the singleton browserHistory provided by react-router
@@ -88,7 +91,7 @@ const rootRoute = {
   childRoutes: createRoutes(store),
 };
 
-const render = (messages) => {
+const render = messages => {
   ReactDOM.render(
     <Provider store={store}>
       <LanguageProvider messages={messages}>
@@ -105,7 +108,7 @@ const render = (messages) => {
         </MuiThemeProvider>
       </LanguageProvider>
     </Provider>,
-    document.getElementById('app')
+    document.getElementById('app'),
   );
 };
 
@@ -120,15 +123,12 @@ if (module.hot) {
 
 // Chunked polyfill for browsers without Intl support
 if (!window.Intl) {
-  (new Promise((resolve) => {
+  new Promise(resolve => {
     resolve(import('intl'));
-  }))
-    .then(() => Promise.all([
-      import('intl/locale-data/jsonp/en.js'),
-      import('intl/locale-data/jsonp/de.js'),
-    ]))
+  })
+    .then(() => Promise.all([import('intl/locale-data/jsonp/en.js'), import('intl/locale-data/jsonp/de.js')]))
     .then(() => render(translationMessages))
-    .catch((err) => {
+    .catch(err => {
       throw err;
     });
 } else {

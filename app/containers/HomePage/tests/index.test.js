@@ -13,9 +13,7 @@ import { loadRepos } from '../../App/actions';
 
 describe('<HomePage />', () => {
   it('should render the repos list', () => {
-    const renderedComponent = shallow(
-      <HomePage loading error={false} repos={[]} />
-    );
+    const renderedComponent = shallow(<HomePage loading error={false} repos={[]} />);
     expect(renderedComponent.contains(<ReposList loading error={false} repos={[]} />)).toEqual(true);
   });
 
@@ -23,12 +21,8 @@ describe('<HomePage />', () => {
     const submitSpy = jest.fn();
     mount(
       <IntlProvider locale="en">
-        <HomePage
-          username="Not Empty"
-          onChangeUsername={() => {}}
-          onSubmitForm={submitSpy}
-        />
-      </IntlProvider>
+        <HomePage username="Not Empty" onChangeUsername={() => {}} onSubmitForm={submitSpy} />
+      </IntlProvider>,
     );
     expect(submitSpy).toHaveBeenCalled();
   });

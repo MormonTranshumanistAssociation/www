@@ -14,14 +14,14 @@ const query = gql`
   query ConferencePresenters($confId: ID!) {
     viewer {
       allPresenters(
-        where: { presentations: { conference: { id: { eq: $confId } } } } 
+        where: { presentations: { conference: { id: { eq: $confId } } } }
         orderBy: { field: displayName, direction: ASC }
       ) {
         edges {
           node {
             id
             displayName
-            ...PresenterPresenter 
+            ...PresenterPresenter
           }
         }
       }
@@ -35,18 +35,16 @@ const ToCWrapper = styled.div`
   ul {
     display: inline-block;
     vertical-align: top;
-    width: calc(400px / 2)
+    width: calc(400px / 2);
   }
   ul + div + h3 {
     margin-top: 2rem;
   }
 `;
 
-const ToC = styled.ul`
-`;
+const ToC = styled.ul``;
 
-const ToCItem = styled.li`
-`;
+const ToCItem = styled.li``;
 
 export default () => (
   <div>
@@ -67,26 +65,21 @@ export default () => (
           return (
             <div>
               <ToCWrapper>
-                {
-                  _.map(tocParts, (tocPart, index) => (
-                    <ToC key={index}>
-                      {
-                        _.map(tocPart, (presenter) => (
-                          <ToCItem key={presenter.id}>
-                            <a href={`#${toSafeId(presenter.displayName)}`}>{presenter.displayName}</a>
-                          </ToCItem>
-                        ))
-                      }
-                    </ToC>
-                  ))
-                }
+                {_.map(tocParts, (tocPart, index) => (
+                  <ToC key={index}>
+                    {_.map(tocPart, presenter => (
+                      <ToCItem key={presenter.id}>
+                        <a href={`#${toSafeId(presenter.displayName)}`}>{presenter.displayName}</a>
+                      </ToCItem>
+                    ))}
+                  </ToC>
+                ))}
               </ToCWrapper>
-              {
-                _.map(presenters, (presenter) => (
-                  <Presenter key={presenter.id} presenter={filter(Presenter.fragments.presenter, presenter)} />
-                ))
-              }
-            </div>);
+              {_.map(presenters, presenter => (
+                <Presenter key={presenter.id} presenter={filter(Presenter.fragments.presenter, presenter)} />
+              ))}
+            </div>
+          );
         }}
       </Query>
     </MarkdownProfiles>

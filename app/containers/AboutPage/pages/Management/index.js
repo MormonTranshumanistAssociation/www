@@ -8,12 +8,10 @@ const Management = () => (
   <div>
     <Title>Management</Title>
     <MarkdownProfiles>
-      {
-        _.map(profilesReq.keys(), (key) => {
-          const Profile = profilesReq(key).default;
-          return <Profile key={key} />;
-        })
-      }
+      {_.map(profilesReq.keys(), key => {
+        const Profile = profilesReq(key).default;
+        return <Profile key={key} />;
+      })}
     </MarkdownProfiles>
   </div>
 );

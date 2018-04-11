@@ -6,9 +6,7 @@ import Wrapper from './Wrapper';
 function ListItem(props) {
   return (
     <Wrapper>
-      <Item>
-        {props.item}
-      </Item>
+      <Item>{props.item}</Item>
     </Wrapper>
   );
 }

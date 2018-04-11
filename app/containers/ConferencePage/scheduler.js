@@ -34,7 +34,7 @@ class Scheduler {
       .get('presentations.edges')
       .map('node')
       .orderBy(['position'], ['asc'])
-      .map((presentation) => {
+      .map(presentation => {
         const { flex = conference.defaultPresentationFlex || 0, duration, actualDuration } = presentation;
         const scheduledMoment = startAtMoment.clone().add(currentScheduledOffset, 'minutes');
         const adjustedMoment = startAtMoment.clone().add(currentAdjustedOffset, 'minutes');
@@ -90,7 +90,6 @@ Scheduler.fragments = {
             position
           }
         }
-        
       }
     }
   `,

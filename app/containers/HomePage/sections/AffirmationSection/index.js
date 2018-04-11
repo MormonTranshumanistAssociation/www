@@ -8,14 +8,15 @@ import Columns, { Column } from 'components/Columns';
 import messages from './messages';
 
 function softBreak(WrappedComponent) {
-  return ({ children = '', ...rest }) => {      // eslint-disable-line react/prop-types
+  return ({ children = '', ...rest }) => {
+    // eslint-disable-line react/prop-types
     const text = String(children).replace('||', '<br/>');
     return <WrappedComponent {...rest} dangerouslySetInnerHTML={{ __html: text }} />;
   };
 }
 
 const H = softBreak(styled.h3`
-  color: #525B3A;
+  color: #525b3a;
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 400;
@@ -28,27 +29,28 @@ const P = styled.p`
 `;
 
 const Title = styled.h2`
-  color: #525B3A;
+  color: #525b3a;
   font-size: 2rem;
 `;
 const AffirmationSection = () => {
-  const affs = [1, 2, 3, 4, 5, 6].map((index) => (
-    { header: messages[`aff${index}Header`], text: messages[`aff${index}Text`] }
-  ));
+  const affs = [1, 2, 3, 4, 5, 6].map(index => ({
+    header: messages[`aff${index}Header`],
+    text: messages[`aff${index}Text`],
+  }));
 
   return (
     <Section>
       <SectionContent>
-        <Title><FormattedMessage {...messages.title} /></Title>
+        <Title>
+          <FormattedMessage {...messages.title} />
+        </Title>
         <Columns>
-          {
-            affs.map((aff, index) => (
-              <Column key={index}>
-                <FormattedMessage {...aff.header}>{(msg) => <H>{msg}</H>}</FormattedMessage>
-                <FormattedMessage {...aff.text}>{(msg) => <P>{msg}</P>}</FormattedMessage>
-              </Column>
-            ))
-          }
+          {affs.map((aff, index) => (
+            <Column key={index}>
+              <FormattedMessage {...aff.header}>{msg => <H>{msg}</H>}</FormattedMessage>
+              <FormattedMessage {...aff.text}>{msg => <P>{msg}</P>}</FormattedMessage>
+            </Column>
+          ))}
         </Columns>
       </SectionContent>
     </Section>

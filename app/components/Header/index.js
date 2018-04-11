@@ -21,19 +21,37 @@ const HiddenWhenPrinting = styled.div`
   }
 `;
 
-const Header = (props) => (
+const Header = props => (
   <HiddenWhenPrinting>
     <NavBar>
-      <Link data-tag="Link" to="/"><FormattedMessage {...messages.home} /></Link>
-      <Link to="/news"><FormattedMessage {...messages.news} /></Link>
-      <Link to="/about"><FormattedMessage {...messages.about} /></Link>
-      <Link to="/primers"><FormattedMessage {...messages.primers} /></Link>
-      <Link to="/quotes"><FormattedMessage {...messages.quotes} /></Link>
-      <Link href="http://transfigurist.org" target="_blank"><FormattedMessage {...messages.blog} /></Link>
-      <Link to="/meetup"><FormattedMessage {...messages.meetup} /></Link>
-      <JoinButton><Link to="/join"><FormattedMessage {...messages.join} /></Link></JoinButton>
+      <Link data-tag="Link" to="/">
+        <FormattedMessage {...messages.home} />
+      </Link>
+      <Link to="/news">
+        <FormattedMessage {...messages.news} />
+      </Link>
+      <Link to="/about">
+        <FormattedMessage {...messages.about} />
+      </Link>
+      <Link to="/primers">
+        <FormattedMessage {...messages.primers} />
+      </Link>
+      <Link to="/quotes">
+        <FormattedMessage {...messages.quotes} />
+      </Link>
+      <Link href="http://transfigurist.org" target="_blank">
+        <FormattedMessage {...messages.blog} />
+      </Link>
+      <Link to="/meetup">
+        <FormattedMessage {...messages.meetup} />
+      </Link>
+      <JoinButton>
+        <Link to="/join">
+          <FormattedMessage {...messages.join} />
+        </Link>
+      </JoinButton>
     </NavBar>
-    { !props.menuOnly && <Banner /> }
+    {!props.menuOnly && <Banner />}
   </HiddenWhenPrinting>
 );
 Header.propTypes = {

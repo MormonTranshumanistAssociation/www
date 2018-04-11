@@ -10,4 +10,4 @@ export const scrollToLocationHash = () => {
   });
 };
 
-export const toSafeId = (id) => _.kebabCase(_.truncate(id, { length: 50, separator: ' ' }));
+export const toSafeId = id => _.kebabCase(_.truncate(id, { length: 50, separator: ' ' }));

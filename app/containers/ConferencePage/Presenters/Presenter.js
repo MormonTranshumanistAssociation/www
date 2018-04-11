@@ -13,8 +13,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const DisplayName = styled.h1`
-`;
+const DisplayName = styled.h1``;
 
 const PresentationName = styled.h2`
   line-height: 1.35 !important;
@@ -32,8 +31,7 @@ const Photo = styled.img`
   width: 128px;
 `;
 
-const Bio = styled.p`
-`;
+const Bio = styled.p``;
 
 const EmptyPhoto = styled.div`
   height: 160px;
@@ -51,13 +49,11 @@ const Presenter = ({ presenter }) => (
   <Wrapper id={`${toSafeId(presenter.displayName)}`}>
     {presenter.photoUrl ? <Photo src={presenter.photoUrl} alt={presenter.displayName} /> : <EmptyPhoto />}
     <DisplayName>{presenter.displayName}</DisplayName>
-    {
-      _.map(_.get(presenter, 'presentations.edges'), (edge) => (
-        <Link key={edge.node.id} to={`/conf/schedule#${toSafeId(edge.node.title)}`}>
-          <PresentationName>{edge.node.title}</PresentationName>
-        </Link>
-      ))
-    }
+    {_.map(_.get(presenter, 'presentations.edges'), edge => (
+      <Link key={edge.node.id} to={`/conf/schedule#${toSafeId(edge.node.title)}`}>
+        <PresentationName>{edge.node.title}</PresentationName>
+      </Link>
+    ))}
     <Bio>{presenter.bio}</Bio>
     <ClearFix />
   </Wrapper>
@@ -71,7 +67,7 @@ Presenter.fragments = {
   presenter: gql`
     fragment PresenterPresenter on Presenter {
       id
-      presentations(orderBy: {field: position, direction: ASC}) {
+      presentations(orderBy: { field: position, direction: ASC }) {
         edges {
           node {
             id

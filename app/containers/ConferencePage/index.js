@@ -12,16 +12,16 @@ import ToC from './toc';
 import { GRAPHQL_URL } from './constants';
 import authStore from './authStore';
 
-const MarkdownPage = styled.div` 
+const MarkdownPage = styled.div`
   h1 + p > img {
     width: 100%;
-    box-shadow: 0 1px 4px rgba(0,0,0,.6);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
   }
 `;
 
 const apolloClient = new ApolloClient({
   uri: GRAPHQL_URL,
-  request: async (operation) => {
+  request: async operation => {
     const token = localStorage.getItem('conf-token');
     if (token) {
       operation.setContext({
@@ -33,7 +33,7 @@ const apolloClient = new ApolloClient({
   },
 });
 
-const ConferencePage = (props) => (
+const ConferencePage = props => (
   <ApolloProvider client={apolloClient}>
     <MobxProvider authStore={authStore}>
       <div>
@@ -42,11 +42,11 @@ const ConferencePage = (props) => (
           <Helmet title="Conference" />
           <Section>
             <PageWithContents>
-              <div><ToC /></div>
+              <div>
+                <ToC />
+              </div>
               <SingleColumn>
-                <MarkdownPage>
-                  {props.children}
-                </MarkdownPage>
+                <MarkdownPage>{props.children}</MarkdownPage>
               </SingleColumn>
             </PageWithContents>
           </Section>

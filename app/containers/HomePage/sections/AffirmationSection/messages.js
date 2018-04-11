@@ -28,7 +28,8 @@ export default defineMessages({
       creation of worlds without end.`,
   },
   aff3Header: {
-    id: 'aff.3.header', defaultMessage: 'We understand the||Gospel to be compatible',
+    id: 'aff.3.header',
+    defaultMessage: 'We understand the||Gospel to be compatible',
   },
   aff3Text: {
     id: 'aff.3.text',

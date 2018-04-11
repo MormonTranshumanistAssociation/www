@@ -27,7 +27,7 @@ const ButtonRow = styled(Row)`
 `;
 
 const InputLabel = styled.label`
-  display: flex; 
+  display: flex;
   flex: none;
 `;
 const InputField = styled.input`
@@ -60,7 +60,6 @@ const loginUserMutation = gql`
 `;
 
 class SignIn extends React.PureComponent {
-
   constructor() {
     super();
     this.state = {
@@ -71,7 +70,7 @@ class SignIn extends React.PureComponent {
     };
   }
 
-  handleInputChange = (event) => {
+  handleInputChange = event => {
     const target = event.target;
     const value = target.type === 'checkbox' ? target.checked : target.value;
     const name = target.name;
@@ -79,7 +78,7 @@ class SignIn extends React.PureComponent {
     this.setState({ [name]: value });
   };
 
-  handleSubmit = (event) => {
+  handleSubmit = event => {
     event.preventDefault();
     this.authenticate();
     return false;
@@ -116,12 +115,7 @@ class SignIn extends React.PureComponent {
     <Form onSubmit={this.handleSubmit}>
       <Row>
         <InputLabel for="username">Username</InputLabel>
-        <InputField
-          id="username"
-          name="username"
-          value={this.state.username}
-          onChange={this.handleInputChange}
-        />
+        <InputField id="username" name="username" value={this.state.username} onChange={this.handleInputChange} />
       </Row>
       <Row>
         <InputLabel for="password">Password</InputLabel>
@@ -134,13 +128,17 @@ class SignIn extends React.PureComponent {
         />
       </Row>
       <ButtonRow>
-        <Button><input type="submit" value="Log in" /></Button>
+        <Button>
+          <input type="submit" value="Log in" />
+        </Button>
       </ButtonRow>
     </Form>
   );
 
   renderLogoutButton = () => (
-    <Button><button onClick={this.signOut}>Log out</button></Button>
+    <Button>
+      <button onClick={this.signOut}>Log out</button>
+    </Button>
   );
 
   render() {
@@ -164,7 +162,7 @@ SignIn.propTypes = {
 
 export default compose(
   graphql(loginUserMutation, {
-    props: (props) => ({
+    props: props => ({
       ...props,
       loginUser: ({ username, password }) =>
         props.mutate({

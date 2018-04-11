@@ -8,11 +8,7 @@ import { fromJS } from 'immutable';
 
 import configureStore from 'store';
 
-import {
-  injectAsyncReducer,
-  injectAsyncSagas,
-  getAsyncInjectors,
-} from '../asyncInjectors';
+import { injectAsyncReducer, injectAsyncSagas, getAsyncInjectors } from '../asyncInjectors';
 
 // Fixtures
 
@@ -31,9 +27,7 @@ function* testSaga() {
   yield put({ type: 'TEST', payload: 'yup' });
 }
 
-const sagas = [
-  testSaga,
-];
+const sagas = [testSaga];
 
 describe('asyncInjectors', () => {
   let store;

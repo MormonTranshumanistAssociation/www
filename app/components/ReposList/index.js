@@ -11,9 +11,7 @@ function ReposList({ loading, error, repos }) {
   }
 
   if (error !== false) {
-    const ErrorComponent = () => (
-      <ListItem item={'Something went wrong, please try again!'} />
-    );
+    const ErrorComponent = () => <ListItem item={'Something went wrong, please try again!'} />;
     return <List component={ErrorComponent} />;
   }
 

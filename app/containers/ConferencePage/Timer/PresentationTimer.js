@@ -42,7 +42,7 @@ const FlashingCover = styled.div`
   right: 0;
   bottom: 0;
   background: black;
-  ${(p) => p.animate ? `animation: ${warningAnimation} 0.25s alternate-reverse infinite;` : 'opacity: 0;'}
+  ${p => (p.animate ? `animation: ${warningAnimation} 0.25s alternate-reverse infinite;` : 'opacity: 0;')};
 `;
 
 const ProgressCover = styled.div`
@@ -65,7 +65,7 @@ const PresenterImage = styled.img`
   object-fit: cover;
   z-index: 1;
   transform: translate(0, -10vh);
-  box-shadow: 0 0.5vmin 2vmin 0.5vmin rgba(0,0,0,.3);
+  box-shadow: 0 0.5vmin 2vmin 0.5vmin rgba(0, 0, 0, 0.3);
 `;
 
 const PresenterName = styled.div`
@@ -116,7 +116,6 @@ const TimeUpMessage = styled.div`
 `;
 
 class TimerPage extends React.PureComponent {
-
   state = {
     startTime: new Date(),
     seconds: 0,
@@ -154,8 +153,8 @@ class TimerPage extends React.PureComponent {
     const GREEN = 126;
     const RED = 9;
     const durationSeconds = duration * 60;
-    const warnSeconds = ((seconds - (durationSeconds - WARN_SECS)) / (durationSeconds - WARN_SECS)) * WARN_SECS;
-    const warningTime = Math.min(WARN_SECS, (secondsLeft > WARN_SECS) ? 0 : warnSeconds);
+    const warnSeconds = (seconds - (durationSeconds - WARN_SECS)) / (durationSeconds - WARN_SECS) * WARN_SECS;
+    const warningTime = Math.min(WARN_SECS, secondsLeft > WARN_SECS ? 0 : warnSeconds);
     const hue = GREEN - Math.floor((GREEN - RED) * (warningTime / WARN_SECS));
     const brightness = 25 + Math.floor((50 - 25) * progress);
     const color = `hsl(${hue}, 100%, ${brightness}%)`;
@@ -186,37 +185,39 @@ TimerPage.propTypes = {
  */
 const PresentationTimer = ({ presentation }) => (
   <TimerPage
-    ParticlesComponent={<Particles
-      width="100%"
-      height="100%"
-      style={{ position: 'absolute', top: 0, bottom: 0, left: 0, right: 0 }}
-      params={{
-        particles: {
-          number: {
-            value: 100,
+    ParticlesComponent={
+      <Particles
+        width="100%"
+        height="100%"
+        style={{ position: 'absolute', top: 0, bottom: 0, left: 0, right: 0 }}
+        params={{
+          particles: {
+            number: {
+              value: 100,
+            },
+            opacity: {
+              value: 0.5,
+              random: true,
+              anim: { enable: true, speed: 0.1 },
+            },
+            size: {
+              value: 5,
+              random: true,
+              anim: { enable: true, speed: 0.5 },
+            },
+            line_linked: {
+              enable: false,
+            },
+            move: {
+              speed: 2,
+              out_mode: 'bounce',
+              bounce: true,
+              random: true,
+            },
           },
-          opacity: {
-            value: 0.5,
-            random: true,
-            anim: { enable: true, speed: 0.1 },
-          },
-          size: {
-            value: 5,
-            random: true,
-            anim: { enable: true, speed: 0.5 },
-          },
-          line_linked: {
-            enable: false,
-          },
-          move: {
-            speed: 2,
-            out_mode: 'bounce',
-            bounce: true,
-            random: true,
-          },
-        },
-      }}
-    />}
+        }}
+      />
+    }
     presentation={presentation}
   />
 );
@@ -227,13 +228,12 @@ PresentationTimer.propTypes = {
 PresentationTimer.fragments = {
   presentation: gql`
     fragment PresentationTimerPresentation on Presentation {
-      duration,
+      duration
       presenter {
         displayName
       }
     }
   `,
 };
-
 
 export default PresentationTimer;

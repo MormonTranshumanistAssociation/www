@@ -9,7 +9,7 @@ import { toSafeId } from '../helpers';
 
 const Wrapper = styled.div`
   display: flex;
-  margin: ${(p) => p.isBreak ? '2.5em 0' : '0 0 1em 0'} !important;
+  margin: ${p => (p.isBreak ? '2.5em 0' : '0 0 1em 0')} !important;
 `;
 
 const Time = styled.div`
@@ -35,8 +35,7 @@ const PresentationName = styled.span`
   font-style: italic;
 `;
 
-const BreakName = styled.span`
-`;
+const BreakName = styled.span``;
 
 const Title = styled.h2`
   flex: 1;
@@ -50,7 +49,7 @@ const Duration = styled.span`
 `;
 
 const Delta = styled.span`
-  color: ${(p) => p.color};
+  color: ${p => p.color};
 `;
 
 const ScheduleColor = ({ presentation, children }) => {
@@ -79,7 +78,7 @@ Difference.propTypes = {
   presentation: PropTypes.object,
 };
 
-const formattedDate = (date) => {
+const formattedDate = date => {
   let formatted = moment(date).format('LT');
   formatted = formatted.replace(/ PM/g, 'pm');
   formatted = formatted.replace(/ AM/g, 'am');
@@ -97,21 +96,23 @@ const Presentation = ({ presentation }) => {
         <ScheduleColor presentation={presentation}>{formattedDate(presentation.adjustedMoment)}</ScheduleColor>
       </Time>
       <Info>
-        {presenterName &&
+        {presenterName && (
           <Title>
             <Link to={`/conf/presenters#${toSafeId(presentation.presenter.displayName)}`}>
               <Name>{presenterName}</Name>
             </Link>
             {presentation.title && <PresentationName>{presentation.title}</PresentationName>}
           </Title>
-        }
-        {!presenterName &&
+        )}
+        {!presenterName && (
           <Title>
             {presentation.title && <BreakName>{presentation.title}</BreakName>}
             <Duration>{`(${presentation.adjustedDuration} mins)`}</Duration>
           </Title>
-        }
-        <DifferenceWrapper><Difference presentation={presentation} /></DifferenceWrapper>
+        )}
+        <DifferenceWrapper>
+          <Difference presentation={presentation} />
+        </DifferenceWrapper>
       </Info>
     </Wrapper>
   );

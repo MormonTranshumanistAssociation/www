@@ -11,7 +11,7 @@ const Quote = styled.h3`
   padding: 0 1rem;
   margin: 0;
   line-height: 1.25em;
-  color: #525B3A;
+  color: #525b3a;
 `;
 
 const QuoteSource = styled(Quote)`
@@ -24,8 +24,8 @@ const NewGodLinkImage = styled.img`
   width: 310px;
   height: auto;
   margin: 2em 0 6em 0;
-  transition: .2s all;
-  box-shadow: 0 1px 4px rgba(0,0,0,.6);
+  transition: 0.2s all;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 
   &:hover {
     -webkit-filter: brightness(75%);
@@ -34,10 +34,18 @@ const NewGodLinkImage = styled.img`
 
 const TheosisSection = () => (
   <Section>
-    <Quote><FormattedMessage {...messages.newGodQuote} /></Quote>
-    <a href="//new-god-argument.com"><NewGodLinkImage src={NewGodThumbImage} /></a>
-    <Quote><FormattedMessage {...messages.confVideosQuote} /></Quote>
-    <QuoteSource><FormattedMessage {...messages.josephSmith} /></QuoteSource>
+    <Quote>
+      <FormattedMessage {...messages.newGodQuote} />
+    </Quote>
+    <a href="//new-god-argument.com">
+      <NewGodLinkImage src={NewGodThumbImage} />
+    </a>
+    <Quote>
+      <FormattedMessage {...messages.confVideosQuote} />
+    </Quote>
+    <QuoteSource>
+      <FormattedMessage {...messages.josephSmith} />
+    </QuoteSource>
     <ConferenceVideoNav />
   </Section>
 );

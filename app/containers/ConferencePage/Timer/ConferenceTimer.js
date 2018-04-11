@@ -55,9 +55,7 @@ export default () => (
           // - On new presentation, reset seconds
           const presentation = presentations[0];
           const second = 0;
-          return (
-            <PresentationTimer presentation={presentation} second={second} />
-          );
+          return <PresentationTimer presentation={presentation} second={second} />;
         }}
       </Query>
     </MarkdownProfiles>

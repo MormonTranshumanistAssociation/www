@@ -31,14 +31,18 @@ echo('Building the Webpack DLL...');
 if (!exists(dllManifestPath)) {
   writeFile(
     dllManifestPath,
-    JSON.stringify(defaults({
-      name: 'react-boilerplate-dlls',
-      private: true,
-      author: pkg.author,
-      repository: pkg.repository,
-      version: pkg.version,
-    }), null, 2),
-    'utf8'
+    JSON.stringify(
+      defaults({
+        name: 'react-boilerplate-dlls',
+        private: true,
+        author: pkg.author,
+        repository: pkg.repository,
+        version: pkg.version,
+      }),
+      null,
+      2,
+    ),
+    'utf8',
   );
 }
 

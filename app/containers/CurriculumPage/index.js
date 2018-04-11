@@ -48,13 +48,13 @@ import ToC from './toc';
 
 const GlossaryProvidingMarkdown = styled.div`
   img {
-    width: 100%; 
-    box-shadow: 0 1px 4px rgba(0,0,0,.6);
+    width: 100%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
   }
   strong {
     position: relative;
     cursor: help;
-    color: rgb(100,148,0);
+    color: rgb(100, 148, 0);
     display: inline-block;
     font-weight: 500;
     padding: 0 2px;
@@ -78,8 +78,8 @@ const GlossaryProvidingMarkdown = styled.div`
     visibility: hidden;
     padding: 12px 16px;
     color: #fff;
-    font-size: .9em;
-    background: rgba(50,50,50,.9);
+    font-size: 0.9em;
+    background: rgba(50, 50, 50, 0.9);
     //transition: opacity 200ms;
     border-radius: 3px;
   }
@@ -88,33 +88,32 @@ const GlossaryProvidingMarkdown = styled.div`
     opacity: 1;
   }
   strong:hover > code:after {
-    content: " ";
+    content: ' ';
     position: absolute;
     top: 100%; /* At the bottom of the tooltip */
     left: 4em;
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: rgba(50,50,50,.9) transparent transparent transparent;
+    border-color: rgba(50, 50, 50, 0.9) transparent transparent transparent;
   }
   ul > li {
     list-style-type: disc;
   }
-
 `;
 
-const CurriculumPage = (props) => (
+const CurriculumPage = props => (
   <div>
     <Header />
     <article>
       <Helmet title="Primers" />
       <Section>
         <PageWithContents>
-          <div><ToC /></div>
+          <div>
+            <ToC />
+          </div>
           <SingleColumn>
-            <GlossaryProvidingMarkdown>
-              {props.children}
-            </GlossaryProvidingMarkdown>
+            <GlossaryProvidingMarkdown>{props.children}</GlossaryProvidingMarkdown>
           </SingleColumn>
         </PageWithContents>
       </Section>

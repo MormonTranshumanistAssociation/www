@@ -19,16 +19,16 @@ const ContributeLink = styled.a`
   color: white;
   padding: 0.2rem 1.75rem;
   border-radius: 2px;
-  background: rgba(0,0,0,.35); 
+  background: rgba(0, 0, 0, 0.35);
   font-size: 0.9rem;
   text-decoration: none;
   margin: 12px 0;
   display: inline-block;
   flex: 0;
-  
+
   &:hover {
     text-decoration: underline;
-    background: rgba(0,0,0,.5);
+    background: rgba(0, 0, 0, 0.5);
   }
 `;
 
@@ -44,7 +44,7 @@ const TopAlignedSection = styled(Section)`
 
 const Overlay = styled.div`
   position: absolute;
-  background: rgba(255,255,255,.5);
+  background: rgba(255, 255, 255, 0.5);
   top: 0;
   right: 0;
   bottom: 0;
@@ -69,18 +69,18 @@ const ConferenceBanner = styled.div`
   width: 100%;
   margin-bottom: 30px;
   text-decoration: none !important;
-  border: 5px solid rgb(255,133,5);
+  border: 5px solid rgb(255, 133, 5);
   cursor: pointer;
   &:hover {
     text-decoration: none !important;
-    box-shadow: 0 2px 10px 5px rgba(0,0,0,.35);
+    box-shadow: 0 2px 10px 5px rgba(0, 0, 0, 0.35);
   }
 `;
 
 const RegistrationHeader = styled.a`
   display: block;
-  text-align: center; 
-  background: rgb(255,133,5);
+  text-align: center;
+  background: rgb(255, 133, 5);
   padding: 8px 24px;
   color: white;
   font-size: 2rem;
@@ -100,8 +100,8 @@ const Spacer = styled.div`
 const HeadlinesSection = styled.div`
   z-index: 1;
   margin-top: 3em;
-  background: rgba(0,0,0,.35);
-  min-height: 111px;    // height if no headline has more than 3 lines of text; prevents jitter when content loads
+  background: rgba(0, 0, 0, 0.35);
+  min-height: 111px; // height if no headline has more than 3 lines of text; prevents jitter when content loads
 `;
 
 const SplashSection = () => (
@@ -111,9 +111,7 @@ const SplashSection = () => (
     <ElevatedContainer>
       <RouterLink to="/conf">
         <ConferenceBanner>
-          <RegistrationHeader>
-            Join our live video stream!
-          </RegistrationHeader>
+          <RegistrationHeader>Join our live video stream!</RegistrationHeader>
           <ConferenceImage alt="2018 Conference" src={ConfImage} />
         </ConferenceBanner>
       </RouterLink>
