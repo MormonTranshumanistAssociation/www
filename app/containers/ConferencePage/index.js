@@ -11,14 +11,14 @@ import ToC from './toc';
 import authStore from './authStore';
 import apolloClient from './apolloClient';
 
-const MarkdownPage = styled.div` 
+const MarkdownPage = styled.div`
   h1 + p > img {
     width: 100%;
-    box-shadow: 0 1px 4px rgba(0,0,0,.6);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
   }
 `;
 
-const ConferencePage = (props) => (
+const ConferencePage = props => (
   <ApolloProvider client={apolloClient}>
     <MobxProvider authStore={authStore}>
       <div>
@@ -27,11 +27,11 @@ const ConferencePage = (props) => (
           <Helmet title="Conference" />
           <Section>
             <PageWithContents>
-              <div><ToC /></div>
+              <div>
+                <ToC />
+              </div>
               <SingleColumn>
-                <MarkdownPage>
-                  {props.children}
-                </MarkdownPage>
+                <MarkdownPage>{props.children}</MarkdownPage>
               </SingleColumn>
             </PageWithContents>
           </Section>

@@ -17,7 +17,7 @@ class ConferenceTimer extends React.Component {
   componentWillUnmount() {
     document.removeEventListener('keydown', this.keyDownListener);
   }
-  handleKeyDown = (event) => {
+  handleKeyDown = event => {
     const { authStore } = this.props;
     console.log({ code: event.keyCode, B: KeyCodes.B });
     if (!authStore.token) {
@@ -42,9 +42,9 @@ class ConferenceTimer extends React.Component {
   handlePresentationAdvance = () => {
     console.log('handlePresentationAdvance');
     const { setActivePresentation, presentations, activePresentationId } = this.props;
-    const currentIdx = _.findIndex(presentations, (p) => p.id === activePresentationId);
+    const currentIdx = _.findIndex(presentations, p => p.id === activePresentationId);
     let nextIdx;
-    if (currentIdx === (_.size(presentations) - 1)) {
+    if (currentIdx === _.size(presentations) - 1) {
       nextIdx = null;
     } else if (currentIdx === -1) {
       nextIdx = 0;
@@ -59,7 +59,7 @@ class ConferenceTimer extends React.Component {
   handlePresentationReverse = () => {
     console.log('handlePresentationAdvance');
     const { setActivePresentation, presentations, activePresentationId } = this.props;
-    const currentIdx = _.findIndex(presentations, (p) => p.id === activePresentationId);
+    const currentIdx = _.findIndex(presentations, p => p.id === activePresentationId);
     let nextIdx;
     if (currentIdx === null || currentIdx === 0) {
       nextIdx = null;
@@ -70,7 +70,6 @@ class ConferenceTimer extends React.Component {
     console.log({ nextIdx, presentationId });
     setActivePresentation({ presentationId });
   };
-
 
   render() {
     const { presentations, activePresentationId } = this.props;
@@ -83,9 +82,7 @@ class ConferenceTimer extends React.Component {
     //     setActivePresentation(activePresentationId);
     //   }
     // }
-    const activePresentation = _.find(presentations,
-      (presentation) => presentation.id === activePresentationId
-    );
+    const activePresentation = _.find(presentations, presentation => presentation.id === activePresentationId);
 
     // if (!activePresentation) {
     //   console.error('Could not find active presentation in query results', { activePresentation });
@@ -106,13 +103,10 @@ class ConferenceTimer extends React.Component {
     // If 'B' key is pressed, set selected presentation backward
     // If 'F' key is pressed, advanced selected presentation
 
-
     // If right arrow is pressed, advance time by 10 mins. If shift-right-arrow is pressed, advance by 1 hour
     // If left arrow is pressed, rewind time by 10 mins. If shift-left-arrow is press, rewind by 1 hour
 
-    return (
-      <PresentationTimer onKeyDown={this.handleKeyDown} presentation={activePresentation} second={second} />
-    );
+    return <PresentationTimer onKeyDown={this.handleKeyDown} presentation={activePresentation} second={second} />;
   }
 }
 
@@ -126,3 +120,4 @@ ConferenceTimer.propTypes = {
 };
 
 export default inject('authStore')(observer(ConferenceTimer));
+ƒ;

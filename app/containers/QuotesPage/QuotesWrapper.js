@@ -6,7 +6,7 @@ const Wrapper = styled.article`
   ul {
     display: inline-block;
     vertical-align: top;
-    width: calc(400px / 2)
+    width: calc(400px / 2);
   }
   ul + div + h3 {
     margin-top: 2rem;
@@ -16,7 +16,7 @@ const Wrapper = styled.article`
     height: auto;
     float: right;
     margin-left: 16px;
-    box-shadow: 0 1px 4px rgba(0,0,0,.6);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
   }
   h2 > img {
     width: 100%;
@@ -24,7 +24,7 @@ const Wrapper = styled.article`
     height: auto;
     float: none;
     margin: 0 0 1.5em 0;
-    box-shadow: 0 1px 4px rgba(0,0,0,.6);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
   }
   h2 {
     margin-bottom: 0;
@@ -54,6 +54,10 @@ const Wrapper = styled.article`
   }
 `;
 
-const QuotesWrapper = () => <Wrapper><QuotesMarkdown /></Wrapper>;
+const QuotesWrapper = () => (
+  <Wrapper>
+    <QuotesMarkdown />
+  </Wrapper>
+);
 
 export default QuotesWrapper;

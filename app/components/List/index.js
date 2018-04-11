@@ -5,23 +5,19 @@ import Wrapper from './Wrapper';
 
 function List(props) {
   const ComponentToRender = props.component;
-  let content = (<div></div>);
+  let content = <div />;
 
   // If we have items, render them
   if (props.items) {
-    content = props.items.map((item, index) => (
-      <ComponentToRender key={`item-${index}`} item={item} />
-    ));
+    content = props.items.map((item, index) => <ComponentToRender key={`item-${index}`} item={item} />);
   } else {
     // Otherwise render a single component
-    content = (<ComponentToRender />);
+    content = <ComponentToRender />;
   }
 
   return (
     <Wrapper>
-      <Ul>
-        {content}
-      </Ul>
+      <Ul>{content}</Ul>
     </Wrapper>
   );
 }

@@ -1,7 +1,6 @@
 import { action, extendObservable } from 'mobx';
 
 class AuthStore {
-
   constructor() {
     extendObservable(this, {
       token: localStorage.getItem('conf-token'),

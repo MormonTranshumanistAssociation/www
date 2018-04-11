@@ -6,11 +6,11 @@ import { FormattedMessage } from 'react-intl';
 import loadjs from 'loadjs';
 import messages from './messages';
 
-const MemberLocationSpreadsheet = 'https://docs.google.com/spreadsheets/d/1RI22NUmZT8B70wHAkiJnlIqWMSKj46Bvxd-WuFeUp4E/gviz/tq?gid=540714092&headers=1';
-const DefaultLocation = { latitude: '39.499741', longitude: '-111.547318' };    // Utah
+const MemberLocationSpreadsheet =
+  'https://docs.google.com/spreadsheets/d/1RI22NUmZT8B70wHAkiJnlIqWMSKj46Bvxd-WuFeUp4E/gviz/tq?gid=540714092&headers=1';
+const DefaultLocation = { latitude: '39.499741', longitude: '-111.547318' }; // Utah
 
 class Membership extends React.Component {
-
   state = {
     memberCount: '…',
     countryCount: '…',
@@ -26,24 +26,24 @@ class Membership extends React.Component {
     // (see Feed component and https://developer.yahoo.com/yql/console/)
 
     if (typeof google === 'undefined') {
-      loadjs([
+      loadjs(
+        [
           'https://www.gstatic.com/charts/loader.js',
           'https://maps.googleapis.com/maps/api/js?key=AIzaSyCFkUj-L6xGl27TM7oaNifLAaJhV_s8sJA',
         ],
-        'googlecharts'
+        'googlecharts',
       );
       loadjs.ready('googlecharts', {
         success: () => {
           // console.log('Loaded googlecharts');
-          google.charts.load('current', {packages: ['corechart']});
+          google.charts.load('current', { packages: ['corechart'] });
           google.charts.setOnLoadCallback(this.drawGID);
         },
-        error: (depsNotFound) => {
+        error: depsNotFound => {
           console.error(depsNotFound); // eslint-disable-line no-console
         },
       });
-    }
-    else {
+    } else {
       this.drawGID();
     }
   }
@@ -54,7 +54,7 @@ class Membership extends React.Component {
     query.send(this.handleQueryResponse);
   };
 
-  handleQueryResponse = async (response) => {
+  handleQueryResponse = async response => {
     if (response.isError()) {
       alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
       return;
@@ -65,7 +65,7 @@ class Membership extends React.Component {
     let memberCount = 0;
     const countries = {};
     let locations = []; // [['Location', 'Count']];
-    for (let i=0; i < rowCount; ++i) {
+    for (let i = 0; i < rowCount; ++i) {
       let country = table.getValue(i, 0) || 'USA';
       if (country === 'USA') {
         country = 'US';
@@ -84,7 +84,7 @@ class Membership extends React.Component {
     this.setState({ memberCount, countryCount: _.size(countries) });
     const usLocations = _.filter(locations, { country: 'US' });
     const usCount = _.reduce(usLocations, (result, location) => result + location.count, 0);
-    const otherLocations = _.filter(locations, (location) => location.country !== 'US');
+    const otherLocations = _.filter(locations, location => location.country !== 'US');
 
     const worldLocations = [{ country: 'US', count: usCount }, ...otherLocations];
 
@@ -104,7 +104,7 @@ class Membership extends React.Component {
       colorAxis: {
         minValue: 0,
         maxValue: 50,
-        colors: ['#f0f2ec', '#659400']
+        colors: ['#f0f2ec', '#659400'],
       },
     });
 
@@ -123,7 +123,7 @@ class Membership extends React.Component {
       colorAxis: {
         minValue: 0,
         maxValue: 50,
-        colors: ['#f0f2ec', '#659400']
+        colors: ['#f0f2ec', '#659400'],
       },
     });
 

@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 
 const Nav = styled.nav`
   text-align: left;
-  border-left: 1px solid rgba(0,0,0,.2);
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
   list-style-type: none;
   padding: 0 14px;
 `;
@@ -22,23 +22,21 @@ export const EntryCss = css`
   display: block;
   text-indent: -1em;
   padding-left: 1em;
-  padding-bottom: .4em;
+  padding-bottom: 0.4em;
   line-height: 1.33em;
   @media screen and (max-width: 672px) {
     line-height: 1.2em;
-    padding-bottom: 0.4em; 
+    padding-bottom: 0.4em;
   }
 `;
 
 export const Entry = styled(Link)`
-  ${EntryCss}
+  ${EntryCss};
 `;
 
-export const TableOfContents = (props) => (
+export const TableOfContents = props => (
   <Wrapper>
-    <Nav>
-      {props.children}
-    </Nav>
+    <Nav>{props.children}</Nav>
   </Wrapper>
 );
 TableOfContents.propTypes = {

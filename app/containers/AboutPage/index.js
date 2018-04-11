@@ -12,7 +12,7 @@ import { SingleColumn } from 'components/Columns';
 import PageWithContents from 'components/PageWithContents';
 import ToC from './toc';
 
-const AboutPage = (props) => (
+const AboutPage = props => (
   <div>
     <Header />
     <article>
@@ -20,9 +20,7 @@ const AboutPage = (props) => (
       <Section>
         <PageWithContents>
           <ToC />
-          <SingleColumn>
-            {props.children}
-          </SingleColumn>
+          <SingleColumn>{props.children}</SingleColumn>
         </PageWithContents>
       </Section>
     </article>

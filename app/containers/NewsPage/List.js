@@ -16,11 +16,11 @@ const Thumbnail = styled.img`
   margin-top: 3px;
   margin-right: 12px;
   margin-bottom: 0;
-  box-shadow: 0 1px 4px rgba(0,0,0,.6);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 `;
 
 const PublishedDate = styled.div`
-  color: rgba(0,0,0,.5);
+  color: rgba(0, 0, 0, 0.5);
   font-size: 0.8rem;
   margin: 40px 0 -32px 0;
 `;
@@ -57,25 +57,26 @@ class NewsPage extends React.PureComponent {
         <Feed
           url="http://news.transfigurism.org/feeds/posts/default?redirect=false"
           select="id, published, title, content, thumbnail"
-          renderer={(result) => {
+          renderer={result => {
             const entries = _.get(result, 'query.results.entry', []);
             return (
               <article>
-                { _.map(entries, (entry) => {
+                {_.map(entries, entry => {
                   const match = /post-(.*)$/.exec(entry.id);
                   const shortId = match[1];
                   return (
                     <div id={entry.id} key={entry.id}>
                       <PublishedDate>{moment(entry.published).format('LL')}</PublishedDate>
-                      <Link to={`/news/${shortId}`}><h2>{entry.title.content}</h2></Link>
-                      { !!entry.thumbnail && <Thumbnail src={entry.thumbnail.url} /> }
+                      <Link to={`/news/${shortId}`}>
+                        <h2>{entry.title.content}</h2>
+                      </Link>
+                      {!!entry.thumbnail && <Thumbnail src={entry.thumbnail.url} />}
                       <div>
                         <span dangerouslySetInnerHTML={{ __html: html2text(entry.content.content, { length: 400 }) }} />
                         <ReadMoreLink to={`/news/${shortId}`}>
                           <FormattedMessage id="readMore" defaultMessage="Read more" />
                         </ReadMoreLink>
                       </div>
-
                     </div>
                   );
                 })}
@@ -85,13 +86,14 @@ class NewsPage extends React.PureComponent {
           limit={this.state.limit}
         />
         <MoreButtonWrapper>
-          <Button><a onClick={this.onMorePress}>More news...</a></Button>
+          <Button>
+            <a onClick={this.onMorePress}>More news...</a>
+          </Button>
         </MoreButtonWrapper>
       </div>
     );
   }
 }
-NewsPage.propTypes = {
-};
+NewsPage.propTypes = {};
 
 export default NewsPage;

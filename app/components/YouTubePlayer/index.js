@@ -11,12 +11,11 @@ const Player = styled.div`
   overflow: hidden;
   max-width: 100%;
   background: #000;
-  transition: .2s all;    
+  transition: 0.2s all;
 
   &:hover img {
     -webkit-filter: brightness(75%);
   }
-
 `;
 
 const SizedPlayButtonOverlay = styled.div`
@@ -27,7 +26,7 @@ const SizedPlayButtonOverlay = styled.div`
   margin-left: -36px;
   margin-top: -36px;
   position: absolute;
-  background: url("//i.imgur.com/TxzC70f.png") no-repeat;
+  background: url('//i.imgur.com/TxzC70f.png') no-repeat;
   cursor: pointer;
 `;
 
@@ -54,9 +53,8 @@ const SizedThumbImage = styled.img`
   border: none;
   height: auto;
   cursor: pointer;
-  transition: .2s all;    
+  transition: 0.2s all;
 `;
-
 
 export const ThumbImage = ({ videoId }) => (
   <SizedThumbImage alt="Video Player" src={`//i.ytimg.com/vi/${videoId}/hqdefault.jpg`} />
@@ -80,9 +78,9 @@ const ModalCloseIcon = styled(CloseIcon)`
   padding: 5px;
   border: 2px solid white;
   cursor: pointer;
-  background: rgba(0,0,0,.3);
+  background: rgba(0, 0, 0, 0.3);
   &:hover {
-    background: rgba(0,0,0,.7);
+    background: rgba(0, 0, 0, 0.7);
   }
 `;
 
@@ -93,11 +91,11 @@ const ModalIframeWrapper = styled.div`
   height: 0;
   overflow: hidden;
   background: #000;
-  transition: .2s all;
+  transition: 0.2s all;
   z-index: 9999;
 `;
 
-const ModalPlayer = (props) => {
+const ModalPlayer = props => {
   const { children, isOpen, onClose } = props;
   const modalStyle = {
     overlay: {
@@ -130,9 +128,7 @@ ModalPlayer.propTypes = {
   onClose: React.PropTypes.func,
 };
 
-
 class YouTubePlayer extends React.Component {
-
   static propTypes = {
     videoId: React.PropTypes.string.isRequired,
     modal: React.PropTypes.bool,
@@ -155,25 +151,25 @@ class YouTubePlayer extends React.Component {
   render() {
     const { isPlaying, isModalOpen } = this.state;
     const { videoId, modal, hiddenOverlay } = this.props;
-    const Wrapper = (modal
-      ? (props) => <ModalPlayer isOpen={isModalOpen} onClose={this.onModalClose}>{props.children}</ModalPlayer>
-      : (props) => <div>{props.children}</div>
-    );
+    const Wrapper = modal
+      ? props => (
+          <ModalPlayer isOpen={isModalOpen} onClose={this.onModalClose}>
+            {props.children}
+          </ModalPlayer>
+        )
+      : props => <div>{props.children}</div>;
     return (
       <Player>
-        { isPlaying
-          ? (
-            <Wrapper>
-              <SizedIframe src={`//www.youtube.com/embed/${videoId}?autoplay=1`} frameBorder="0" allowFullScreen="1" />
-            </Wrapper>
-          )
-          : (
-            <div onTouchTap={this.onClick}>
-              <ThumbImage videoId={videoId} />
-              { !hiddenOverlay && <SizedPlayButtonOverlay /> }
-            </div>
-          )
-        }
+        {isPlaying ? (
+          <Wrapper>
+            <SizedIframe src={`//www.youtube.com/embed/${videoId}?autoplay=1`} frameBorder="0" allowFullScreen="1" />
+          </Wrapper>
+        ) : (
+          <div onTouchTap={this.onClick}>
+            <ThumbImage videoId={videoId} />
+            {!hiddenOverlay && <SizedPlayButtonOverlay />}
+          </div>
+        )}
       </Player>
     );
   }

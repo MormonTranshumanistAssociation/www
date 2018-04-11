@@ -21,7 +21,7 @@ const ErrorNumber = styled.h2`
   font-family: 'Open Sans', Helvetica, sans;
   font-size: 3em;
   font-weight: 300;
-  color: rgba(0,0,0,.3);
+  color: rgba(0, 0, 0, 0.3);
   margin: 0 0 20px 0;
 `;
 export default function NotFound() {
@@ -31,7 +31,9 @@ export default function NotFound() {
       <FullPageSection>
         <SectionContent>
           <ErrorNumber>404</ErrorNumber>
-          <H1><FormattedMessage {...messages.header} /></H1>
+          <H1>
+            <FormattedMessage {...messages.header} />
+          </H1>
         </SectionContent>
       </FullPageSection>
     </div>

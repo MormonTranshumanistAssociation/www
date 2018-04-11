@@ -23,7 +23,7 @@ const VideoWrapper = styled.div`
   &:last-child {
     margin-right: 2em;
   }
-  box-shadow: 0 1px 4px rgba(0,0,0,.6);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 `;
 
 /*
@@ -50,20 +50,19 @@ const MoreVideosLinkText = styled.p`
 */
 
 const VideoThumb = ({ videoId }) => (
-  <VideoWrapper><YouTubePlayer videoId={videoId} modal hiddenOverlay /></VideoWrapper>
+  <VideoWrapper>
+    <YouTubePlayer videoId={videoId} modal hiddenOverlay />
+  </VideoWrapper>
 );
 VideoThumb.propTypes = { videoId: React.PropTypes.string.isRequired };
 
-
 const ConferenceVideoNav = () => (
   <NavBar
-    innerRef={
-      (c) => {
-        if (c && c.scrollLeft === 0) {
-          c.scrollLeft = 100; // eslint-disable-line no-param-reassign
-        }
+    innerRef={c => {
+      if (c && c.scrollLeft === 0) {
+        c.scrollLeft = 100; // eslint-disable-line no-param-reassign
       }
-    }
+    }}
   >
     <VideoThumb videoId="B14yKHwe9HU" />
     <VideoThumb videoId="8YyImflOFA4" />

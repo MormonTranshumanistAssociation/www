@@ -18,7 +18,7 @@ const PrintOnly = styled.div`
     margin: -24px 0 24px 0;
     padding: 0;
     border-radius: 2px;
-    font-size: .9em;
+    font-size: 0.9em;
     color: #659400;
     line-height: 1.2;
     div {
@@ -31,7 +31,7 @@ const PrintOnly = styled.div`
 const ScreenOnly = styled.div`
   margin: -18px 0 24px 0;
   padding: 0;
-  font-size: .9em;
+  font-size: 0.9em;
   line-height: 1.2;
   > div {
     display: inline-block;
@@ -40,18 +40,25 @@ const ScreenOnly = styled.div`
       border-radius: 2px;
       display: inline-block;
       padding: 0.2em 1em;
-      background-color: rgba(101,148,0,0.15);
-      b, a {
+      background-color: rgba(101, 148, 0, 0.15);
+      b,
+      a {
         color: #659400;
       }
     }
     #twitter-link {
-      background-color: #1DA1F2;
-      &, a { color: #fff };
+      background-color: #1da1f2;
+      &,
+      a {
+        color: #fff;
+      }
     }
     #facebook-link {
       background-color: #4267b2;
-      &, a { color: #fff };
+      &,
+      a {
+        color: #fff;
+      }
     }
   }
   @media print {
@@ -85,8 +92,16 @@ export default () => (
       <div>Join us online at https://transfigurism.org/conf</div>
     </PrintOnly>
     <ScreenOnly>
-      <div><div id="twitter-link"><a href="https://twitter.com/hashtag/mtaconf">#mtaconf</a></div></div>
-      <div><div id="facebook-link"><a href="https://www.facebook.com/events/158279478213858/">Facebook</a></div></div>
+      <div>
+        <div id="twitter-link">
+          <a href="https://twitter.com/hashtag/mtaconf">#mtaconf</a>
+        </div>
+      </div>
+      <div>
+        <div id="facebook-link">
+          <a href="https://www.facebook.com/events/158279478213858/">Facebook</a>
+        </div>
+      </div>
     </ScreenOnly>
     <MarkdownProfiles>
       <Query query={query} variables={{ confId: CONFERENCE_ID }} pollInterval={10000}>
@@ -101,12 +116,9 @@ export default () => (
           const presentations = scheduler.getDecoratedPresentations();
           return (
             <div>
-              {
-                _.map(presentations, (presentation) => (
-                  <Presentation key={presentation.id} presentation={presentation} />
-                ))
-              }
-            </div>);
+              {_.map(presentations, presentation => <Presentation key={presentation.id} presentation={presentation} />)}
+            </div>
+          );
         }}
       </Query>
     </MarkdownProfiles>

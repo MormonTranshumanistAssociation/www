@@ -5,16 +5,14 @@ import Section from 'components/Section';
 import PageWithContents from 'components/PageWithContents';
 import { SingleColumn } from 'components/Columns';
 
-const MeetupPage = (props) => (
+const MeetupPage = props => (
   <div>
     <Header />
     <article>
       <Helmet title="Meetup" />
       <Section>
         <PageWithContents>
-          <SingleColumn>
-            {props.children}
-          </SingleColumn>
+          <SingleColumn>{props.children}</SingleColumn>
         </PageWithContents>
       </Section>
     </article>

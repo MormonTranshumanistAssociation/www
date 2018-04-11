@@ -8,17 +8,17 @@ import BannerImage from './banner.jpg';
 import Logo from './mta-logo.png';
 
 const BannerSection = styled(Section)`
-    background-position-y: top;
-    background-attachment: fixed;
-    margin: 0;
-    @media screen and (max-width: 672px) {
-      height: 1px;
-      padding: 0;
-      overflow-y: hidden;
-    }
-    @media (min-width: 672px) {
-      padding: 36px 0 0 0;
-    }
+  background-position-y: top;
+  background-attachment: fixed;
+  margin: 0;
+  @media screen and (max-width: 672px) {
+    height: 1px;
+    padding: 0;
+    overflow-y: hidden;
+  }
+  @media (min-width: 672px) {
+    padding: 36px 0 0 0;
+  }
 `;
 
 const LogoImg = styled(Img)`
@@ -31,7 +31,7 @@ const LogoImg = styled(Img)`
 `;
 
 export default () => (
-  <BannerSection img={BannerImage} >
+  <BannerSection img={BannerImage}>
     <SectionContent>
       <SingleColumn>
         <LogoImg src={Logo} alt="MTA Logo" />

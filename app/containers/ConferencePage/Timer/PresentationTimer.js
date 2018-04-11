@@ -48,7 +48,7 @@ const SplashImage = styled.img`
   transform: translate(-50%, -50%);
   height: auto;
   z-index: 1;
-  border: 5px solid rgb(255,133,5);
+  border: 5px solid rgb(255, 133, 5);
 `;
 
 const warningAnimation = keyframes`
@@ -67,7 +67,7 @@ const FlashingCover = styled.div`
   right: 0;
   bottom: 0;
   background: black;
-  ${(p) => p.animate ? `animation: ${warningAnimation} 0.25s alternate-reverse infinite;` : 'opacity: 0;'}
+  ${p => (p.animate ? `animation: ${warningAnimation} 0.25s alternate-reverse infinite;` : 'opacity: 0;')};
 `;
 
 const ProgressCover = styled.div`
@@ -90,7 +90,7 @@ const PresenterImage = styled.img`
   object-fit: cover;
   z-index: 1;
   transform: translate(0, -10vh);
-  box-shadow: 0 0.5vmin 2vmin 0.5vmin rgba(0,0,0,.3) !important;
+  box-shadow: 0 0.5vmin 2vmin 0.5vmin rgba(0, 0, 0, 0.3) !important;
 `;
 
 const PresenterName = styled.div`
@@ -145,7 +145,7 @@ const TimeRow = styled.div`
   text-align: right;
   margin: 0;
   padding: 0;
-  line-height: 1;  
+  line-height: 1;
 `;
 
 const flashingTimeSeparatorAnimation = keyframes`
@@ -183,7 +183,6 @@ function formatSeconds(seconds) {
 }
 
 class TimerPage extends React.PureComponent {
-
   state = {
     startTime: new Date(),
     seconds: 0,
@@ -204,10 +203,7 @@ class TimerPage extends React.PureComponent {
 
   render() {
     const { seconds } = this.state;
-    const {
-      ParticlesComponent,
-      presentation,
-    } = this.props;
+    const { ParticlesComponent, presentation } = this.props;
 
     // console.log('render', { presentation });
     const { duration } = presentation;
@@ -215,7 +211,7 @@ class TimerPage extends React.PureComponent {
 
     // fades from green to red over final portion of time that is equal to WARN_SECS
     // (lesser of 3 mins or 10% of duration)
-    const WARN_SECS = Math.min(180, 0.10 * durationSeconds);
+    const WARN_SECS = Math.min(180, 0.1 * durationSeconds);
     // flashes background over final portion of time that is equal to FLASH_SECS
     // (lesser of 30 secs or 5% of duration)
     const FLASH_SECS = Math.min(30, 0.05 * durationSeconds);
@@ -250,8 +246,12 @@ class TimerPage extends React.PureComponent {
         <PresenterName>{presenterName || presentationTitle}</PresenterName>
         {!!secondsLeft && (
           <TimeRemaining>
-            <TimeRow>{H} {H ? <FlashingTimeUnit>{M}</FlashingTimeUnit> : M}</TimeRow>
-            <TimeRow><FlashingTimeUnit>{S}</FlashingTimeUnit></TimeRow>
+            <TimeRow>
+              {H} {H ? <FlashingTimeUnit>{M}</FlashingTimeUnit> : M}
+            </TimeRow>
+            <TimeRow>
+              <FlashingTimeUnit>{S}</FlashingTimeUnit>
+            </TimeRow>
           </TimeRemaining>
         )}
         {!secondsLeft && <TimeUpMessage>{"Time's up!"}</TimeUpMessage>}
@@ -265,43 +265,44 @@ TimerPage.propTypes = {
   ParticlesComponent: PropTypes.node,
 };
 
-
 /**
  * Wrapper that passes ParticlesComponent so that particles canvas doesn't get re-rendered every time the timer
  * component is updated.
  */
 const PresentationTimer = ({ presentation }) => {
-  const ParticlesComponent = (<Particles
-    width="100%"
-    height="100%"
-    style={{ position: 'absolute', top: 0, bottom: 0, left: 0, right: 0 }}
-    params={{
-      particles: {
-        number: {
-          value: 100,
+  const ParticlesComponent = (
+    <Particles
+      width="100%"
+      height="100%"
+      style={{ position: 'absolute', top: 0, bottom: 0, left: 0, right: 0 }}
+      params={{
+        particles: {
+          number: {
+            value: 100,
+          },
+          opacity: {
+            value: 0.5,
+            random: true,
+            anim: { enable: true, speed: 0.1 },
+          },
+          size: {
+            value: 5,
+            random: true,
+            anim: { enable: true, speed: 0.5 },
+          },
+          line_linked: {
+            enable: false,
+          },
+          move: {
+            speed: 2,
+            out_mode: 'bounce',
+            bounce: true,
+            random: true,
+          },
         },
-        opacity: {
-          value: 0.5,
-          random: true,
-          anim: { enable: true, speed: 0.1 },
-        },
-        size: {
-          value: 5,
-          random: true,
-          anim: { enable: true, speed: 0.5 },
-        },
-        line_linked: {
-          enable: false,
-        },
-        move: {
-          speed: 2,
-          out_mode: 'bounce',
-          bounce: true,
-          random: true,
-        },
-      },
-    }}
-  />);
+      }}
+    />
+  );
   if (!presentation) {
     return (
       <Wrapper>
@@ -313,13 +314,9 @@ const PresentationTimer = ({ presentation }) => {
       </Wrapper>
     );
   }
-  return (
-    <TimerPage
-      ParticlesComponent={ParticlesComponent}
-      presentation={presentation}
-    />
-  );
+  return <TimerPage ParticlesComponent={ParticlesComponent} presentation={presentation} />;
 };
+
 PresentationTimer.propTypes = {
   presentation: PropTypes.object,
 };
@@ -336,6 +333,5 @@ PresentationTimer.fragments = {
     }
   `,
 };
-
 
 export default PresentationTimer;

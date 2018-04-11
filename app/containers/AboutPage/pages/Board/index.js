@@ -8,12 +8,10 @@ const Board = () => (
   <div>
     <Title>Board of Directors</Title>
     <MarkdownProfiles>
-      {
-        _.map(profilesReq.keys(), (key) => {
-          const Profile = profilesReq(key).default;
-          return <Profile key={key} />;
-        })
-      }
+      {_.map(profilesReq.keys(), key => {
+        const Profile = profilesReq(key).default;
+        return <Profile key={key} />;
+      })}
     </MarkdownProfiles>
   </div>
 );

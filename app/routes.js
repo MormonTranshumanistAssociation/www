@@ -3,11 +3,11 @@
 // See http://blog.mxstbr.com/2016/01/react-apps-with-pages for more information
 // about the code splitting business
 
-const errorLoading = (err) => {
+const errorLoading = err => {
   console.error('Dynamic page loading failed', err); // eslint-disable-line no-console
 };
 
-const loadModule = (cb) => (componentModule) => {
+const loadModule = cb => componentModule => {
   cb(null, componentModule.default);
 };
 
@@ -15,7 +15,9 @@ export default function createRoutes() {
   return [
     {
       getComponent(nextState, cb) {
-        import('containers/Page').then(loadModule(cb)).catch(errorLoading);
+        import('containers/Page')
+          .then(loadModule(cb))
+          .catch(errorLoading);
       },
       childRoutes: [
         {
@@ -26,26 +28,34 @@ export default function createRoutes() {
               .then(loadModule(cb))
               .catch(errorLoading);
           },
-        }, {
+        },
+        {
           path: '/news',
           name: 'news',
           getComponent(nextState, cb) {
-            import('containers/NewsPage').then(loadModule(cb)).catch(errorLoading);
+            import('containers/NewsPage')
+              .then(loadModule(cb))
+              .catch(errorLoading);
           },
           indexRoute: {
             getComponent(partialNextState, cb) {
-              import('containers/NewsPage/List').then(loadModule(cb)).catch(errorLoading);
+              import('containers/NewsPage/List')
+                .then(loadModule(cb))
+                .catch(errorLoading);
             },
           },
           childRoutes: [
             {
               path: '/news/:id',
               getComponent(nextState, cb) {
-                import('containers/NewsPage/Detail').then(loadModule(cb)).catch(errorLoading);
+                import('containers/NewsPage/Detail')
+                  .then(loadModule(cb))
+                  .catch(errorLoading);
               },
             },
           ],
-        }, {
+        },
+        {
           path: '/about',
           name: 'about',
           getComponent(nextState, cb) {
@@ -64,7 +74,9 @@ export default function createRoutes() {
             {
               path: 'transhumanist-declaration',
               getComponent(nextState, cb) {
-                import('containers/AboutPage/pages/TranshumanistDeclaration.md').then(loadModule(cb)).catch(errorLoading);
+                import('containers/AboutPage/pages/TranshumanistDeclaration.md')
+                  .then(loadModule(cb))
+                  .catch(errorLoading);
               },
             },
             {
@@ -78,190 +90,257 @@ export default function createRoutes() {
             {
               path: 'management',
               getComponent(nextState, cb) {
-                import('containers/AboutPage/pages/Management').then(loadModule(cb)).catch(errorLoading);
+                import('containers/AboutPage/pages/Management')
+                  .then(loadModule(cb))
+                  .catch(errorLoading);
               },
             },
             {
               path: 'board-of-directors',
               getComponent(nextState, cb) {
-                import('containers/AboutPage/pages/Board').then(loadModule(cb)).catch(errorLoading);
+                import('containers/AboutPage/pages/Board')
+                  .then(loadModule(cb))
+                  .catch(errorLoading);
               },
             },
             {
               path: 'members',
               getComponent(nextState, cb) {
-                import('containers/AboutPage/pages/Membership').then(loadModule(cb)).catch(errorLoading);
+                import('containers/AboutPage/pages/Membership')
+                  .then(loadModule(cb))
+                  .catch(errorLoading);
               },
             },
             {
               path: 'constitution',
               getComponent(nextState, cb) {
-                import('containers/AboutPage/pages/Constitution.md').then(loadModule(cb)).catch(errorLoading);
+                import('containers/AboutPage/pages/Constitution.md')
+                  .then(loadModule(cb))
+                  .catch(errorLoading);
               },
             },
             {
               path: 'articles-of-incorporation',
               getComponent(nextState, cb) {
-                import('containers/AboutPage/pages/ArticlesOfIncorporation.md').then(loadModule(cb)).catch(errorLoading);
+                import('containers/AboutPage/pages/ArticlesOfIncorporation.md')
+                  .then(loadModule(cb))
+                  .catch(errorLoading);
               },
             },
             {
               path: 'faq',
               getComponent(nextState, cb) {
-                import('containers/AboutPage/pages/FAQ.md').then(loadModule(cb)).catch(errorLoading);
+                import('containers/AboutPage/pages/FAQ.md')
+                  .then(loadModule(cb))
+                  .catch(errorLoading);
               },
             },
           ],
-        }, {
+        },
+        {
           path: '/curriculum',
           name: 'curriculum',
           onEnter: ({ params }, replace) => replace('/primers'),
-        }, {
+        },
+        {
           path: '/primers',
           name: 'primers',
           getComponent(nextState, cb) {
-            import('containers/CurriculumPage').then(loadModule(cb)).catch(errorLoading);
+            import('containers/CurriculumPage')
+              .then(loadModule(cb))
+              .catch(errorLoading);
           },
           indexRoute: {
             getComponent(partialNextState, cb) {
-              import('containers/CurriculumPage/lessons/index.md').then(loadModule(cb)).catch(errorLoading);
+              import('containers/CurriculumPage/lessons/index.md')
+                .then(loadModule(cb))
+                .catch(errorLoading);
             },
           },
           childRoutes: [
             {
               path: '1',
               getComponent(nextState, cb) {
-                import('containers/CurriculumPage/lessons/Lesson1.md').then(loadModule(cb)).catch(errorLoading);
+                import('containers/CurriculumPage/lessons/Lesson1.md')
+                  .then(loadModule(cb))
+                  .catch(errorLoading);
               },
             },
             {
               path: '2',
               getComponent(nextState, cb) {
-                import('containers/CurriculumPage/lessons/Lesson2.md').then(loadModule(cb)).catch(errorLoading);
+                import('containers/CurriculumPage/lessons/Lesson2.md')
+                  .then(loadModule(cb))
+                  .catch(errorLoading);
               },
             },
             {
               path: '3',
               getComponent(nextState, cb) {
-                import('containers/CurriculumPage/lessons/Lesson3.md').then(loadModule(cb)).catch(errorLoading);
+                import('containers/CurriculumPage/lessons/Lesson3.md')
+                  .then(loadModule(cb))
+                  .catch(errorLoading);
               },
             },
             {
               path: '4',
               getComponent(nextState, cb) {
-                import('containers/CurriculumPage/lessons/Lesson4.md').then(loadModule(cb)).catch(errorLoading);
+                import('containers/CurriculumPage/lessons/Lesson4.md')
+                  .then(loadModule(cb))
+                  .catch(errorLoading);
               },
             },
             {
               path: '5',
               getComponent(nextState, cb) {
-                import('containers/CurriculumPage/lessons/Lesson5.md').then(loadModule(cb)).catch(errorLoading);
+                import('containers/CurriculumPage/lessons/Lesson5.md')
+                  .then(loadModule(cb))
+                  .catch(errorLoading);
               },
             },
             {
               path: '6',
               getComponent(nextState, cb) {
-                import('containers/CurriculumPage/lessons/Lesson6.md').then(loadModule(cb)).catch(errorLoading);
+                import('containers/CurriculumPage/lessons/Lesson6.md')
+                  .then(loadModule(cb))
+                  .catch(errorLoading);
               },
             },
             {
               path: '7',
               getComponent(nextState, cb) {
-                import('containers/CurriculumPage/lessons/Lesson7.md').then(loadModule(cb)).catch(errorLoading);
+                import('containers/CurriculumPage/lessons/Lesson7.md')
+                  .then(loadModule(cb))
+                  .catch(errorLoading);
               },
             },
           ],
-        }, {
+        },
+        {
           path: '/quotes',
           name: 'quotes',
           getComponent(nextState, cb) {
-            import('containers/QuotesPage').then(loadModule(cb)).catch(errorLoading);
+            import('containers/QuotesPage')
+              .then(loadModule(cb))
+              .catch(errorLoading);
           },
-        }, {
+        },
+        {
           path: '/meetup',
           name: 'meetup',
           getComponent(nextState, cb) {
-            import('containers/MeetupPage').then(loadModule(cb)).catch(errorLoading);
+            import('containers/MeetupPage')
+              .then(loadModule(cb))
+              .catch(errorLoading);
           },
           indexRoute: {
             getComponent(partialNextState, cb) {
-              import('containers/MeetupPage/Meetup.md').then(loadModule(cb)).catch(errorLoading);
+              import('containers/MeetupPage/Meetup.md')
+                .then(loadModule(cb))
+                .catch(errorLoading);
             },
           },
-        }, {
+        },
+        {
           path: '/join',
           name: 'join',
           getComponent(nextState, cb) {
-            import('containers/JoinPage').then(loadModule(cb)).catch(errorLoading);
+            import('containers/JoinPage')
+              .then(loadModule(cb))
+              .catch(errorLoading);
           },
           indexRoute: {
             getComponent(partialNextState, cb) {
-              import('containers/JoinPage/Join.md').then(loadModule(cb)).catch(errorLoading);
+              import('containers/JoinPage/Join.md')
+                .then(loadModule(cb))
+                .catch(errorLoading);
             },
           },
           childRoutes: [
             {
               path: 'form',
               getComponent(nextState, cb) {
-                import('containers/JoinPage/Form').then(loadModule(cb)).catch(errorLoading);
+                import('containers/JoinPage/Form')
+                  .then(loadModule(cb))
+                  .catch(errorLoading);
               },
             },
           ],
-        }, {
+        },
+        {
           path: '/conf',
           name: 'conf',
           getComponent(nextState, cb) {
-            import('containers/ConferencePage').then(loadModule(cb)).catch(errorLoading);
+            import('containers/ConferencePage')
+              .then(loadModule(cb))
+              .catch(errorLoading);
           },
           indexRoute: {
             getComponent(partialNextState, cb) {
-              import('containers/ConferencePage/Welcome').then(loadModule(cb)).catch(errorLoading);
+              import('containers/ConferencePage/Welcome')
+                .then(loadModule(cb))
+                .catch(errorLoading);
             },
           },
           childRoutes: [
             {
               path: 'presenters',
               getComponent(nextState, cb) {
-                import('containers/ConferencePage/Presenters').then(loadModule(cb)).catch(errorLoading);
+                import('containers/ConferencePage/Presenters')
+                  .then(loadModule(cb))
+                  .catch(errorLoading);
               },
             },
             {
               path: 'schedule',
               getComponent(nextState, cb) {
-                import('containers/ConferencePage/Schedule').then(loadModule(cb)).catch(errorLoading);
+                import('containers/ConferencePage/Schedule')
+                  .then(loadModule(cb))
+                  .catch(errorLoading);
               },
             },
             {
               path: 'login',
               getComponent(nextState, cb) {
-                import('containers/ConferencePage/SignIn').then(loadModule(cb)).catch(errorLoading);
+                import('containers/ConferencePage/SignIn')
+                  .then(loadModule(cb))
+                  .catch(errorLoading);
               },
             },
           ],
         },
       ],
-    }, {
+    },
+    {
       path: '/conf/timer',
       name: 'timer',
       getComponent(nextState, cb) {
-        import('containers/ConferencePage/Timer').then(loadModule(cb)).catch(errorLoading);
+        import('containers/ConferencePage/Timer')
+          .then(loadModule(cb))
+          .catch(errorLoading);
       },
-    }, {
+    },
+    {
       path: '/pages/*',
       getComponent(nextState, cb) {
         window.location.href = `http://legacy.transfigurism.org${nextState.location.pathname}`;
         cb();
       },
-    }, {
+    },
+    {
       getComponent(nextState, cb) {
-        import('containers/Page').then(loadModule(cb)).catch(errorLoading);
+        import('containers/Page')
+          .then(loadModule(cb))
+          .catch(errorLoading);
       },
       childRoutes: [
         {
           path: '*',
           name: 'notfound',
           getComponent(nextState, cb) {
-            import('containers/NotFoundPage').then(loadModule(cb)).catch(errorLoading);
+            import('containers/NotFoundPage')
+              .then(loadModule(cb))
+              .catch(errorLoading);
           },
         },
       ],

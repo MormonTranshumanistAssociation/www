@@ -2,7 +2,6 @@ import React, { PropTypes } from 'react';
 import Loader from 'halogen/GridLoader';
 
 class Feed extends React.PureComponent {
-
   constructor(props) {
     super(props);
     this.startListener(props);
@@ -17,7 +16,7 @@ class Feed extends React.PureComponent {
     this.startListener(nextProps);
   }
 
-  startListener = async (props) => {
+  startListener = async props => {
     const { url, limit, offset, table, select } = props;
     const params = [];
     if (limit) {
@@ -40,7 +39,6 @@ class Feed extends React.PureComponent {
     }
     return renderer(this.state.result);
   }
-
 }
 
 Feed.propTypes = {
@@ -56,7 +54,6 @@ Feed.defaultProps = {
   select: '*',
   url: 'http://news.transfigurism.org/feeds/posts/default?redirect=false',
   table: 'atom',
-
 };
 
 export default Feed;

@@ -5,7 +5,7 @@ import Section from 'components/Section';
 import PageWithContents from 'components/PageWithContents';
 import { SingleColumn } from 'components/Columns';
 
-const NewsPage = (props) => (
+const NewsPage = props => (
   <div>
     <Header />
     <Helmet title="News" />

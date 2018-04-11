@@ -27,13 +27,14 @@ const NewsItem = styled.div`
     text-align: left;
     font-size: 1.1rem;
   }
-  h3, a {
+  h3,
+  a {
     color: white;
   }
 `;
 
 const Thumbnail = styled.img`
-  box-shadow: 0 1px 4px rgba(0,0,0,.6);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
   flex: 0 0 62px;
   width: 62px;
   height: 62px;
@@ -47,17 +48,19 @@ const Headlines = () => (
       url="http://news.transfigurism.org/feeds/posts/default?redirect=false"
       select="id, title, thumbnail"
       limit={3}
-      renderer={(result) => {
+      renderer={result => {
         const entries = _.get(result, 'query.results.entry', []);
         return (
           <NewsList>
-            { _.map(entries, (entry) => {
+            {_.map(entries, entry => {
               const match = /post-(.*)$/.exec(entry.id);
               const shortId = match[1];
               return (
                 <NewsItem id={entry.id} key={entry.id}>
-                  { !!entry.thumbnail && <Thumbnail src={entry.thumbnail.url} /> }
-                  <Link to={`/news/${shortId}`}><h3>{entry.title.content}</h3></Link>
+                  {!!entry.thumbnail && <Thumbnail src={entry.thumbnail.url} />}
+                  <Link to={`/news/${shortId}`}>
+                    <h3>{entry.title.content}</h3>
+                  </Link>
                 </NewsItem>
               );
             })}

@@ -28,7 +28,11 @@ export function Page(props) {
         titleTemplate="%s | Mormon Transhumanist Association"
         defaultTitle=""
         meta={[
-          { name: 'description', content: 'Mormon Transhumanist Association is the world\'s largest advocacy network for ethical use of technology and religion to extend human abilities.' },
+          {
+            name: 'description',
+            content:
+              "Mormon Transhumanist Association is the world's largest advocacy network for ethical use of technology and religion to extend human abilities.",
+          },
         ]}
       />
       {React.Children.toArray(props.children)}

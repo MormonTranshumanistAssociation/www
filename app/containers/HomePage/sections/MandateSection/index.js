@@ -19,7 +19,7 @@ const H = styled.h3`
   padding: 0;
   margin: 0;
   line-height: 1.25em;
-  color: rgba(0,0,0,.75);
+  color: rgba(0, 0, 0, 0.75);
 `;
 
 const TextWrapper = styled.div`
@@ -32,8 +32,8 @@ const VideoWrapper = styled.div`
   max-width: calc(384px + 2 * 2rem);
   width: 100%;
   height: auto;
-  margin: 1rem 0;  
-  box-shadow: 0 1px 4px rgba(0,0,0,.6);
+  margin: 1rem 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 `;
 
 const FixedBackgroundSection = styled(Section)`
@@ -44,10 +44,16 @@ const MandateSection = () => (
   <FixedBackgroundSection img={LeavesImage}>
     <SectionContent>
       <Centered>
-        <VideoWrapper><YouTubePlayer videoId="VePRByRNIAc" /></VideoWrapper>
+        <VideoWrapper>
+          <YouTubePlayer videoId="VePRByRNIAc" />
+        </VideoWrapper>
         <TextWrapper>
-          <H><FormattedMessage {...messages.header} /></H>
-          <p><FormattedMessage {...messages.text} /></p>
+          <H>
+            <FormattedMessage {...messages.header} />
+          </H>
+          <p>
+            <FormattedMessage {...messages.text} />
+          </p>
         </TextWrapper>
       </Centered>
     </SectionContent>

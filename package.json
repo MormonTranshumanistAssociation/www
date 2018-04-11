@@ -44,10 +44,14 @@
     "test:watch": "cross-env NODE_ENV=test jest --watchAll",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "deploy:aws": "env-cmd ./.env s3-deploy './build/**' --cwd './build/' --gzip --region us-west-2 --bucket $BUCKET --etag --cache $CACHE",
-    "deploy:prod": "npm run build && BUCKET='www.transfigurism.org' CACHE='600' npm run deploy:aws"
+    "deploy:prod": "npm run build && BUCKET='www.transfigurism.org' CACHE='600' npm run deploy:aws",
+    "format": "prettier --write '**/*.{js,jsx}'"
   },
   "lint-staged": {
-    "*.js": "lint:eslint"
+    "*.{js,jsx}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "pre-commit": "lint:staged",
   "babel": {
@@ -268,6 +272,7 @@
     "babel-plugin-dynamic-import-node": "1.0.0",
     "babel-plugin-react-intl": "2.2.0",
     "babel-plugin-react-transform": "2.0.2",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-plugin-transform-es2015-modules-commonjs": "6.18.0",
     "babel-plugin-transform-react-constant-elements": "6.9.1",
     "babel-plugin-transform-react-inline-elements": "6.8.0",
@@ -286,9 +291,11 @@
     "eslint": "3.11.1",
     "eslint-config-airbnb": "13.0.0",
     "eslint-config-airbnb-base": "10.0.1",
+    "eslint-config-prettier": "^2.9.0",
     "eslint-import-resolver-webpack": "0.8.0",
     "eslint-plugin-import": "2.2.0",
     "eslint-plugin-jsx-a11y": "2.2.3",
+    "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "6.7.1",
     "eslint-plugin-redux-saga": "0.1.5",
     "eventsource-polyfill": "0.9.6",
@@ -306,6 +313,7 @@
     "offline-plugin": "4.5.2",
     "plop": "1.7.3",
     "pre-commit": "1.1.3",
+    "prettier": "^1.11.1",
     "react-addons-test-utils": "15.4.1",
     "rimraf": "2.5.4",
     "s3-deploy": "^0.7.5",
