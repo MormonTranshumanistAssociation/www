@@ -80,15 +80,17 @@ ConferenceTimerQuery.propTypes = {
 
 export default compose(
   graphql(setActivePresentationMutation, {
-    props: (props) => ({
+    props: props => ({
       ...props,
       setActivePresentation: ({ presentationId }) =>
         props.mutate({
           variables: { confId: CONFERENCE_ID, presentationId },
-          refetchQueries: [{
-            query: conferenceTimerQuery,
-            variables: { confId: CONFERENCE_ID },
-          }],
+          refetchQueries: [
+            {
+              query: conferenceTimerQuery,
+              variables: { confId: CONFERENCE_ID },
+            },
+          ],
           // update: (store, { data: { updateConference } }) => {
           //   console.log('update');
           //   console.log({ updateConference });

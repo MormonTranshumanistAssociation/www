@@ -3,7 +3,7 @@ import { GRAPHQL_URL } from './constants';
 
 export default new ApolloClient({
   uri: GRAPHQL_URL,
-  request: async (operation) => {
+  request: async operation => {
     const token = localStorage.getItem('conf-token');
     if (token) {
       operation.setContext({

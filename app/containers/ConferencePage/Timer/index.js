@@ -9,11 +9,7 @@ import ConferenceTimerQuery from './ConferenceTimerQuery';
 export default () => (
   <ApolloProvider client={apolloClient}>
     <MobxProvider authStore={authStore}>
-      <ConferenceTimerQuery>
-        {
-          (props) => <ConferenceTimer {...props} />
-        }
-      </ConferenceTimerQuery>
+      <ConferenceTimerQuery>{props => <ConferenceTimer {...props} />}</ConferenceTimerQuery>
     </MobxProvider>
   </ApolloProvider>
 );

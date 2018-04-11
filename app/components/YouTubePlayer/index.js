@@ -151,13 +151,16 @@ class YouTubePlayer extends React.Component {
   render() {
     const { isPlaying, isModalOpen } = this.state;
     const { videoId, modal, hiddenOverlay } = this.props;
-    const Wrapper = modal
-      ? props => (
-          <ModalPlayer isOpen={isModalOpen} onClose={this.onModalClose}>
-            {props.children}
-          </ModalPlayer>
-        )
-      : props => <div>{props.children}</div>;
+    let Wrapper;
+    if (modal) {
+      Wrapper = props => (
+        <ModalPlayer isOpen={isModalOpen} onClose={this.onModalClose}>
+          {props.children}
+        </ModalPlayer>
+      );
+    } else {
+      Wrapper = props => <div>{props.children}</div>;
+    }
     return (
       <Player>
         {isPlaying ? (
