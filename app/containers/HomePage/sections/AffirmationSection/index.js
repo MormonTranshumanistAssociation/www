@@ -45,12 +45,22 @@ const AffirmationSection = () => {
           <FormattedMessage {...messages.title} />
         </Title>
         <Columns>
-          {affs.map((aff, index) => (
-            <Column key={index}>
-              <FormattedMessage {...aff.header}>{msg => <H>{msg}</H>}</FormattedMessage>
-              <FormattedMessage {...aff.text}>{msg => <P>{msg}</P>}</FormattedMessage>
-            </Column>
-          ))}
+          <Column>
+            <FormattedMessage {...affs[0].header}>{msg => <H>{msg}</H>}</FormattedMessage>
+            <FormattedMessage {...affs[0].text}>{msg => <P>{msg}</P>}</FormattedMessage>
+            <FormattedMessage {...affs[1].header}>{msg => <H>{msg}</H>}</FormattedMessage>
+            <FormattedMessage {...affs[1].text}>{msg => <P>{msg}</P>}</FormattedMessage>
+            <FormattedMessage {...affs[2].header}>{msg => <H>{msg}</H>}</FormattedMessage>
+            <FormattedMessage {...affs[2].text}>{msg => <P>{msg}</P>}</FormattedMessage>
+          </Column>
+          <Column>
+            <FormattedMessage {...affs[3].header}>{msg => <H>{msg}</H>}</FormattedMessage>
+            <FormattedMessage {...affs[3].text}>{msg => <P>{msg}</P>}</FormattedMessage>
+            <FormattedMessage {...affs[4].header}>{msg => <H>{msg}</H>}</FormattedMessage>
+            <FormattedMessage {...affs[4].text}>{msg => <P>{msg}</P>}</FormattedMessage>
+            <FormattedMessage {...affs[5].header}>{msg => <H>{msg}</H>}</FormattedMessage>
+            <FormattedMessage {...affs[5].text}>{msg => <P>{msg}</P>}</FormattedMessage>
+          </Column>
         </Columns>
       </SectionContent>
     </Section>

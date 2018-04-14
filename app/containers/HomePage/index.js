@@ -9,6 +9,7 @@ import Helmet from 'react-helmet';
 import Header from 'components/Header';
 import SplashSection from './sections/SplashSection';
 import AffirmationSection from './sections/AffirmationSection';
+import PrimersSection from './sections/PrimersSection';
 import MandateSection from './sections/MandateSection';
 import TheosisSection from './sections/TheosisSection';
 
@@ -27,6 +28,7 @@ export class HomePage extends React.PureComponent {
           <div>
             <SplashSection />
             <AffirmationSection />
+            <PrimersSection />
             <MandateSection />
             <TheosisSection />
           </div>
