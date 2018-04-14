@@ -19,16 +19,23 @@ const QuoteSource = styled(Quote)`
   font-size: 1.2rem;
 `;
 
+const NewGodLink = styled.a`
+  padding: 0 12px;
+  display: inline-block;
+`;
+
 const NewGodLinkImage = styled.img`
+  max-width: 360px;
   background-size: cover;
-  width: 310px;
+  display: block;
+  width: 100%;
   height: auto;
   margin: 2em 0 6em 0;
   transition: 0.2s all;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 
   &:hover {
-    -webkit-filter: brightness(75%);
+    filter: brightness(75%);
   }
 `;
 
@@ -37,9 +44,9 @@ const TheosisSection = () => (
     <Quote>
       <FormattedMessage {...messages.newGodQuote} />
     </Quote>
-    <a href="//new-god-argument.com">
+    <NewGodLink href="//new-god-argument.com">
       <NewGodLinkImage src={NewGodThumbImage} />
-    </a>
+    </NewGodLink>
     <Quote>
       <FormattedMessage {...messages.confVideosQuote} />
     </Quote>

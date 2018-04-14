@@ -12,6 +12,7 @@ const Centered = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0 12px;
 `;
 
 const H = styled.h3`
@@ -32,7 +33,7 @@ const VideoWrapper = styled.div`
   max-width: calc(384px + 2 * 2rem);
   width: 100%;
   height: auto;
-  margin: 1rem 0;
+  margin: 1rem 12px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 `;
 

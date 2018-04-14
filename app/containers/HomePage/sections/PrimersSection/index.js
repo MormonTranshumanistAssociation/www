@@ -78,15 +78,13 @@ const PrimerItem = styled.div`
   margin-bottom: 32px;
   cursor: pointer;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-  &:hover {
-    box-shadow: 0 1px 18px rgba(0, 0, 0, 0.8);
-  }
-  &:active {
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  &:hover > img {
+    filter: brightness(75%);
   }
 `;
 
 const PrimerImage = styled.img`
+  transition: all 250ms;
   width: 100%;
   height: auto;
 `;
