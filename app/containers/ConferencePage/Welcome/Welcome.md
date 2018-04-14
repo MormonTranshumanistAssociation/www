@@ -24,6 +24,7 @@
     text-decoration: underline !important;
   }
 </style>
+<!--
 <a href="https://www.youtube.com/c/TransfigurismOrg/live" target="_blank" class="register-button youtube-button">
   View live stream on YouTube!
 </a>
@@ -31,6 +32,7 @@
   Register now at Eventbrite!
 </a>
 <p>
+-->
 
 
 ## Welcome!
