@@ -120,4 +120,3 @@ ConferenceTimer.propTypes = {
 };
 
 export default inject('authStore')(observer(ConferenceTimer));
-ƒ;
