@@ -27,7 +27,7 @@ const LogoImg = styled(Img)`
   }
   height: 80px;
   width: auto;
-  margin-left: -3px;
+  margin: 8px 0 8px -3px;
 `;
 
 export default () => (
