@@ -97,6 +97,7 @@ module.exports = options => ({
       { from: 'app/assets/mta-thumbnail.jpg', to: 'assets' },
       { from: 'app/assets/transfigurist', to: 'assets/transfigurist' },
       { from: 'app/assets/presenters', to: 'assets/presenters' },
+      { from: 'app/assets/conferences', to: 'assets/conferences' },
     ]),
     new webpack.ProvidePlugin({
       // make fetch available

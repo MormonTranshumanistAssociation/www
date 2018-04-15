@@ -9,6 +9,7 @@ import Presentation from './Presentation';
 import { CONFERENCE_ID } from '../constants';
 import { Scheduler } from '../scheduler';
 import { scrollToLocationHash } from '../helpers';
+import data from './data.json';
 
 const PrintOnly = styled.div`
   display: none;
@@ -104,23 +105,24 @@ export default () => (
       </div>
     </ScreenOnly>
     <MarkdownProfiles>
-      <Query query={query} variables={{ confId: CONFERENCE_ID }} pollInterval={10000}>
-        {({ loading, error, data }) => {
-          if (loading) return <Loader color="#525B3A" size="10px" />;
-          if (error) return <p>Error</p>;
+      {(() => {
+        // <Query query={query} variables={{ confId: CONFERENCE_ID }} pollInterval={10000}>
+        //   {({ loading, error, data }) => {
+        //     if (loading) return <Loader color="#525B3A" size="10px" />;
+        //     if (error) return <p>Error</p>;
 
-          scrollToLocationHash();
+        scrollToLocationHash();
 
-          const conference = data.node;
-          const scheduler = new Scheduler({ conference });
-          const presentations = scheduler.getDecoratedPresentations();
-          return (
-            <div>
-              {_.map(presentations, presentation => <Presentation key={presentation.id} presentation={presentation} />)}
-            </div>
-          );
-        }}
-      </Query>
+        const conference = data.node;
+        const scheduler = new Scheduler({ conference });
+        const presentations = scheduler.getDecoratedPresentations();
+        return (
+          <div>
+            {_.map(presentations, presentation => <Presentation key={presentation.id} presentation={presentation} />)}
+          </div>
+        );
+        //</Query>
+      })()}
     </MarkdownProfiles>
   </div>
 );

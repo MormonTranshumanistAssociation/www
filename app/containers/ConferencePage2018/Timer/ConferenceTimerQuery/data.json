@@ -1,0 +1,362 @@
+{
+      "node": {
+        "presentations": {
+          "edges": [
+            {
+              "node": {
+                "id": "UHJlc2VudGF0aW9uOjIz",
+                "title": "Dinner",
+                "presenter": null,
+                "__typename": "Presentation",
+                "duration": 60,
+                "actualDuration": null,
+                "flex": null,
+                "position": 22
+              },
+              "__typename": "PresentationEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGF0aW9uOjIy",
+                "title": "Panel discussion with guest speakers",
+                "presenter": null,
+                "__typename": "Presentation",
+                "duration": 40,
+                "actualDuration": null,
+                "flex": null,
+                "position": 18
+              },
+              "__typename": "PresentationEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGF0aW9uOjIx",
+                "title": "Future of Healthy Longevity",
+                "presenter": {
+                  "displayName": "Elizabeth Parrish",
+                  "__typename": "Presenter"
+                },
+                "__typename": "Presentation",
+                "duration": 50,
+                "actualDuration": null,
+                "flex": null,
+                "position": 17
+              },
+              "__typename": "PresentationEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGF0aW9uOjIw",
+                "title": "Break with snacks",
+                "presenter": null,
+                "__typename": "Presentation",
+                "duration": 25,
+                "actualDuration": null,
+                "flex": null,
+                "position": 16
+              },
+              "__typename": "PresentationEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGF0aW9uOjE5",
+                "title": "Refuge of the Worlds: Transfiguration and Divine Embodiment in the Hindu and Latter-day Saint Tradition",
+                "presenter": {
+                  "displayName": "Jaxon Washburn",
+                  "__typename": "Presenter"
+                },
+                "__typename": "Presentation",
+                "duration": 20,
+                "actualDuration": null,
+                "flex": null,
+                "position": 19
+              },
+              "__typename": "PresentationEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGF0aW9uOjE4",
+                "title": "The Church Used to Be Like Silicon Valley. Can It Be Again?",
+                "presenter": {
+                  "displayName": "Carl Youngblood",
+                  "__typename": "Presenter"
+                },
+                "__typename": "Presentation",
+                "duration": 10,
+                "actualDuration": null,
+                "flex": null,
+                "position": 15
+              },
+              "__typename": "PresentationEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGF0aW9uOjE3",
+                "title": "Blood, the Anti-Christ, & Exorcising McConkie*: Meditations on Mormon Transhumanism",
+                "presenter": {
+                  "displayName": "Ben Blair",
+                  "__typename": "Presenter"
+                },
+                "__typename": "Presentation",
+                "duration": 10,
+                "actualDuration": null,
+                "flex": null,
+                "position": 14
+              },
+              "__typename": "PresentationEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGF0aW9uOjE2",
+                "title": "Artificial Intelligence and LDS Cosmology",
+                "presenter": {
+                  "displayName": "Ross Richey",
+                  "__typename": "Presenter"
+                },
+                "__typename": "Presentation",
+                "duration": 20,
+                "actualDuration": null,
+                "flex": null,
+                "position": 10
+              },
+              "__typename": "PresentationEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGF0aW9uOjE1",
+                "title": "Feminism Meets Transhumanism",
+                "presenter": {
+                  "displayName": "Blaire Ostler",
+                  "__typename": "Presenter"
+                },
+                "__typename": "Presentation",
+                "duration": 20,
+                "actualDuration": null,
+                "flex": null,
+                "position": 13
+              },
+              "__typename": "PresentationEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGF0aW9uOjE0",
+                "title": "Teleomachy: The Transhuman and Divine Problem with Social Purposes",
+                "presenter": {
+                  "displayName": "Charles Randall Paul",
+                  "__typename": "Presenter"
+                },
+                "__typename": "Presentation",
+                "duration": 25,
+                "actualDuration": null,
+                "flex": null,
+                "position": 20
+              },
+              "__typename": "PresentationEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGF0aW9uOjEz",
+                "title": "Breakout Sessions",
+                "presenter": null,
+                "__typename": "Presentation",
+                "duration": 40,
+                "actualDuration": null,
+                "flex": 10,
+                "position": 12
+              },
+              "__typename": "PresentationEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGF0aW9uOjEy",
+                "title": "Spirituality and Superorganisms",
+                "presenter": {
+                  "displayName": "Micah Redding",
+                  "__typename": "Presenter"
+                },
+                "__typename": "Presentation",
+                "duration": 20,
+                "actualDuration": null,
+                "flex": null,
+                "position": 11
+              },
+              "__typename": "PresentationEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGF0aW9uOjEx",
+                "title": "The Same as All Gods Have Done Before You: Transhumanism and the Religion of Tomorrow",
+                "presenter": {
+                  "displayName": "Jon Ogden",
+                  "__typename": "Presenter"
+                },
+                "__typename": "Presentation",
+                "duration": 20,
+                "actualDuration": 0,
+                "flex": null,
+                "position": 21
+              },
+              "__typename": "PresentationEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGF0aW9uOjEw",
+                "title": "After anthropos: humanistic social science in a post-human milieu",
+                "presenter": {
+                  "displayName": "Jon Bialecki",
+                  "__typename": "Presenter"
+                },
+                "__typename": "Presentation",
+                "duration": 20,
+                "actualDuration": null,
+                "flex": null,
+                "position": 8
+              },
+              "__typename": "PresentationEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGF0aW9uOjk=",
+                "title": "The Book of Mormon as Literary Alchemy: Joseph's Magnum Opus and the Philosopher's Stone",
+                "presenter": {
+                  "displayName": "Bryce Haymond",
+                  "__typename": "Presenter"
+                },
+                "__typename": "Presentation",
+                "duration": 20,
+                "actualDuration": null,
+                "flex": null,
+                "position": 9
+              },
+              "__typename": "PresentationEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGF0aW9uOjg=",
+                "title": "Lunch",
+                "presenter": null,
+                "__typename": "Presentation",
+                "duration": 50,
+                "actualDuration": 38,
+                "flex": 15,
+                "position": 7
+              },
+              "__typename": "PresentationEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGF0aW9uOjc=",
+                "title": "\"Lightning in a Bottle”: The Technology of Religious Organization",
+                "presenter": {
+                  "displayName": "Melissa Inouye",
+                  "__typename": "Presenter"
+                },
+                "__typename": "Presentation",
+                "duration": 60,
+                "actualDuration": 45,
+                "flex": null,
+                "position": 6
+              },
+              "__typename": "PresentationEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGF0aW9uOjY=",
+                "title": "Break",
+                "presenter": null,
+                "__typename": "Presentation",
+                "duration": 20,
+                "actualDuration": null,
+                "flex": 5,
+                "position": 5
+              },
+              "__typename": "PresentationEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGF0aW9uOjU=",
+                "title": "Changing Our Minds",
+                "presenter": {
+                  "displayName": "Bryan Johnson",
+                  "__typename": "Presenter"
+                },
+                "__typename": "Presentation",
+                "duration": 30,
+                "actualDuration": 0,
+                "flex": null,
+                "position": 4
+              },
+              "__typename": "PresentationEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGF0aW9uOjQ=",
+                "title": "Being Christ in Name and Power",
+                "presenter": {
+                  "displayName": "Lincoln Cannon",
+                  "__typename": "Presenter"
+                },
+                "__typename": "Presentation",
+                "duration": 20,
+                "actualDuration": 25,
+                "flex": null,
+                "position": 3
+              },
+              "__typename": "PresentationEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGF0aW9uOjM=",
+                "title": "The Future of the Mormon Transhumanist Association",
+                "presenter": {
+                  "displayName": "Michaelann Bradley",
+                  "__typename": "Presenter"
+                },
+                "__typename": "Presentation",
+                "duration": 20,
+                "actualDuration": null,
+                "flex": null,
+                "position": 2
+              },
+              "__typename": "PresentationEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGF0aW9uOjI=",
+                "title": "Open Thou Mine Eyes",
+                "presenter": {
+                  "displayName": "Chris Bradford",
+                  "__typename": "Presenter"
+                },
+                "__typename": "Presentation",
+                "duration": 30,
+                "actualDuration": null,
+                "flex": null,
+                "position": 1
+              },
+              "__typename": "PresentationEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGF0aW9uOjE=",
+                "title": "Welcome",
+                "presenter": {
+                  "displayName": "Chris Bradford",
+                  "__typename": "Presenter"
+                },
+                "__typename": "Presentation",
+                "duration": 15,
+                "actualDuration": -24,
+                "flex": null,
+                "position": 0
+              },
+              "__typename": "PresentationEdge"
+            }
+          ],
+          "__typename": "PresentationConnection"
+        },
+        "defaultPresentationFlex": null,
+        "startAt": "2018-04-07T15:00:00.000Z",
+        "__typename": "Conference"
+      }
+  }

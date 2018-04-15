@@ -5,9 +5,10 @@ import gql from 'graphql-tag';
 import { inject, observer } from 'mobx-react';
 import _ from 'lodash';
 import Loader from 'halogen/GridLoader';
-import { CONFERENCE_ID } from '../constants';
-import { Scheduler } from '../scheduler';
-import PresentationTimer from './PresentationTimer';
+import { CONFERENCE_ID } from '../../constants';
+import { Scheduler } from '../../scheduler';
+import PresentationTimer from '../PresentationTimer';
+import data from './data.json';
 
 const conferenceTimerQuery = gql`
   query ConferenceTimer($confId: ID!) {
@@ -50,26 +51,26 @@ const setActivePresentationMutation = gql`
 class ConferenceTimerQuery extends React.Component {
   render() {
     const { setActivePresentation } = this.props;
-    return (
-      <Query query={conferenceTimerQuery} variables={{ confId: CONFERENCE_ID }}>
-        {({ loading, error, data }) => {
-          if (loading) return <Loader color="#525B3A" size="10px" />;
-          if (error) return <p>Error</p>;
+    // return (
+    // <Query query={conferenceTimerQuery} variables={{ confId: CONFERENCE_ID }}>
+    //   {({ loading, error, data }) => {
+    //     if (loading) return <Loader color="#525B3A" size="10px" />;
+    //     if (error) return <p>Error</p>;
 
-          const conference = data.node;
-          if (!conference) {
-            console.error(`No conference data for conference ${CONFERENCE_ID}`);
-            return null;
-          }
+    const conference = data.node;
+    if (!conference) {
+      console.error(`No conference data for conference ${CONFERENCE_ID}`);
+      return null;
+    }
 
-          const scheduler = new Scheduler({ conference });
-          const presentations = scheduler.getDecoratedPresentations();
-          const activePresentationId = _.get(conference, 'activePresentation.id');
+    const scheduler = new Scheduler({ conference });
+    const presentations = scheduler.getDecoratedPresentations();
+    const activePresentationId = _.get(conference, 'activePresentation.id');
 
-          return this.props.children({ presentations, activePresentationId, data, setActivePresentation });
-        }}
-      </Query>
-    );
+    return this.props.children({ presentations, activePresentationId, data, setActivePresentation });
+    //   }}
+    // </Query>
+    // );
   }
 }
 

@@ -268,16 +268,16 @@ export default function createRoutes() {
           ],
         },
         {
-          path: '/conf',
-          name: 'conf',
+          path: '/conf/2018',
+          name: 'conf/2018',
           getComponent(nextState, cb) {
-            import('containers/ConferencePage')
+            import('containers/ConferencePage2018')
               .then(loadModule(cb))
               .catch(errorLoading);
           },
           indexRoute: {
             getComponent(partialNextState, cb) {
-              import('containers/ConferencePage/Welcome')
+              import('containers/ConferencePage2018/Welcome')
                 .then(loadModule(cb))
                 .catch(errorLoading);
             },
@@ -286,7 +286,7 @@ export default function createRoutes() {
             {
               path: 'presenters',
               getComponent(nextState, cb) {
-                import('containers/ConferencePage/Presenters')
+                import('containers/ConferencePage2018/Presenters')
                   .then(loadModule(cb))
                   .catch(errorLoading);
               },
@@ -294,7 +294,7 @@ export default function createRoutes() {
             {
               path: 'schedule',
               getComponent(nextState, cb) {
-                import('containers/ConferencePage/Schedule')
+                import('containers/ConferencePage2018/Schedule')
                   .then(loadModule(cb))
                   .catch(errorLoading);
               },
@@ -302,7 +302,7 @@ export default function createRoutes() {
             {
               path: 'login',
               getComponent(nextState, cb) {
-                import('containers/ConferencePage/SignIn')
+                import('containers/ConferencePage2018/SignIn')
                   .then(loadModule(cb))
                   .catch(errorLoading);
               },
@@ -312,10 +312,19 @@ export default function createRoutes() {
       ],
     },
     {
-      path: '/conf/timer',
+      path: '/conf/2018/timer',
       name: 'timer',
       getComponent(nextState, cb) {
-        import('containers/ConferencePage/Timer')
+        import('containers/ConferencePage2018/Timer')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    },
+    {
+      path: '/conf*',
+      name: 'conf',
+      getComponent(nextState, cb) {
+        import('containers/ConferencesPage')
           .then(loadModule(cb))
           .catch(errorLoading);
       },

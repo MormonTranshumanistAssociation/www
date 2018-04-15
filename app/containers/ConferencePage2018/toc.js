@@ -5,10 +5,10 @@ import { inject, observer } from 'mobx-react';
 
 const ToC = ({ authStore }) => (
   <TableOfContents>
-    <Entry to="/conf">Welcome</Entry>
-    <Entry to="/conf/schedule">Schedule</Entry>
-    <Entry to="/conf/presenters">Presenters</Entry>
-    {!!authStore.token && <Entry to="/conf/timer">Timer</Entry>}
+    <Entry to="/conf/2018">Welcome</Entry>
+    <Entry to="/conf/2018/schedule">Schedule</Entry>
+    <Entry to="/conf/2018/presenters">Presenters</Entry>
+    {!!authStore.token && <Entry to="/conf/2018/timer">Timer</Entry>}
     {!!authStore.token && <Entry onClick={() => authStore.setToken(null)}>Log out</Entry>}
   </TableOfContents>
 );

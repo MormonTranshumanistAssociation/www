@@ -1,0 +1,419 @@
+{
+      "viewer": {
+        "allPresenters": {
+          "edges": [
+            {
+              "node": {
+                "id": "UHJlc2VudGVyOjEz",
+                "displayName": "Ben Blair",
+                "presentations": {
+                  "edges": [
+                    {
+                      "node": {
+                        "id": "UHJlc2VudGF0aW9uOjE3",
+                        "title": "Blood, the Anti-Christ, & Exorcising McConkie*: Meditations on Mormon Transhumanism",
+                        "position": 14,
+                        "__typename": "Presentation"
+                      },
+                      "__typename": "PresentationEdge"
+                    }
+                  ],
+                  "__typename": "PresentationConnection"
+                },
+                "bio": "Ben Blair holds a PhD in Philosophy and Education from Teachers College, Columbia University, and is a Co-Founder of Teachur.co, a platform to de-institutionalize education. He and his wife, Gabrielle Blair, are the parents of six children, and live in Oakland, CA. He currently serves as Chief Special Projects Officer of the Mormon Transhumanist Association.",
+                "email": "ben.blair@transfigurism.org",
+                "photoUrl": "/assets/presenters/ben-blair.png",
+                "__typename": "Presenter"
+              },
+              "__typename": "PresenterEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGVyOjEx",
+                "displayName": "Blaire Ostler",
+                "presentations": {
+                  "edges": [
+                    {
+                      "node": {
+                        "id": "UHJlc2VudGF0aW9uOjE1",
+                        "title": "Feminism Meets Transhumanism",
+                        "position": 13,
+                        "__typename": "Presentation"
+                      },
+                      "__typename": "PresentationEdge"
+                    }
+                  ],
+                  "__typename": "PresentationConnection"
+                },
+                "bio": "Blaire Ostler is one of the leading voices on the intersections of Mormonism, feminism, and transhumanism. She currently serves as director of the Mormon Transhumanist Association. Blaire holds a BFA in Design from the International Academy of Design and Technology-Seattle. She is pursuing a second bachelor’s degree in philosophy with an emphasis in gender studies. She is passionate about esthetics, religion, human sexuality, queer theory, social philosophy, and art. She and husband Drew reside in Utah with their three children.",
+                "email": "blaire.ostler@transfigurism.org",
+                "photoUrl": "/assets/presenters/blaire-ostler.png",
+                "__typename": "Presenter"
+              },
+              "__typename": "PresenterEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGVyOjQ=",
+                "displayName": "Bryan Johnson",
+                "presentations": {
+                  "edges": [
+                    {
+                      "node": {
+                        "id": "UHJlc2VudGF0aW9uOjU=",
+                        "title": "Changing Our Minds",
+                        "position": 4,
+                        "__typename": "Presentation"
+                      },
+                      "__typename": "PresentationEdge"
+                    }
+                  ],
+                  "__typename": "PresentationConnection"
+                },
+                "bio": "Bryan Johnson is the founder of Kernel, OS Fund, and Braintree. He founded Kernel in 2016, investing $100M of his personal capital to build advanced neural interfaces to treat disease and dysfunction, illuminate the mechanisms of intelligence, and extend cognition. In 2014, Bryan invested $100M to start OS Fund to support inventors and scientists who aim to benefit humanity by rewriting the operating systems of life. His OS Fund investments include endeavors to cure age-related diseases and radically extend healthy human life to 100+, make biology a predictable programming language, digitize analog businesses, replicate the human visual cortex using artificial intelligence, expand humanity’s access to resources, reinvent transportation using autonomous vehicles, and reimagine food using biology, among others. In 2007, Bryan founded Braintree, an online and mobile payments provider. In 2012, Braintree acquired Venmo. Bryan and his team worked tirelessly to build an exceptional company—one that they loved, and one that was worthy of frequent love letters from its customers. In 2013, Braintree was acquired by PayPal for $800M. Bryan is an outdoor-adventure enthusiast (mountains, volcanoes, arctic dog sledding), pilot and author of a children's book, Code 7.",
+                "email": "b@kernel.co",
+                "photoUrl": "/assets/presenters/bryan-johnson.png",
+                "__typename": "Presenter"
+              },
+              "__typename": "PresenterEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGVyOjY=",
+                "displayName": "Bryce Haymond",
+                "presentations": {
+                  "edges": [
+                    {
+                      "node": {
+                        "id": "UHJlc2VudGF0aW9uOjk=",
+                        "title": "The Book of Mormon as Literary Alchemy: Joseph's Magnum Opus and the Philosopher's Stone",
+                        "position": 9,
+                        "__typename": "Presentation"
+                      },
+                      "__typename": "PresentationEdge"
+                    }
+                  ],
+                  "__typename": "PresentationConnection"
+                },
+                "bio": "Bryce Haymond is a designer, philosopher, and mystic. He received a BFA in Industrial Design and a minor in Ballroom Dance from Brigham Young University. He's formerly the Product Development & Design Director at HandStands in Salt Lake City, Utah, where he led the design, development, and manufacture of technology accessory consumer products. During last year's 2017 MTA Conference he launched a new website, ThyMindOMan.com, where he writes about perennial wisdom and the mystical relationship between the human mind and God. He and his wife, Raven, have four children and live in Mechanicsburg, Pennsylvania.",
+                "email": "brycehaymond@gmail.com",
+                "photoUrl": "/assets/presenters/bryce_haymond.png",
+                "__typename": "Presenter"
+              },
+              "__typename": "PresenterEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGVyOjE0",
+                "displayName": "Carl Youngblood",
+                "presentations": {
+                  "edges": [
+                    {
+                      "node": {
+                        "id": "UHJlc2VudGF0aW9uOjE4",
+                        "title": "The Church Used to Be Like Silicon Valley. Can It Be Again?",
+                        "position": 15,
+                        "__typename": "Presentation"
+                      },
+                      "__typename": "PresentationEdge"
+                    }
+                  ],
+                  "__typename": "PresentationConnection"
+                },
+                "bio": "Carl Youngblood has been an avid technology enthusiast since early childhood, and has been earning a living as a software engineer since 1997. He was a Mormon missionary for two years in Brazil, where his newfound aptitude for language led him to eventually get a degree in Portuguese from Brigham Young University, and later a masters in Computer Science from the University of Washington. Carl's struggle to apply his faith meaningfully in today's rapidly-changing world led him to co-found The Mormon Transhumanist Association in 2006. Carl is passionate about science, technology, religion, philosophy and the performing arts. Carl is Vice President, director, and co-founder of the Mormon Transhumanist Association.",
+                "email": "carl.youngblood@transfigurism.org",
+                "photoUrl": "/assets/presenters/carl-youngblood.png",
+                "__typename": "Presenter"
+              },
+              "__typename": "PresenterEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGVyOjEw",
+                "displayName": "Charles Randall Paul",
+                "presentations": {
+                  "edges": [
+                    {
+                      "node": {
+                        "id": "UHJlc2VudGF0aW9uOjE0",
+                        "title": "Teleomachy: The Transhuman and Divine Problem with Social Purposes",
+                        "position": 20,
+                        "__typename": "Presentation"
+                      },
+                      "__typename": "PresentationEdge"
+                    }
+                  ],
+                  "__typename": "PresentationConnection"
+                },
+                "bio": "Charles Randall Paul is the founder and president of the Foundation for Religious Diplomacy (NY and UT) that works to build trust between religious critics and rivals. He is the co-founder of The World Table, a software platform for respectful conversations on the Internet. He received a B.S. from Brigham Young University in social psychology (1970) and an MBA from Harvard University (1972). After a career as a commercial real estate developer, he obtained a Ph.D. at the University of Chicago Committee on Social Thought (2000). He and his wife, Jann, have five children and fifteen grandchildren.",
+                "email": "crandallpaul@icloud.com",
+                "photoUrl": "/assets/presenters/charles-randall-paul.png",
+                "__typename": "Presenter"
+              },
+              "__typename": "PresenterEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGVyOjE=",
+                "displayName": "Chris Bradford",
+                "presentations": {
+                  "edges": [
+                    {
+                      "node": {
+                        "id": "UHJlc2VudGF0aW9uOjE=",
+                        "title": "Welcome",
+                        "position": 0,
+                        "__typename": "Presentation"
+                      },
+                      "__typename": "PresentationEdge"
+                    },
+                    {
+                      "node": {
+                        "id": "UHJlc2VudGF0aW9uOjI=",
+                        "title": "Open Thou Mine Eyes",
+                        "position": 1,
+                        "__typename": "Presentation"
+                      },
+                      "__typename": "PresentationEdge"
+                    }
+                  ],
+                  "__typename": "PresentationConnection"
+                },
+                "bio": "Chris Bradford was born in Utah, but soon moved to Washington, D.C. and then overseas for his father's employment. He has lived in Egypt, Germany, Jordan, Pakistan and Italy, where he served an LDS mission. A self-taught programmer, he is currently VP of Engineering at Ancestry.com. He has a degree from Brigham Young University in linguistics. Chris and wife Lucy have five sons and three daughters. Chris is passionate about science, technology, religion, philosophy, and the performing arts. Chris is President and a co-founder of the Mormon Transhumanist Association.",
+                "email": "christopher.bradford@transfigurism.org",
+                "photoUrl": "/assets/presenters/chris-bradford.png",
+                "__typename": "Presenter"
+              },
+              "__typename": "PresenterEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGVyOjE2",
+                "displayName": "Elizabeth Parrish",
+                "presentations": {
+                  "edges": [
+                    {
+                      "node": {
+                        "id": "UHJlc2VudGF0aW9uOjIx",
+                        "title": "Future of Healthy Longevity",
+                        "position": 17,
+                        "__typename": "Presentation"
+                      },
+                      "__typename": "PresentationEdge"
+                    }
+                  ],
+                  "__typename": "PresentationConnection"
+                },
+                "bio": "Elizabeth Parrish is CEO of BioViva, a biotech corporation targeting cellular aging that develops therapies to regenerate muscle and tissue. BioViva believes everyone deserves access to these life saving therapies. Elizabeth is a humanitarian, entrepreneur, innovator, and a leading voice for genetic cures. As a strong proponent of progress and education for the advancement of regenerative medicine modalities, she serves as a motivational speaker to the public at large for the life sciences. She is actively involved in international educational media outreach and is a founding member of the International Longevity Alliance (ILA). She is an affiliated member of the Complex Biological Systems Alliance (CBSA), which is a unique platform for Mensa based, highly gifted persons who advance scientific discourse and discovery. The mission of the CBSA is to further scientific understanding of biological complexity and the nature and origins of human disease. She is the founder of BioTrove Investments LLC and the BioTrove Podcasts which is committed to offering a meaningful way for people to learn about and fund research in regenerative medicine.",
+                "email": "liz.parrish@me.com",
+                "photoUrl": "/assets/presenters/elizabeth-parrish.png",
+                "__typename": "Presenter"
+              },
+              "__typename": "PresenterEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGVyOjE1",
+                "displayName": "Jaxon Washburn",
+                "presentations": {
+                  "edges": [
+                    {
+                      "node": {
+                        "id": "UHJlc2VudGF0aW9uOjE5",
+                        "title": "Refuge of the Worlds: Transfiguration and Divine Embodiment in the Hindu and Latter-day Saint Tradition",
+                        "position": 19,
+                        "__typename": "Presentation"
+                      },
+                      "__typename": "PresentationEdge"
+                    }
+                  ],
+                  "__typename": "PresentationConnection"
+                },
+                "bio": "Jaxon Washburn is a 19-year old freshman pursuing a major in Religious Studies from Arizona State University. Raised in an interfaith household, his passions include Mormon and Religious Studies, and interfaith activism. He is the current Youth Advisor for the Arizona Interfaith Movement, has spoken at venues such as the Parliament of the World's Religions and the United Nations, and is looking to serve a mission for the Church of Jesus Christ of Latter-day Saints this summer.",
+                "email": "jaxonjwashburn@gmail.com",
+                "photoUrl": "/assets/presenters/jaxon_washburn.png",
+                "__typename": "Presenter"
+              },
+              "__typename": "PresenterEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGVyOjc=",
+                "displayName": "Jon Bialecki",
+                "presentations": {
+                  "edges": [
+                    {
+                      "node": {
+                        "id": "UHJlc2VudGF0aW9uOjEw",
+                        "title": "After anthropos: humanistic social science in a post-human milieu",
+                        "position": 8,
+                        "__typename": "Presentation"
+                      },
+                      "__typename": "PresentationEdge"
+                    }
+                  ],
+                  "__typename": "PresentationConnection"
+                },
+                "bio": "Jon Bialecki is a fellow in the School of Social and Political Science at the University of Edinburgh. His academic interests include the anthropology of religion, anthropology of the subject, ontology and temporality, religious language ideology, and religious transhumanist movements.",
+                "email": "jon.bialecki@gmail.com",
+                "photoUrl": "/assets/presenters/jon-bialecki.png",
+                "__typename": "Presenter"
+              },
+              "__typename": "PresenterEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGVyOjg=",
+                "displayName": "Jon Ogden",
+                "presentations": {
+                  "edges": [
+                    {
+                      "node": {
+                        "id": "UHJlc2VudGF0aW9uOjEx",
+                        "title": "The Same as All Gods Have Done Before You: Transhumanism and the Religion of Tomorrow",
+                        "position": 21,
+                        "__typename": "Presentation"
+                      },
+                      "__typename": "PresentationEdge"
+                    }
+                  ],
+                  "__typename": "PresentationConnection"
+                },
+                "bio": "Jon Ogden is the author of When Mormons Doubt: A Way to Save Relationships and Seek a Quality Life.",
+                "email": "ogden.jon@gmail.com ",
+                "photoUrl": "/assets/presenters/jon-ogden.png",
+                "__typename": "Presenter"
+              },
+              "__typename": "PresenterEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGVyOjI=",
+                "displayName": "Lincoln Cannon",
+                "presentations": {
+                  "edges": [
+                    {
+                      "node": {
+                        "id": "UHJlc2VudGF0aW9uOjQ=",
+                        "title": "Being Christ in Name and Power",
+                        "position": 3,
+                        "__typename": "Presentation"
+                      },
+                      "__typename": "PresentationEdge"
+                    }
+                  ],
+                  "__typename": "PresentationConnection"
+                },
+                "bio": "Lincoln Cannon is a technologist and philosopher, and leading advocate of technological evolution and postsecular religion. He is a founder, board member, and former president of the Mormon Transhumanist Association. He is a founder and board member of the Christian Transhumanist Association. And he formulated the New God Argument, a logical argument for faith in God that is popular among religious Transhumanists. Lincoln is CEO at Thrivous, a human enhancement company. He is married with Dorothée Vankrieckenge, and they have three children.",
+                "email": "lincoln.cannon@transfigurism.org",
+                "photoUrl": "/assets/presenters/lincoln-cannon.png",
+                "__typename": "Presenter"
+              },
+              "__typename": "PresenterEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGVyOjU=",
+                "displayName": "Melissa Inouye",
+                "presentations": {
+                  "edges": [
+                    {
+                      "node": {
+                        "id": "UHJlc2VudGF0aW9uOjc=",
+                        "title": "\"Lightning in a Bottle”: The Technology of Religious Organization",
+                        "position": 6,
+                        "__typename": "Presentation"
+                      },
+                      "__typename": "PresentationEdge"
+                    }
+                  ],
+                  "__typename": "PresentationConnection"
+                },
+                "bio": "Melissa Wei-Tsing Inouye is a professor of Chinese history at the University of Auckland, New Zealand. Her first book, China and the True Jesus, is forthcoming from Oxford University Press and tells the story of the True Jesus Church and charismatic Christian modes in China in the twentieth century. Her published research includes work on global Mormonism, particularly in greater China. Dr. Inouye has taught Chinese history and Asian history at California State University Los Angeles and Loyola Marymount University, and American religious history at the University of Hong Kong. In addition to her academic work, Inouye has written numerous essays on Mormonism and her lived experience as a Mormon woman in the twenty-first century.",
+                "email": "m.inouye@auckland.ac.nz",
+                "photoUrl": "/assets/presenters/melissa-inouye.png",
+                "__typename": "Presenter"
+              },
+              "__typename": "PresenterEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGVyOjk=",
+                "displayName": "Micah Redding",
+                "presentations": {
+                  "edges": [
+                    {
+                      "node": {
+                        "id": "UHJlc2VudGF0aW9uOjEy",
+                        "title": "Spirituality and Superorganisms",
+                        "position": 11,
+                        "__typename": "Presentation"
+                      },
+                      "__typename": "PresentationEdge"
+                    }
+                  ],
+                  "__typename": "PresentationConnection"
+                },
+                "bio": "Micah Redding is a software developer and the Executive Director of the Christian Transhumanist Association. He's an international TEDx speaker and educator, and a contributor to Vice Motherboard, the Huffington Post, IEET, and Humanity+ Magazine. His travels have taken him to Tahrir Square during the Arab Spring, and Afghanistan during the war. Micah is a member of Mensa, a teaching fellow at Exosphere Academy in South America, and the host of the Christian Transhumanist Podcast, where he interviews leading edge thinkers in religion and technology.",
+                "email": "micah@christiantranshumanism.org",
+                "photoUrl": "/assets/presenters/micah_redding.png",
+                "__typename": "Presenter"
+              },
+              "__typename": "PresenterEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGVyOjM=",
+                "displayName": "Michaelann Bradley",
+                "presentations": {
+                  "edges": [
+                    {
+                      "node": {
+                        "id": "UHJlc2VudGF0aW9uOjM=",
+                        "title": "The Future of the Mormon Transhumanist Association",
+                        "position": 2,
+                        "__typename": "Presentation"
+                      },
+                      "__typename": "PresentationEdge"
+                    }
+                  ],
+                  "__typename": "PresentationConnection"
+                },
+                "bio": "Michaelann Bradley is a nonprofit advocate and community organizer. She currently serves as the CEO of the Association, which she has been actively involved with since 2013, including speaking at four conferences. In her professional life, she is the director of United Way's mental health initiatives; in other roles, she has been a fundraiser, marketing director, board chair, event planner, and social media strategist. She and her husband, Mormon historian Don, live in Provo, Utah.",
+                "email": "michaelann.bradley@transfigurism.org",
+                "photoUrl": "/assets/presenters/michaelann-bradley.png",
+                "__typename": "Presenter"
+              },
+              "__typename": "PresenterEdge"
+            },
+            {
+              "node": {
+                "id": "UHJlc2VudGVyOjEy",
+                "displayName": "Ross Richey",
+                "presentations": {
+                  "edges": [
+                    {
+                      "node": {
+                        "id": "UHJlc2VudGF0aW9uOjE2",
+                        "title": "Artificial Intelligence and LDS Cosmology",
+                        "position": 10,
+                        "__typename": "Presentation"
+                      },
+                      "__typename": "PresentationEdge"
+                    }
+                  ],
+                  "__typename": "PresentationConnection"
+                },
+                "bio": "Ross Richey is the owner of FTL Strategies, a software company specializing in rapid application development and lean software methodology. He lives in Salt Lake City with his wife and four kids. In his spare time he maintains a blog/podcast, where he posts weekly on a variety of topics, including religion, politics and technology. ",
+                "email": "rosswrichey@gmail.com ",
+                "photoUrl": "/assets/presenters/ross-richey.png",
+                "__typename": "Presenter"
+              },
+              "__typename": "PresenterEdge"
+            }
+          ],
+          "__typename": "PresenterConnection"
+        },
+        "__typename": "Viewer"
+      }
+  }
