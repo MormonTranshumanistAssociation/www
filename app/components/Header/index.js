@@ -46,7 +46,7 @@ const Header = props => (
         <FormattedMessage {...messages.meetup} />
       </Link>
       <JoinButton>
-        <Link to="/join">
+        <Link href="https://www.joinit.org/o/transfigurism">
           <FormattedMessage {...messages.join} />
         </Link>
       </JoinButton>

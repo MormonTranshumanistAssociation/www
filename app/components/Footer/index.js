@@ -67,7 +67,7 @@ function Footer() {
             <Link to="/meetup">
               <FormattedMessage {...messages.meetup} />
             </Link>
-            <Link to="/join">
+            <Link href="https://www.joinit.org/o/transfigurism">
               <FormattedMessage {...messages.contribute} />
             </Link>
             <Link to="/conf/login">
