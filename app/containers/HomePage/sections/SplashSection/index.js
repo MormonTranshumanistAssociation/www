@@ -6,12 +6,19 @@ import SectionContent from 'components/SectionContent';
 import ForestImage from './forest.jpg';
 import SocialNavBar from './SocialNavBar';
 import Logo from './mta-logo.png';
+import AmazonSmileLogo from './amazon-smile.png';
 import Headlines from './Headlines';
 
 const LogoImg = styled(Img)`
   width: 206px;
   height: auto;
   margin: 50px 0 50px 0;
+  flex: 0;
+`;
+
+const AmazonSmileImg = styled(Img)`
+  width: 150px;
+  height: auto;
   flex: 0;
 `;
 
@@ -30,6 +37,12 @@ const ContributeLink = styled.a`
     text-decoration: underline;
     background: rgba(0, 0, 0, 0.5);
   }
+`;
+
+const AmazonSmileLink = styled.a`
+  flex: 0;
+  display: inline-block;
+  margin-top: 30px;
 `;
 
 const TopAlignedSection = styled(Section)`
@@ -58,6 +71,11 @@ const SplashSection = () => (
       <LogoImg alt="MTA Logo" src={Logo} />
       <SocialNavBar />
       <ContributeLink href="/join#donation">Contribute</ContributeLink>
+    </div>
+    <div>
+      <AmazonSmileLink href="/amazon" title="Give to the MTA by shopping with Amazon Smile!">
+        <AmazonSmileImg alt="Amazon Smile" src={AmazonSmileLogo} />
+      </AmazonSmileLink>
     </div>
     <Spacer />
     <HeadlinesSection>
