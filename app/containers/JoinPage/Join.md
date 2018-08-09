@@ -86,6 +86,18 @@ You may indicate the amount of your donation and any special requests, such as u
     </script>
   </div
 
+
+## <a id="amazon-smile"></a> [![AmazonSmile](assets/logos/amazon_smile.png)](https://smile.amazon.com/ch/20-5826770)
+
+You can also contribute by shopping with Amazon Smile. Amazon will donate a portion of your purchase 
+payment to the MTA. Please bookmark this link and use it whenever you shop at Amazon.com!
+
+<div>
+  <a class="join-button" href="https://smile.amazon.com/ch/20-5826770">Shop with Amazon Smile</a>
+</div>
+
+
+
 ## <a id="discussion"></a>Discussion
 Join in discussion with members of the Mormon Transhumanist Association. If you prefer offline discussion, check for a Meetup group in your area, or start your own. If you prefer online discussion, you'll find the Mormon Transhumanist Association on major social networks and discussion forums.
 
