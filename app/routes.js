@@ -268,6 +268,13 @@ export default function createRoutes() {
           ],
         },
         {
+          path: '/amazon',
+          getComponent(nextState, cb) {
+            window.location.href = `https://smile.amazon.com/ch/20-5826770`;
+            cb();
+          },
+        },
+        {
           path: '/conf/2018',
           name: 'conf/2018',
           getComponent(nextState, cb) {
