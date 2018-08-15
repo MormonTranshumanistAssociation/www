@@ -5,6 +5,7 @@ import ForestImage from 'containers/HomePage/sections/SplashSection/forest.jpg';
 import Section from 'components/Section';
 import Link from 'components/Link';
 import SectionContent from 'components/SectionContent';
+import GoogleTranslate from 'components/GoogleTranslate';
 import messages from './messages';
 
 const H = styled.h3`
@@ -89,6 +90,7 @@ function Footer() {
           </LinkGroup>
         </Links>
       </FooterSectionContent>
+      <GoogleTranslate />
       <p>
         <FormattedMessage {...messages.copyright} />
       </p>
