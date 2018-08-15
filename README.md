@@ -6,6 +6,11 @@ React application built from [react-boilerplate](https://www.reactboilerplate.co
 
 ### Building
 
+Use node version 10 or later. If using `nvm`, you can switch to 10.6 with
+```bash
+nvm use 10.6
+```
+
 Install [yarn](https://yarnpkg.com/en/docs/install), then from within the project folder: 
 
 ```bash
@@ -16,6 +21,9 @@ yarn build
 (Other execution options are listed in the "scripts" section of `package.json`.)
 
 ### Starting locally
+
+Be sure you are using node version 10 or later. (See above.)
+
 ```bash
 yarn start
 ```
