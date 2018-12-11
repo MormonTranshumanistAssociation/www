@@ -7,6 +7,7 @@ const ToC = () => (
     <Entry to="/about/faq">FAQ</Entry>
     <Entry to="/about/transhumanist-declaration">Transhumanist Declaration</Entry>
     <Entry to="/about/affirmation">Mormon Transumanist Affirmation</Entry>
+    <Entry to="/about/statements">Official Statements</Entry>
     <Entry to="/about/management">Management</Entry>
     <Entry to="/about/board-of-directors">Board of Directors</Entry>
     <Entry to="/about/members">Members</Entry>

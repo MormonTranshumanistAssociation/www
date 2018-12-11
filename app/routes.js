@@ -88,6 +88,14 @@ export default function createRoutes() {
               },
             },
             {
+              path: 'statements',
+              getComponent(nextState, cb) {
+                import('containers/AboutPage/pages/Statements.md')
+                  .then(loadModule(cb))
+                  .catch(errorLoading);
+              },
+            },
+            {
               path: 'management',
               getComponent(nextState, cb) {
                 import('containers/AboutPage/pages/Management')
