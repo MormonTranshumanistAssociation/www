@@ -60,4 +60,9 @@ injectGlobal`
     padding: 0 1em;
     margin: 0;
   }
+  li {
+    text-indent: -1em;
+    padding: 0.25em 1em;
+    line-height: 1.25em;
+  }
 `;
