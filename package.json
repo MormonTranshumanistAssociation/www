@@ -1,16 +1,12 @@
 {
-  "name": "react-boilerplate",
-  "version": "3.4.0",
-  "description": "A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/react-boilerplate/react-boilerplate.git"
-  },
+  "name": "www",
+  "version": "2.0.0",
+  "description": "Official website of the Mormon Transhumanist Association",
   "engines": {
     "npm": ">=3",
     "node": ">=5"
   },
-  "author": "Max Stoiber",
+  "author": "Nathan Hadfield (based on react-boilerplate@3.4.0)",
   "license": "MIT",
   "scripts": {
     "analyze:clean": "rimraf stats.json",
@@ -319,7 +315,7 @@
     "prettier": "^1.11.1",
     "react-addons-test-utils": "15.4.1",
     "rimraf": "2.5.4",
-    "s3-deploy": "^0.7.5",
+    "s3-deploy": "^1.2.0",
     "shelljs": "0.7.5",
     "sinon": "2.0.0-pre",
     "style-loader": "0.13.1",
