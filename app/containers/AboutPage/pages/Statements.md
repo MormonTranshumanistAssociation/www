@@ -7,7 +7,7 @@
 
 ..ref name
 ## Name of the Mormon Transhumanist Association
-*11 December 2018*
+*10 December 2018*
 
 The Church of Jesus Christ of Latter-day Saints (Church of Jesus Christ) has asked its members and friends not to use the words “Mormon” or “Mormonism” when referring to it, its members, or its unique culture. The Mormon Transhumanist Association acknowledges and will adhere to that request. The Association also encourages its members and friends to respect and adhere to such requests from organizations and individuals generally.
 
