@@ -29,12 +29,12 @@ import Primers from './Primers.md';
 const primers = [
   {
     image: Primer1Image,
-    title: 'The Basics of Mormon Transhumanism',
+    title: 'What is Mormon Transhumanism?',
     url: '/primers/1',
   },
   {
     image: Primer2Image,
-    title: 'The purpose of the Mormon Transhumanist Association',
+    title: 'What is the purpose of the Mormon Transhumanist Association?',
     url: '/primers/2',
   },
   {
@@ -44,22 +44,22 @@ const primers = [
   },
   {
     image: Primer4Image,
-    title: 'Exponential Change',
+    title: 'Exponential change',
     url: '/primers/4',
   },
   {
     image: Primer5Image,
-    title: 'Implications of Exponential Technological Trends for Humanity',
+    title: 'Implications of exponential technological trends for humanity',
     url: '/primers/5',
   },
   {
     image: Primer6Image,
-    title: 'A Brief History of Religious Transhumanism',
+    title: 'A brief history of religious transhumanism',
     url: '/primers/6',
   },
   {
     image: Primer7Image,
-    title: 'The Role of Christ in Transhumanism',
+    title: 'What is the role of Christ in transhumanism?',
     url: '/primers/7',
   },
 ];

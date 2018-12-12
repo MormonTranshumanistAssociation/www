@@ -1,4 +1,4 @@
-# Implications of Exponential Technological Trends for Humanity
+# Implications of exponential technological trends for humanity
 
 ![Image](./assets/lesson5.jpg)
 ## Objective(s)

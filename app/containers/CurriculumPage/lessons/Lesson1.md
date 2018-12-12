@@ -1,4 +1,4 @@
-# The Basics of Mormon Transhumanism
+# What is Mormon Transhumanism?
 
 ![Image](./assets/lesson1.jpg)
 ## Objective(s)

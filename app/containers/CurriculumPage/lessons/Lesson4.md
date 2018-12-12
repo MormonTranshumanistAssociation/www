@@ -1,4 +1,4 @@
-# Exponential Change
+# Exponential change
 
 ![Image](./assets/lesson4.jpg)
 ## Objective(s)

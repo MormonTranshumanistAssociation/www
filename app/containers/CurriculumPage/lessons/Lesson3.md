@@ -1,4 +1,4 @@
-# Humanity+ and The Transhumanist Declaration
+# Humanity+ and the Transhumanist Declaration
 
 ![Image](./assets/lesson3.jpg)
 ## Objective(s)

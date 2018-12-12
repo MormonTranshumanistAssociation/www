@@ -1,4 +1,4 @@
-# The Purpose of the Mormon Transhumanist Association
+# What is the purpose of the Mormon Transhumanist Association?
 
 ![Image](./assets/lesson2.jpg)
 ## Objective(s)

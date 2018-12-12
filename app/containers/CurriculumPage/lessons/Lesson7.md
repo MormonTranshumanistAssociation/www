@@ -1,4 +1,4 @@
-# The Role of Christ in Transhumanism
+# What is the Role of Christ in Transhumanism?
 
 ![Image](./assets/lesson7.jpg)
 ## Objective(s)

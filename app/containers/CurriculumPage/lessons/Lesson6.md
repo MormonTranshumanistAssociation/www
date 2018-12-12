@@ -1,4 +1,4 @@
-# A Brief History of Religious Transhumanism
+# A brief history of religious transhumanism
 
 ![Image](./assets/lesson6.jpg)
 ## Objective(s)
