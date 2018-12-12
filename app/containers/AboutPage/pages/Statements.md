@@ -34,7 +34,7 @@ The Mormon Transhumanist Association requires that all members support the Trans
 
 The Mormon Transhumanist Association is not affiliated with any religious organization. However, members may have personal affiliations with religious organizations, Mormon or otherwise. The Association encourages members in such affiliations to adapt Transhumanism to their unique situations. The Association also encourages members, friends, and critics to express their views and to respond to each other's views in a manner that reflects discipleship of the Gospel of Jesus Christ. As stated in the Affirmation, “We practice our discipleship when we offer friendship, that all may be many in one; when we receive truth, let it come from whence it may; and when we send relief, consolation and healing, that raises each other together.”
 
-...ref reconcile
+..ref reconcile
 ## Reconcile the Members of the Body of Christ
 *18 June 2014*
 
