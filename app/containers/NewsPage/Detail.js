@@ -37,8 +37,6 @@ class NewsPage extends React.PureComponent {
         </MoreButtonWrapper>
         <Feed
           url={`http://news.transfigurism.org/feeds/posts/default/${params.id}?redirect=false`}
-          table="feednormalizer"
-          select="id, published, title, content"
           renderer={result => {
             const entry = _.get(result, 'query.results.entry');
             return (

@@ -258,7 +258,8 @@
     "striptags": "^2.2.1",
     "styled-components": "1.1.2",
     "warning": "3.0.0",
-    "whatwg-fetch": "2.0.1"
+    "whatwg-fetch": "2.0.1",
+    "xml2json-light": "^1.0.6"
   },
   "optionalDependencies": {
     "fsevents": "1.2.4"
