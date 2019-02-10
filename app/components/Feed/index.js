@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import Loader from 'halogen/GridLoader';
+import xml2json from 'xml2json-light';
 
 class Feed extends React.PureComponent {
   constructor(props) {
@@ -17,19 +18,31 @@ class Feed extends React.PureComponent {
   }
 
   startListener = async props => {
-    const { url, limit, offset, table, select } = props;
+    const { url, limit, offset } = props;
     const params = [];
-    if (limit) {
-      params.push(`limit ${limit}`);
-    }
-    if (offset) {
-      params.push(`offset ${offset}`);
-    }
-    const query = encodeURIComponent(`select ${select} from ${table} where url='${url}' ${params.join(' ')} `);
-    const yqlUrl = `https://query.yahooapis.com/v1/public/yql?q=${query}&format=json&diagnostics=false&callback=`;
-    const response = await fetch(yqlUrl);
+    const feedUrl = encodeURIComponent(url);
+    params.push(`rss_url=${feedUrl}`);
+    // TODO:
+    // rss2json doesn't support an offset, so we'd compute the total number of records we'd need to get and then
+    // clip the result
+
+    // if (limit) {
+    //   params.push(`count=${limit}`);
+    // }
+    // if (offset) {
+    //   params.push(`offset ${offset}`);
+    // }
+    const queryUrl = `https://api.rss2json.com/v1/api.json?${params.join('&')}`;
+    console.log({ url, feedUrl, queryUrl });
+    const response = await fetch(queryUrl);
     const json = await response.json();
-    this.setState({ result: json, loading: false });
+    console.log({ json });
+
+    const clipped = {
+      ...json,
+      items: _.slice(json.items, 0, limit),
+    };
+    this.setState({ result: clipped, loading: false });
   };
 
   render() {
@@ -46,14 +59,10 @@ Feed.propTypes = {
   renderer: PropTypes.func.isRequired,
   limit: PropTypes.number,
   offset: PropTypes.number,
-  table: PropTypes.string,
-  select: PropTypes.string,
 };
 
 Feed.defaultProps = {
-  select: '*',
   url: 'http://news.transfigurism.org/feeds/posts/default?redirect=false',
-  table: 'atom',
 };
 
 export default Feed;

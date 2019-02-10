@@ -56,23 +56,22 @@ class NewsPage extends React.PureComponent {
       <div>
         <Feed
           url="http://news.transfigurism.org/feeds/posts/default?redirect=false"
-          select="id, published, title, content, thumbnail"
           renderer={result => {
-            const entries = _.get(result, 'query.results.entry', []);
+            const entries = _.get(result, 'items', []);
             return (
               <article>
                 {_.map(entries, entry => {
-                  const match = /post-(.*)$/.exec(entry.id);
+                  const match = /post-(.*)$/.exec(entry.guid);
                   const shortId = match[1];
                   return (
-                    <div id={entry.id} key={entry.id}>
+                    <div id={entry.guid} key={entry.guid}>
                       <PublishedDate>{moment(entry.published).format('LL')}</PublishedDate>
                       <Link to={`/news/${shortId}`}>
-                        <h2>{entry.title.content}</h2>
+                        <h2>{entry.title}</h2>
                       </Link>
-                      {!!entry.thumbnail && <Thumbnail src={entry.thumbnail.url} />}
+                      {!!entry.thumbnail && <Thumbnail src={entry.thumbnail} />}
                       <div>
-                        <span dangerouslySetInnerHTML={{ __html: html2text(entry.content.content, { length: 400 }) }} />
+                        <span dangerouslySetInnerHTML={{ __html: html2text(entry.content, { length: 400 }) }} />
                         <ReadMoreLink to={`/news/${shortId}`}>
                           <FormattedMessage id="readMore" defaultMessage="Read more" />
                         </ReadMoreLink>

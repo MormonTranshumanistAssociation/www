@@ -46,20 +46,19 @@ const Headlines = () => (
   <Wrapper>
     <Feed
       url="http://news.transfigurism.org/feeds/posts/default?redirect=false"
-      select="id, title, thumbnail"
       limit={3}
       renderer={result => {
-        const entries = _.get(result, 'query.results.entry', []);
+        const entries = _.get(result, 'items', []);
         return (
           <NewsList>
             {_.map(entries, entry => {
-              const match = /post-(.*)$/.exec(entry.id);
+              const match = /post-(.*)$/.exec(entry.guid);
               const shortId = match[1];
               return (
-                <NewsItem id={entry.id} key={entry.id}>
-                  {!!entry.thumbnail && <Thumbnail src={entry.thumbnail.url} />}
+                <NewsItem id={entry.guid} key={entry.guid}>
+                  {!!entry.thumbnail && <Thumbnail src={entry.thumbnail} />}
                   <Link to={`/news/${shortId}`}>
-                    <h3>{entry.title.content}</h3>
+                    <h3>{entry.title}</h3>
                   </Link>
                 </NewsItem>
               );
