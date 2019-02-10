@@ -1,6 +1,5 @@
 import React, { PropTypes } from 'react';
 import Loader from 'halogen/GridLoader';
-import xml2json from 'xml2json-light';
 
 class Feed extends React.PureComponent {
   constructor(props) {
@@ -23,20 +22,11 @@ class Feed extends React.PureComponent {
     const feedUrl = encodeURIComponent(url);
     params.push(`rss_url=${feedUrl}`);
     // TODO:
-    // rss2json doesn't support an offset, so we'd compute the total number of records we'd need to get and then
-    // clip the result
-
-    // if (limit) {
-    //   params.push(`count=${limit}`);
-    // }
-    // if (offset) {
-    //   params.push(`offset ${offset}`);
-    // }
+    // rs2json.com crashes when requesting a specific post.
+    // use Blogger Data API instead: https://developers.google.com/blogger/docs/1.0/developers_guide_js
     const queryUrl = `https://api.rss2json.com/v1/api.json?${params.join('&')}`;
-    console.log({ url, feedUrl, queryUrl });
     const response = await fetch(queryUrl);
     const json = await response.json();
-    console.log({ json });
 
     const clipped = {
       ...json,

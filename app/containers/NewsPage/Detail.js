@@ -35,6 +35,8 @@ class NewsPage extends React.PureComponent {
             <Link to="/news">Back</Link>
           </Button>
         </MoreButtonWrapper>
+        <div>Sorry, this page is currently under construction...</div>
+        {/*
         <Feed
           url={`http://news.transfigurism.org/feeds/posts/default/${params.id}?redirect=false`}
           renderer={result => {
@@ -52,6 +54,7 @@ class NewsPage extends React.PureComponent {
             );
           }}
         />
+        */}
         <MoreButtonWrapper>
           <Button>
             <Link to="/news">Back</Link>
